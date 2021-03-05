@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WINDOWS\\system32\\CommerceProject\\CommerceProject.csproj",
+      "projectUniqueName": "C:\\Users\\cicif\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject.csproj",
       "projectName": "CommerceProject",
-      "projectPath": "C:\\WINDOWS\\system32\\CommerceProject\\CommerceProject.csproj",
+      "projectPath": "C:\\Users\\cicif\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject.csproj",
       "packagesPath": "C:\\Users\\cicif\\.nuget\\packages\\",
-      "outputPath": "C:\\WINDOWS\\system32\\CommerceProject\\obj\\",
+      "outputPath": "C:\\Users\\cicif\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
