@@ -8,23 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\cicif\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Owner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cicif\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject.csproj",
       "projectName": "CommerceProject",
-      "projectPath": "C:\\Users\\cicif\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject.csproj",
-      "packagesPath": "C:\\Users\\cicif\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cicif\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\obj\\",
+      "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\cicif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
