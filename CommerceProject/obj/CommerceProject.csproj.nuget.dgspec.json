@@ -68,6 +68,18 @@
               "target": "Package",
               "version": "[0.9.3, )"
             },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.Blazor.HttpClient": {
+              "target": "Package",
+              "version": "[3.2.0-preview3.20168.3, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
             "Volo.Abp.BlazoriseUI": {
               "target": "Package",
               "version": "[4.2.2, )"
