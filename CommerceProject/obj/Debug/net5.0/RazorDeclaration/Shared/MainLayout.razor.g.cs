@@ -96,6 +96,13 @@ using Blazorise.Material;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\_Imports.razor"
+using System.Net.HttpClient;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
