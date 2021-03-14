@@ -79,6 +79,20 @@ using CommerceProject.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\_Imports.razor"
+using Blazorise;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\_Imports.razor"
+using Blazorise.Material;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -94,7 +108,7 @@ using CommerceProject.Shared;
 #line hidden
 #nullable disable
             ));
-            __builder.AddAttribute(2, "PreferExactMatches", 
+            __builder.AddAttribute(2, "PreferExactMatches", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Boolean>(
 #nullable restore
 #line 1 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\App.razor"
                                                                      true
@@ -102,7 +116,7 @@ using CommerceProject.Shared;
 #line default
 #line hidden
 #nullable disable
-            );
+            ));
             __builder.AddAttribute(3, "Found", (Microsoft.AspNetCore.Components.RenderFragment<Microsoft.AspNetCore.Components.RouteData>)((routeData) => (__builder2) => {
                 __builder2.OpenComponent<Microsoft.AspNetCore.Components.RouteView>(4);
                 __builder2.AddAttribute(5, "RouteData", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.RouteData>(

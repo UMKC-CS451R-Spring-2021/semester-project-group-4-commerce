@@ -1,3 +1,11 @@
 ﻿<StaticWebAssets Version="1.0">
   <ContentRoot BasePath="/" Path="C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\Owner\.nuget\packages\blazorise\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\Owner\.nuget\packages\blazorise.bootstrap\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bulma" Path="C:\Users\Owner\.nuget\packages\blazorise.bulma\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.DataGrid" Path="C:\Users\Owner\.nuget\packages\blazorise.datagrid\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Material" Path="C:\Users\Owner\.nuget\packages\blazorise.material\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Sidebar" Path="C:\Users\Owner\.nuget\packages\blazorise.sidebar\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Snackbar" Path="C:\Users\Owner\.nuget\packages\blazorise.snackbar\0.9.3\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Volo.Abp.AspNetCore.Components.WebAssembly" Path="C:\Users\Owner\.nuget\packages\volo.abp.aspnetcore.components.webassembly\4.2.2\build\..\staticwebassets\" />
 </StaticWebAssets>

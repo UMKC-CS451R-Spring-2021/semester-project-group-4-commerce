@@ -39,6 +39,40 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Blazorise": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Blazorise.Bootstrap": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Blazorise.Bulma": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Blazorise.Components": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Blazorise.Icons.FontAwesome": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Blazorise.Material": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Blazorise.Sidebar": {
+              "target": "Package",
+              "version": "[0.9.3, )"
+            },
+            "Volo.Abp.BlazoriseUI": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
