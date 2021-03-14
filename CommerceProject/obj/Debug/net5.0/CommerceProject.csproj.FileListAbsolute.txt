@@ -184,4 +184,3 @@ C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProjec
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\bin\Debug\net5.0\Volo.Abp.Validation.Abstractions.dll
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\bin\Debug\net5.0\Volo.Abp.VirtualFileSystem.dll
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\bin\Debug\net5.0\Blazorise.Material.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Blazor.HttpClient.dll
