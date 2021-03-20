@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace CommerceProject
+namespace CommerceProject.Pages
 {
     #line hidden
     using System;
@@ -89,13 +89,24 @@ using Blazorise;
 #line default
 #line hidden
 #nullable disable
-    public partial class _Imports : System.Object
+    [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
+    public partial class Home : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
-        protected void Execute()
+        protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 54 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
+      
+    bool collapse1Visible = false;
+    bool collapse2Visible = false;
+    bool collapse3Visible = false;
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

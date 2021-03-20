@@ -83,6 +83,13 @@ using CommerceProject.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
+using Blazorise;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\FetchData.razor"
 using CommerceProject.Data;
 
