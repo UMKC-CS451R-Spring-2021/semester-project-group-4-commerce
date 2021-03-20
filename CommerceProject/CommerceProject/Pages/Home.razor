@@ -1,58 +1,63 @@
 ﻿@page "/home"
 
-<Accordion>
-    Transactions
-    <Collapse Visible="@collapse1Visible">
-        <CollapseHeader>
 
-            <Heading Size="HeadingSize.Is5">
 
-                <Button Clicked="@(()=>collapse1Visible = !collapse1Visible)" Block> Chipotle </Button>
-            </Heading>
-        </CollapseHeader>
-        <CollapseBody>
-            <p>
-                Processing: 6/01/20
-            </p>
-            <p>
-                Account #:
-            </p>
+<div class="card mx-5 mt-5">
+    <h2>Transactions </h2>
+    <div class="container-fluid mb-3">
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header bg-transparent" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <div class="float-left">
+                                <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
+                            </div>
 
-        </CollapseBody>
-    </Collapse>
-    <Collapse Visible="@collapse2Visible">
-        <CollapseHeader>
-            <Heading Size="HeadingSize.Is5">
-                <Button Clicked="@(()=>collapse2Visible = !collapse2Visible)" Block>Amazon</Button>
-            </Heading>
-        </CollapseHeader>
-        <CollapseBody>
-            <p>
-                Processing: 13456
-            </p>
-            <p>
-                Account #:
-            </p>
-        </CollapseBody>
-    </Collapse>
-    <Collapse Visible="@collapse3Visible">
-        <CollapseHeader>
-            <Heading Size="HeadingSize.Is5">
-                <Button Clicked="@(()=>collapse3Visible = !collapse3Visible)" Block>ATM</Button>
-            </Heading>
-        </CollapseHeader>
-        <CollapseBody>
-            <p>
-                Processing:
-            </p>
-            <p>
-                Account #:
-            </p>
-        </CollapseBody>
-    </Collapse>
-</Accordion>
-@code{
-    bool collapse1Visible = false;
-    bool collapse2Visible = false;
-    bool collapse3Visible = false;
-}
+                            <div class="float-right">
+                                <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
+                            </div>
+
+                            <div class="float">
+                                <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </a>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="card-block">
+                        TEST TEST
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-transparent" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                    <h5 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="float-left">
+                                <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
+                            </div>
+
+                            <div class="float-right">
+                                <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
+                            </div>
+
+                            <div class="float">
+                                <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="card-block">
+                        TEST 1 TEST 2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
