@@ -1,0 +1,58 @@
+﻿@page "/home"
+
+<Accordion>
+    Transactions
+    <Collapse Visible="@collapse1Visible">
+        <CollapseHeader>
+
+            <Heading Size="HeadingSize.Is5">
+
+                <Button Clicked="@(()=>collapse1Visible = !collapse1Visible)" Block> Chipotle </Button>
+            </Heading>
+        </CollapseHeader>
+        <CollapseBody>
+            <p>
+                Processing: 6/01/20
+            </p>
+            <p>
+                Account #:
+            </p>
+
+        </CollapseBody>
+    </Collapse>
+    <Collapse Visible="@collapse2Visible">
+        <CollapseHeader>
+            <Heading Size="HeadingSize.Is5">
+                <Button Clicked="@(()=>collapse2Visible = !collapse2Visible)" Block>Amazon</Button>
+            </Heading>
+        </CollapseHeader>
+        <CollapseBody>
+            <p>
+                Processing: 13456
+            </p>
+            <p>
+                Account #:
+            </p>
+        </CollapseBody>
+    </Collapse>
+    <Collapse Visible="@collapse3Visible">
+        <CollapseHeader>
+            <Heading Size="HeadingSize.Is5">
+                <Button Clicked="@(()=>collapse3Visible = !collapse3Visible)" Block>ATM</Button>
+            </Heading>
+        </CollapseHeader>
+        <CollapseBody>
+            <p>
+                Processing:
+            </p>
+            <p>
+                Account #:
+            </p>
+        </CollapseBody>
+    </Collapse>
+</Accordion>
+@code{
+    bool collapse1Visible = false;
+    bool collapse2Visible = false;
+    bool collapse3Visible = false;
+}
