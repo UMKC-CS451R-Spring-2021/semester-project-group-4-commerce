@@ -28,7 +28,7 @@ namespace CommerceProject.Data
 
         public Transaction GetTransactions(int account_id)
         {
-            string the_query = @"SELECT Amount, Location, Processing_Date FROM TRANSACTIONS";//trying to figure out
+            string the_query = @"SELECT Amount, Location, Processing_Date FROM TRANSACTIONS";//trying to figure out authentication
             Connection.Open();
             return Connection.Query(the_query).FirstOrDefault();
         }
