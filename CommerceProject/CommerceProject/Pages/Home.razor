@@ -1,30 +1,44 @@
 ﻿@page "/home"
 
 
+<style>
+    body {
+        background-image: url("/css/images/bgh.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        min-height: 500px;
+        background-attachment: fixed;
+    }
+</style>
 
 <div class="card mx-5 mt-5">
-    <h2>Transactions </h2>
+    <div class="bg-transparent clearfix">
+        <div class="float-left ml-2">
+            <h2>Transactions</h2>
+        </div>
+        <button type="button" class="btn bg-transparent float-right mr-2 mt-1">Settings <i class="fas fa-cog"></i> </button>
+        <button type="button" class="btn bg-transparent float-right mr-3 mt-1">Add Transaction <i class="fas fa-plus-circle"></i> </button>
+    </div>
+    <div class="clearfix"></div>
     <div class="container-fluid mb-3">
         <div id="accordion" role="tablist" aria-multiselectable="true">
             <div class="card">
                 <div class="card-header bg-transparent" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
-                    <h5 class="mb-0">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                            <div class="float-left">
-                                <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                            </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <div class="float-left">
+                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
+                        </div>
 
-                            <div class="float-right">
-                                <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                            </div>
+                        <div class="float-right">
+                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
+                        </div>
 
-                            <div class="float">
-                                <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                            </div>
+                        <div class="float">
+                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
+                        </div>
 
-                            <div class="clearfix"></div>
-                        </a>
-                    </h5>
+                        <div class="clearfix"></div>
+                    </a>
                 </div>
 
                 <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -35,24 +49,45 @@
             </div>
             <div class="card">
                 <div class="card-header bg-transparent" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
-                    <h5 class="mb-0">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <div class="float-left">
-                                <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                            </div>
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="float-left">
+                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
+                        </div>
 
-                            <div class="float-right">
-                                <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                            </div>
+                        <div class="float-right">
+                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
+                        </div>
 
-                            <div class="float">
-                                <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                            </div>
-                            <div class="clearfix"></div>
-                        </a>
-                    </h5>
+                        <div class="float">
+                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
                 </div>
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="card-block">
+                        TEST 1 TEST 2
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-transparent" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="float-left">
+                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
+                        </div>
+
+                        <div class="float-right">
+                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
+                        </div>
+
+                        <div class="float">
+                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
+                        </div>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
                     <div class="card-block">
                         TEST 1 TEST 2
                     </div>
