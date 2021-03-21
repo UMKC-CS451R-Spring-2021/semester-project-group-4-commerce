@@ -68,9 +68,17 @@
               "target": "Package",
               "version": "[0.9.3, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.78, )"
+            },
             "Microsoft.AspNetCore.Blazor.HttpClient": {
               "target": "Package",
               "version": "[3.2.0-preview3.20168.3, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             },
             "Volo.Abp.BlazoriseUI": {
               "target": "Package",

@@ -96,6 +96,13 @@ using Blazorise.Material;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\_Imports.razor"
+using Dapper;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
