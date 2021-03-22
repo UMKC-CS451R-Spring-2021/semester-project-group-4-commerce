@@ -1,22 +1,32 @@
-﻿@using Blazorise
- 
-<Bar Breakpoint="Breakpoint.Desktop"
-     Background="Background.Light"
-     ThemeContrast="ThemeContrast.Light">
-    <BarBrand>
-        <Figure Size="FigureSize.None">
-            <FigureImage Source="/css/images/commerce-bank-vector-logo-horizontal.jpg" AlternateText="Commerce Logo" Width="30%"/>
-        </Figure>
-        <BarMenu>
-            <BarStart>
-                <BarItem>
-                    <Button Color="Color.Primary">Log out</Button>
-                    <Button Color="Color.Secondary">Settings</Button>
-                    <Button Color="Color.Secondary">ETC</Button>
+﻿
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/css/images/commerce-bank-vector-logo-horizontal.png" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                </BarItem>
-            </BarStart>
-        </BarMenu>
-    </BarBrand>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav abs-center-x">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Notifications</a>
+                </li>
+            </ul>
+        </div>
 
-</Bar>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+
+                <button type="button" class="btn btn-primary">Sign out</button>
+        </div>
+
+
+    </div>
+</nav>
