@@ -1,6 +1,20 @@
-.navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+.navbar-expand-lg {
+    background-color: #F3F1EE;
 }
+.navbar-toggler {
+    background-color: #F3F1EE;
+}
+
+.navbar-nav {
+    float: none;
+    margin-left: 50%;
+    text-align: center;
+}
+
+    .navbar-nav > li {
+        float: none;
+    }
+
 
 .top-row {
     height: 3.5rem;
@@ -36,6 +50,7 @@
 
 .nav-item {
     font-family: Poppins;
+    color: #6E6F78;
     font-size: 1.2rem;
     padding-top: 0;
 }

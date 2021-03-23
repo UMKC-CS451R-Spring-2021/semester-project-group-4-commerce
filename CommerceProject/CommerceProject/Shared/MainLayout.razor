@@ -1,12 +1,14 @@
-﻿@inherits LayoutComponentBase
-
+﻿@inherits LayoutComponentBase   
 
 <header>
-    <NavMenu/>
+    <NavMenu />
 </header>
 
-<div class="container">
-    <main role="main" class="pl-3">
+<div class="main">
+    <div class="content">
         @Body
-    </main>
+    </div>
+    <footer>
+        This is the footer
+    </footer>
 </div>

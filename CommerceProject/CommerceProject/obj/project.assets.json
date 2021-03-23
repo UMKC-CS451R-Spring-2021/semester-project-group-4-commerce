@@ -7828,11 +7828,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+      "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceWIP\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
       "projectName": "CommerceProject",
-      "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+      "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceWIP\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
       "packagesPath": "C:\\Users\\khoii\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\obj\\",
+      "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceWIP\\CommerceProject\\CommerceProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\khoii\\AppData\\Roaming\\NuGet\\NuGet.Config",

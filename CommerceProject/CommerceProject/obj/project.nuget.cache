@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cbbR2SpvJBORBBCMRY7kp14c1eRjp/PUvc6gGxfHvWCbUvbgdfHp0jGraxXJo8r/8PhDJt/aKV7ozdFJnrzK4g==",
+  "dgSpecHash": "7vxmgdK8WSE8KwxhPKmnYIWQ9h5MvOOSOj2gK91UkWAKr42g8uEqKJTpZ2mD6s3LTmD+jvFn+IFxrG+5etRCWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+  "projectFilePath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceWIP\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khoii\\.nuget\\packages\\blazorise\\0.9.3.1\\blazorise.0.9.3.1.nupkg.sha512",
     "C:\\Users\\khoii\\.nuget\\packages\\blazorise.bootstrap\\0.9.3.1\\blazorise.bootstrap.0.9.3.1.nupkg.sha512",

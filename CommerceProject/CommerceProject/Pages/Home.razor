@@ -1,140 +1,166 @@
 ﻿@page "/home"
 
 
+@using CommerceProject.Data
+@inject WeatherForecastService ForecastService
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+
 <style>
+
     body {
-        background-image: url("/css/images/bgh.png");
+        background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
         background-repeat: no-repeat;
-        background-position: left bottom;
+        background-position: left bottom, right top;
         min-height: 500px;
         background-attachment: fixed;
     }
-
-
-    .container-fluid{
-        min-width:1016px;
+    h2 {
+        font-family: 'Poppins', sans-serif;
     }
 
-    .container {
-        min-width: 400px;
+    .table {
+        font-family: 'Open Sans', sans-serif;
+    }
+    .collapse-row.collapsed + tr {
+        display: none;
+    }
+    table {
+        max-width: 100%;
     }
 
-    .list-group-item {
-        border: 0 !important;
-        padding-top: 2px !important;
-        padding-bottom: 2px !important;
+    .hiddenRow {
+        padding: 0 !important;
+    }
+
+    .tableRowHover tbody tr:not(.tableRowHoverOff):hover td {
+        background-color: #dcdcdc;
+        transition: all 0.01s ease-in-out;
+    }
+
+    tr.noBorder td {
+        border: 0;
+    }
+
+    .sticky-top {
+        top: 1em;
     }
 </style>
 
+<div class="row">
+    <div class="col-2"></div>
+        <div class="col-sm-7">
+            <div class="container mt-1 bg-light float-left" style="border:1px solid #cecece">
+                <h2>
+                    Transactions
+                    <button type="button" class="btn bg-transparent float-right mr-2 mt-1">Settings <i class="fas fa-cog"></i> </button>
+                    <button type="button" class="btn bg-transparent float-right mr-3 mt-1">Add Transaction <i class="fas fa-plus-circle"></i> </button>
+                </h2>
+                <div class="table-responsive-sm">
+                    <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Temp. (C)</th>
+                                <th>Temp. (F)</th>
+                                <th>Summary</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var forecast in forecasts)
 
-<div class="parent-container d-flex">
-        <div class="row">
-            <div class="col">
-                <div class="card mt-5">
-                    <div class="bg-light clearfix">
-                        <div class="float-left ml-2">
-                            <h2>
-                                Transactions
-                            </h2>
-                        </div>
-                        <button type="button" class="btn bg-transparent float-right mr-2 mt-1">Settings <i class="fas fa-cog"></i> </button>
-                        <button type="button" class="btn bg-transparent float-right mr-3 mt-1">Add Transaction <i class="fas fa-plus-circle"></i> </button>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="container-fluid bg-light mb-3 mr-5" id="containerT">
-                        <div id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header bg-transparent" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        <div class="float-left">
-                                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                                        </div>
+                            {
+                                <tr data-toggle="collapse" data-target=".@(forecast.Summary)">
+                                    <td>@forecast.Date.ToShortDateString()</td>
+                                    <td>@forecast.TemperatureC</td>
+                                    <td>@forecast.TemperatureF</td>
+                                    <td>@forecast.Summary</td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo1</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo2</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo3</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo4</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo5</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo1</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo1</div>
+                                    </td>
+                                </tr>
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse  @(forecast.Summary)">Demo1</div>
+                                    </td>
+                                </tr>
 
-                                        <div class="float-right">
-                                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float">
-                                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="clearfix"></div>
-                                    </a>
-                                </div>
-
-                                <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="card-block">
-                                        TEST TEST
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header bg-transparent" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <div class="float-left">
-                                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float-right">
-                                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float">
-                                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="card-block">
-                                        TEST 1 TEST 2
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header bg-transparent" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <div class="float-left">
-                                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float-right">
-                                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float">
-                                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="card-block">
-                                        TEST 1 TEST 2
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
-    </div>
-        <div class="row">
-            <div class="col">
-                <div class="card ml-2 mt-5">
-                    <div class="container bg-light">
-                        <h3> Notifications </h3>
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Alaska</li>
-                        <li class="list-group-item">Spa</li>
-                        <li class="list-group-item">2am</li>
-                        <li class="list-group-item">ASDSADASAAASDADAD</li>
+        </div>
+        <div class="col-sm-3">
+            <div class="container bg-light sticky-top" style="border:1px solid #cecece">
+                <h2> Notifications mt-1</h2>
+                <table class="table table-responsive bg-white" style="border:1px solid #cecece">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Temp. (C)</th>
+                            <th>Temp. (F)</th>
+                            <th>Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var forecast in forecasts)
+                        {
+                            <tr>
+                                <td>@forecast.Date.ToShortDateString()</td>
+                                <td>@forecast.TemperatureC</td>
+                                <td>@forecast.TemperatureF</td>
+                                <td>@forecast.Summary</td>
+                            </tr>
+                        }
 
-
-                    </ul>
-                </div>
+                    </tbody>
+                </table>
             </div>
+        </div>
     </div>
 
-</div>
+
+    @code {
+        private WeatherForecast[] forecasts;
+
+        protected override async Task OnInitializedAsync()
+        {
+            forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        }
+    }
