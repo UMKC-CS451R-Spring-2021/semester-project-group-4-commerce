@@ -31,8 +31,6 @@ namespace CommerceProject.Data
             string the_query = @"SELECT Amount, Location, Processing_Date FROM TRANSACTIONS";//trying to figure out authentication
             Connection.Open();
             return Connection.Query<Transaction>(the_query).ToList<Transaction>();
-
-           
         }
 
         
