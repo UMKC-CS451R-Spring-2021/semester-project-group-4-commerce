@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
+    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
+    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
         "projectName": "CommerceProject",
-        "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
-        "packagesPath": "C:\\Users\\khoii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceLGS\\CommerceProject\\CommerceProject\\obj\\",
+        "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\khoii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
