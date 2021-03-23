@@ -1,6 +1,6 @@
 ﻿@page "/home"
-
-
+@using CommerceProject.Data
+@inject GetTransactionData GetTransactions
 <style>
     body {
         background-image: url("/css/images/bgh.png");
@@ -11,8 +11,8 @@
     }
 
 
-    .container-fluid{
-        min-width:1016px;
+    .container-fluid {
+        min-width: 1016px;
     }
 
     .container {
@@ -28,113 +28,70 @@
 
 
 <div class="parent-container d-flex">
-        <div class="row">
-            <div class="col">
-                <div class="card mt-5">
-                    <div class="bg-light clearfix">
-                        <div class="float-left ml-2">
-                            <h2>
-                                Transactions
-                            </h2>
-                        </div>
-                        <button type="button" class="btn bg-transparent float-right mr-2 mt-1">Settings <i class="fas fa-cog"></i> </button>
-                        <button type="button" class="btn bg-transparent float-right mr-3 mt-1">Add Transaction <i class="fas fa-plus-circle"></i> </button>
+    <div class="row">
+        <div class="col">
+            <div class="card mt-5">
+                <div class="bg-light clearfix">
+                    <div class="float-left ml-2">
+                        <h2>
+                            Transactions
+                        </h2>
                     </div>
-                    <div class="clearfix"></div>
-                    <div class="container-fluid bg-light mb-3 mr-5" id="containerT">
-                        <div id="accordion" role="tablist" aria-multiselectable="true">
-                            <div class="card">
-                                <div class="card-header bg-transparent" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        <div class="float-left">
-                                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float-right">
-                                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float">
-                                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="clearfix"></div>
-                                    </a>
-                                </div>
-
-                                <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                    <div class="card-block">
-                                        TEST TEST
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header bg-transparent" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <div class="float-left">
-                                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float-right">
-                                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float">
-                                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                    <div class="card-block">
-                                        TEST 1 TEST 2
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header bg-transparent" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
-                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <div class="float-left">
-                                            <h4>LOCATION TEXT</h4> @*LOCATION DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float-right">
-                                            <h4 class="text-right">DATE TEXT</h4> @*DATE DATA GOES HERE*@
-                                        </div>
-
-                                        <div class="float">
-                                            <h4 class="text-center">PRICE TEXT</h4> @*PRICE DATA GOES HERE*@
-                                        </div>
-                                        <div class="clearfix"></div>
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                                    <div class="card-block">
-                                        TEST 1 TEST 2
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <button type="button" class="btn bg-transparent float-right mr-2 mt-1">Settings <i class="fas fa-cog"></i> </button>
+                    <button type="button" class="btn bg-transparent float-right mr-3 mt-1">Add Transaction <i class="fas fa-plus-circle"></i> </button>
+                </div>
+                <div class="clearfix"></div>
+                <div class="container-fluid bg-light mb-3 mr-5" id="containerT">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Temp. (C)</th>
+                                <th>Temp. (F)</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var transaction in transaction_list)
+                            {
+                                <tr>
+                                    <td>@transaction.getDate()</td>
+                                    <td>@transaction.getLocation()</td>
+                                    <td>@transaction.get_Amount()</td>
+                                    
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 </div>
             </div>
+        </div>
     </div>
-        <div class="row">
-            <div class="col">
-                <div class="card ml-2 mt-5">
-                    <div class="container bg-light">
-                        <h3> Notifications </h3>
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Alaska</li>
-                        <li class="list-group-item">Spa</li>
-                        <li class="list-group-item">2am</li>
-                        <li class="list-group-item">ASDSADASAAASDADAD</li>
-
-
-                    </ul>
+    <div class="row">
+        <div class="col">
+            <div class="card ml-2 mt-5">
+                <div class="container bg-light">
+                    <h3> Notifications </h3>
                 </div>
+                <ul class="list-group">
+                    <li class="list-group-item">Alaska</li>
+                    <li class="list-group-item">Spa</li>
+                    <li class="list-group-item">2am</li>
+                    <li class="list-group-item">ASDSADASAAASDADAD</li>
+
+
+                </ul>
             </div>
+        </div>
     </div>
 
 </div>
+@code{
+    private List<Transaction> transaction_list;
+
+    GetTransactionData get_list = new GetTransactionData();
+    protected override async Task OnInitializedAsync()
+    {
+        transaction_list = get_list.GetTransactions().ToList<Transaction>();
+    }
+}

@@ -26,9 +26,9 @@ namespace CommerceProject.Data
             }
         }
 
-        public IEnumerable<Transaction> GetTransactions(int account_id)//will become relevant
+        public IEnumerable<Transaction> GetTransactions()//will become relevant
         {
-            string the_query = @"SELECT Amount, Location, Processing_Date FROM TRANSACTIONS";//trying to figure out authentication
+            string the_query = "SELECT Amount, Location, Processing_Date FROM TRANSACTIONS";//trying to figure out authentication
             Connection.Open();
             return Connection.Query<Transaction>(the_query).ToList<Transaction>();
         }

@@ -7,13 +7,29 @@ namespace CommerceProject.Data
 {
     public class Transaction
     {
-        private String location;
-        private String date;
-        private String money_gained;
+        private String Location;
+        private String Processing_Date;
+        private float Amount;
 
-        public String getLocation() { return location; }
-        public String getDate() { return date; }
-        public String get_moneyGained() { return money_gained; }
+
+        public Transaction(float _Amount, String _Processing_Date, String _Location)
+        {
+            Amount = _Amount;
+            Processing_Date = _Processing_Date;
+            Location = _Location;
+        }
+        public String getLocation() 
+        { 
+            return Location; 
+        }
+        public String getDate() 
+        {
+            return Processing_Date; 
+        }
+        public float get_Amount() 
+        { 
+            return Amount;
+        }
     }
 
 
