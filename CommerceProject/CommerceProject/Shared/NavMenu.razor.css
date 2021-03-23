@@ -1,0 +1,79 @@
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn {
+    font-family: sans-serif;
+    background-color:#006747
+}
+
+    .btn:hover {
+        background-color: #4FA800
+    }
+
+
+.navbar-brand {
+    font-size: 1.1rem;
+}
+
+.oi {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.abs-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-item {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+
+    .nav-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+
+    .nav-item a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        background: #4FA800;
+        width: 0;
+    }
+
+    .nav-item a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+@media (min-width: 641px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .collapse {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
