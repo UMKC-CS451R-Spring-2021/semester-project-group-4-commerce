@@ -44,6 +44,7 @@ namespace CommerceProject
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSingleton<GetTransactionData>();
 
             services
               .AddBlazorise(options =>

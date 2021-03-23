@@ -1,6 +1,6 @@
 ﻿@page "/home"
 @using CommerceProject.Data
-@inject GetTransactionData GetTransactions
+@inject GetTransactionData TransactionData
 <style>
     body {
         background-image: url("/css/images/bgh.png");
@@ -46,9 +46,9 @@
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Temp. (C)</th>
-                                <th>Temp. (F)</th>
-                                
+                                <th>Location</th>
+                                <th>Amount</th>
+
                             </tr>
                         </thead>
                         <tbody>
@@ -58,7 +58,7 @@
                                     <td>@transaction.getDate()</td>
                                     <td>@transaction.getLocation()</td>
                                     <td>@transaction.get_Amount()</td>
-                                    
+
                                 </tr>
                             }
                         </tbody>
@@ -87,11 +87,11 @@
 
 </div>
 @code{
-    private List<Transaction> transaction_list;
+    List<Transaction> transaction_list = new List<Transaction>();
 
-    GetTransactionData get_list = new GetTransactionData();
-    protected override async Task OnInitializedAsync()
+
+    protected override void OnInitialized()
     {
-        transaction_list = get_list.GetTransactions().ToList<Transaction>();
+        transaction_list = TransactionData.GetTransactions().ToList();
     }
 }

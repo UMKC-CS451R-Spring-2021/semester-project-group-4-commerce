@@ -107,18 +107,18 @@ using CommerceProject.Data;
 #nullable restore
 #line 89 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
       
-    private List<Transaction> transaction_list;
+    List<Transaction> transaction_list = new List<Transaction>();
 
-    GetTransactionData get_list = new GetTransactionData();
-    protected override async Task OnInitializedAsync()
+
+    protected override void OnInitialized()
     {
-        transaction_list = get_list.GetTransactions().ToList<Transaction>();
+        transaction_list = TransactionData.GetTransactions().ToList();
     }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GetTransactionData GetTransactions { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GetTransactionData TransactionData { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -14,7 +14,7 @@ namespace CommerceProject.Data
         
         public GetTransactionData()
         {
-            connectionString = "";
+            connectionString = "Data Source=NEWBLUE-PC\\COMMERCE_BANK;User ID=Developer2;Password=commerce1;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         }
 

@@ -89,6 +89,13 @@ using Blazorise;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Counter.razor"
+using CommerceProject.Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -100,11 +107,12 @@ using Blazorise;
 #nullable restore
 #line 9 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Counter.razor"
        
-    private int currentCount = 0;
+    public List<Transaction> transaction_list;
+    public GetTransactionData get_list = new GetTransactionData();
 
     private void IncrementCount()
     {
-        currentCount++;
+        transaction_list = get_list.GetTransactions().ToList<Transaction>();
     }
 
 #line default

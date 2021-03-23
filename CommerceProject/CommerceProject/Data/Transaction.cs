@@ -18,6 +18,11 @@ namespace CommerceProject.Data
             Processing_Date = _Processing_Date;
             Location = _Location;
         }
+
+        public Transaction()
+        {
+          
+        }
         public String getLocation() 
         { 
             return Location; 
