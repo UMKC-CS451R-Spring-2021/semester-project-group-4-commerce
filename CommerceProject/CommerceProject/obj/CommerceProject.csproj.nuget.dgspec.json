@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
+    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceV3.1\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
+    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceV3.1\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceV3.1\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
         "projectName": "CommerceProject",
-        "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
-        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\obj\\",
+        "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceV3.1\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "packagesPath": "C:\\Users\\khoii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceV3.1\\CommerceProject\\CommerceProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khoii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

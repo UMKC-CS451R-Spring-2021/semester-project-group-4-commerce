@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace CommerceProject
+namespace CommerceProject.Pages
 {
     #line hidden
     using System;
@@ -89,13 +89,27 @@ using Blazorise;
 #line default
 #line hidden
 #nullable disable
-    public partial class App : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class RedirectToLogin : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 3 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerceV3.1\CommerceProject\CommerceProject\Pages\RedirectToLogin.razor"
+      
+    [Parameter] public string Url { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Navigation.NavigateTo(Url, true);
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager Navigation { get; set; }
     }
 }
 #pragma warning restore 1591

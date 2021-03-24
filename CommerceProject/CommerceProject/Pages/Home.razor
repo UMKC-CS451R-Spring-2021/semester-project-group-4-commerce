@@ -70,16 +70,31 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @{int i = 0;}
                             @foreach (var transaction in transaction_list)
 
                             {
-                                <tr data-toggle="collapse" data-target=".@(transaction.getLocation())">
+                                <tr data-toggle="collapse" data-target=".data_@i">
                                     <td>@transaction.getDate()</td>
                                     <td>@transaction.getLocation()</td>
                                     <td>@transaction.get_Amount()</td>
-                                    
+
                                 </tr>
-                               
+                                <tr class="tableRowHoverOff noBorder">
+                                    <td class="hiddenRow ">
+                                        <div class="collapse data_@i">@(transaction.getLocation())</div>
+                                        <div>
+
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                        <div>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                                i++;
 
                             }
                         </tbody>
