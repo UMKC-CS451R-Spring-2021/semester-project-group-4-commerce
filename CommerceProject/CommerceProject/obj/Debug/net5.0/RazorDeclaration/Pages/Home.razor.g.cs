@@ -89,6 +89,13 @@ using Blazorise;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
+using CommerceProject.Data;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
     public partial class Home : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -97,6 +104,23 @@ using Blazorise;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 134 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
+       
+    private WeatherForecast[] forecasts;
+    List<Transaction> transaction_list = new List<Transaction>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        transaction_list = TransactionData.GetTransactions().ToList();
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GetTransactionData TransactionData { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
     }
 }
 #pragma warning restore 1591
