@@ -73,9 +73,24 @@
     }
 }
 /* _content/CommerceProject/Shared/NavMenu.razor.rz.scp.css */
-.navbar-toggler[b-q9fo7l4ayw] {
-    background-color: rgba(255, 255, 255, 0.1);
+.navbar-expand-lg[b-q9fo7l4ayw] {
+    background-color: #F3F1EE;
 }
+
+.navbar-toggler[b-q9fo7l4ayw] {
+    background-color: #F3F1EE;
+}
+
+.navbar-nav[b-q9fo7l4ayw] {
+    float: none;
+    margin-left: 50%;
+    text-align: center;
+}
+
+    .navbar-nav > li[b-q9fo7l4ayw] {
+        float: none;
+    }
+
 
 .top-row[b-q9fo7l4ayw] {
     height: 3.5rem;
@@ -84,7 +99,7 @@
 
 .btn[b-q9fo7l4ayw] {
     font-family: sans-serif;
-    background-color:#006747
+    background-color: #006747
 }
 
     .btn:hover[b-q9fo7l4ayw] {
@@ -111,6 +126,7 @@
 
 .nav-item[b-q9fo7l4ayw] {
     font-family: Poppins;
+    color: #6E6F78;
     font-size: 1.2rem;
     padding-top: 0;
 }
