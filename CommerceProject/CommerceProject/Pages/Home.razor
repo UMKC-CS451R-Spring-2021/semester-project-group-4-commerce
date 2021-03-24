@@ -64,7 +64,8 @@
                     <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
                         <thead>
                             <tr>
-                                <th>Date</th>
+                                <th>Transaction Number</th>
+                                
                                 <th>Location</th>
                                 <th>Amount</th>
                                 <th>Balance</th>
@@ -75,10 +76,11 @@
 
                             {
                             <tr data-toggle="collapse" data-target=".@(transaction.getLocation())">
-                                <td>@transaction.getDate()</td>
+                                <td>@transaction.get_TransNum()</td>
                                 <td>@transaction.getLocation()</td>
                                 <td>@transaction.get_Amount()</td>
                                 <td>@transaction.getBalance()</td>
+
 
                             </tr>
                                

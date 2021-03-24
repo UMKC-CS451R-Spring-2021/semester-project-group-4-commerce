@@ -105,7 +105,7 @@ using CommerceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 122 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
+#line 125 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
            
         private WeatherForecast[] forecasts;
         List<Transaction> transaction_list = new List<Transaction>();
