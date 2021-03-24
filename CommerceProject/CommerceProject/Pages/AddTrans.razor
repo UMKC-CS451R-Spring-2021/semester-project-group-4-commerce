@@ -61,7 +61,7 @@ else
 
         people = await _db.GetPeople();
 
-        trans = await _trans.GetTransactions("CR");
+        trans = await _trans.GetTransactions(UserName);
 
     }
 
