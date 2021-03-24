@@ -18,6 +18,7 @@ using System.Threading.Tasks;
 using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
+using DataAccessLibrary;
 
 namespace CommerceProject
 {
@@ -45,6 +46,10 @@ namespace CommerceProject
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<GetTransactionData>();
+            services.AddHttpContextAccessor();
+            services.AddTransient<ITransactionData, TransactionData>();
+            services.AddTransient<ISqlDataAccess, SqlDataAccess>();
+            services.AddTransient<IPeopleData, PeopleData>();
 
             services
               .AddBlazorise(options =>

@@ -34,15 +34,3 @@ G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\DataAccessLib
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.deps.json
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\ref\DataAccessLibrary.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csprojAssemblyReference.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfoInputs.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfo.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
