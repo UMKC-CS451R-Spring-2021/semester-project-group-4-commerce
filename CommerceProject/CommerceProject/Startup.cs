@@ -18,7 +18,6 @@ using System.Threading.Tasks;
 using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
-using DataAccessLibrary;
 
 namespace CommerceProject
 {
@@ -39,23 +38,19 @@ namespace CommerceProject
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddSingleton<WeatherForecastService>();
-            services.AddHttpContextAccessor();                              // used to get current logged in user details -Thomas
-            services.AddTransient<IPeopleData, PeopleData>();               // Interface and Dapper for connection with db -Thomas
-            services.AddTransient<ISqlDataAccess, SqlDataAccess>();         // see one line above -(you guessed it...) Thomas
-            services.AddTransient<ITransactionData, TransactionData>();
+            services.AddSingleton<GetTransactionData>();
 
             services
               .AddBlazorise(options =>
               {
                   options.ChangeTextOnKeyPress = true; // optional
-                  })
+              })
               .AddBootstrapProviders()
               .AddFontAwesomeIcons();
         }

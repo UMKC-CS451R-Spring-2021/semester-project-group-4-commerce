@@ -11,10 +11,10 @@ namespace CommerceProject.Data
     public class GetTransactionData
     {
         private String connectionString;
-        
+
         public GetTransactionData()
         {
-            connectionString = "";
+            connectionString = "Data Source=NEWBLUE-PC\\COMMERCE_BANK;User ID=Developer2;Password=commerce1;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         }
 
@@ -26,14 +26,13 @@ namespace CommerceProject.Data
             }
         }
 
-        public IEnumerable<Transaction> GetTransactions(int account_id)//will become relevant
+        public IEnumerable<Transaction> GetTransactions()//will become relevant
         {
-            string the_query = @"SELECT Amount, Location, Processing_Date FROM TRANSACTIONS";//trying to figure out authentication
+            string the_query = "SELECT * FROM TRANSACTIONS";//trying to figure out authentication
             Connection.Open();
             return Connection.Query<Transaction>(the_query).ToList<Transaction>();
         }
 
-        
+
     }
 }
- 
