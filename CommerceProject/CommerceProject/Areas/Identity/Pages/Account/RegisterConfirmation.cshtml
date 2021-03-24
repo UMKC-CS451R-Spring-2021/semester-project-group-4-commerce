@@ -1,0 +1,39 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Registration confirmed";
+}
+
+<div class="col-12 card">
+    <div class="col-12 row">
+        <p>&nbsp;</p>
+    </div>
+    <div class="col-12 row">
+        <div class="col-md-8">
+            <center>
+                <img src="/css/images/commerce-bank-vector-logo-large.png" width="90%" />
+            </center>
+        </div>
+        <div class="col-md-4">
+            <h2>@ViewData["Title"]</h2>
+            <h4 style="font-weight:bold; color:darkgreen">Thanks for registering!</h4>
+            @{
+                if (@Model.DisplayConfirmAccountLink)
+                {
+                    <p>
+                        <a id="confirm-link" href="@Model.EmailConfirmationUrl">Return to log in.</a>
+                    </p>
+                }
+                else
+                {
+                    <p>
+                        Please check your email to confirm your account.
+                    </p>
+                }
+            }
+        </div>
+        <div class="col-4 row">
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
