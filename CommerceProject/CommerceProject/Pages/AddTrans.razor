@@ -1,9 +1,20 @@
 ﻿@page "/addTrans"
 
-@using 
+@using Microsoft.AspNetCore.Http
+
+@inject IHttpContextAccessor httpContextAccessor
 
 <h3>AddTrans</h3>
-
+<p>@UserName</p>
 @code {
+    public string UserName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+
+
+    }
+
 
 }
