@@ -22,17 +22,27 @@ else
                 <tr>
                     <th>Transaction Number</th>
                     <th>Account Number</th>
+                    <th>Processing Date</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Description</th>
                     <th>Balance</th>
+                    <th>Location</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var row in trans)
                 {
-                    <tr>
-                        <td>@row.Trans_Num</td>
-                        <td>@row.Account_Num</td>
-                        <td>@row.Balance</td>
-                    </tr>
+                <tr>
+                    <td>@row.Trans_Num</td>
+                    <td>@row.Account_Num</td>
+                    <td>@row.Processing_Date</td>
+                    <td>@row.Type</td>
+                    <td>@row.Amount</td>
+                    <td>@row.Description</td>
+                    <td>@row.Balance</td>
+                    <td>@row.Location</td>
+                </tr>
                 }
             </tbody>
         </table>
