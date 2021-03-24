@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 52 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+#line 50 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
        
     private List<PersonModel> people;
     private List<TransactionModel> trans;

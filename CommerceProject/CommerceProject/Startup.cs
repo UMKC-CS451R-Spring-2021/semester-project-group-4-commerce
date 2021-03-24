@@ -46,10 +46,10 @@ namespace CommerceProject
             services.AddDatabaseDeveloperPageExceptionFilter();
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<GetTransactionData>();
-            services.AddHttpContextAccessor();
+            services.AddHttpContextAccessor();                              // used to get current logged in user details -Thomas
+            services.AddTransient<IPeopleData, PeopleData>();               // Interface and Dapper for connection with db -Thomas
+            services.AddTransient<ISqlDataAccess, SqlDataAccess>();         // see one line above -(you guessed it...) Thomas
             services.AddTransient<ITransactionData, TransactionData>();
-            services.AddTransient<ISqlDataAccess, SqlDataAccess>();
-            services.AddTransient<IPeopleData, PeopleData>();
 
             services
               .AddBlazorise(options =>
