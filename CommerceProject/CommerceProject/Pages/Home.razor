@@ -67,18 +67,20 @@
                                 <th>Date</th>
                                 <th>Location</th>
                                 <th>Amount</th>
+                                <th>Balance</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var transaction in transaction_list)
 
                             {
-                                <tr data-toggle="collapse" data-target=".@(transaction.getLocation())">
-                                    <td>@transaction.getDate()</td>
-                                    <td>@transaction.getLocation()</td>
-                                    <td>@transaction.get_Amount()</td>
-                                    
-                                </tr>
+                            <tr data-toggle="collapse" data-target=".@(transaction.getLocation())">
+                                <td>@transaction.getDate()</td>
+                                <td>@transaction.getLocation()</td>
+                                <td>@transaction.get_Amount()</td>
+                                <td>@transaction.getBalance()</td>
+
+                            </tr>
                                
 
                             }
