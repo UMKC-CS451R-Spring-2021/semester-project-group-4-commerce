@@ -15,13 +15,14 @@
             </center>
         </div>
         <div class="col-md-4">
-            <h2>@ViewData["Title"]</h2>
-            <h4 style="font-weight:bold; color:darkgreen">Thanks for registering!</h4>
+            <h1>@ViewData["Title"]</h1>
+            <h5 style="font-weight:bold; color:darkgreen">Thanks for registering!</h5>
+            <br />
             @{
                 if (@Model.DisplayConfirmAccountLink)
                 {
                     <p>
-                        <a id="confirm-link" href="@Model.EmailConfirmationUrl">Return to log in.</a>
+                        <a id="confirm-link" href="@Model.EmailConfirmationUrl">Return to login</a>
                     </p>
                 }
                 else
