@@ -65,8 +65,9 @@
                         <thead>
                             <tr>
                                 <th>Date</th>
-                                <th>Location</th>
+                                <th>Desecription</th>
                                 <th>Amount</th>
+                                <th>Balance</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -76,21 +77,17 @@
                             {
                                 <tr data-toggle="collapse" data-target=".data_@i">
                                     <td>@transaction.getDate()</td>
-                                    <td>@transaction.getLocation()</td>
+                                    <td>@transaction.getDescription()</td>
                                     <td>@transaction.get_Amount()</td>
+                                    <td>@(transaction.getBalance())</td>
 
                                 </tr>
                                 <tr class="tableRowHoverOff noBorder">
                                     <td class="hiddenRow ">
-                                        <div class="collapse data_@i">@(transaction.getLocation())</div>
-                                        <div>
-
-                                        </div>
-                                        <div>
-
-                                        </div>
-                                        <div>
-
+                                        <div class="collapse data_@i">
+                                            <p><strong>Account # : </strong>@(transaction.get_AccountNum())</p>
+                                            <p><strong>Type : </strong>@(transaction.getType())</p>
+                                            <strong>Location : </strong>@(transaction.getLocation())
                                         </div>
                                     </td>
                                 </tr>
