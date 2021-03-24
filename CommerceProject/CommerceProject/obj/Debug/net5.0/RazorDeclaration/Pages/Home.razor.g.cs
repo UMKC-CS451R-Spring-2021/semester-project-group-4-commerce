@@ -105,19 +105,22 @@ using CommerceProject.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 159 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
+#line 120 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
            
         private WeatherForecast[] forecasts;
+        List<Transaction> transaction_list = new List<Transaction>();
 
         protected override async Task OnInitializedAsync()
         {
             forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+            transaction_list = TransactionData.GetTransactions().ToList();
         }
     
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GetTransactionData TransactionData { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
     }
 }
