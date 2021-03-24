@@ -1,19 +1,52 @@
 ﻿@page "/addTrans"
 
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
 @using Microsoft.AspNetCore.Http
 
+@inject IPeopleData _db
 @inject IHttpContextAccessor httpContextAccessor
 
-<h3>AddTrans</h3>
-<p>@UserName</p>
+
+<h4>Current User: @UserName</h4>
+
+@if (people is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in people)
+                {
+                    <tr>
+                        <td>@person.First_Name</td>
+                        <td>@person.Last_Name</td>
+                        <td>@person.Email</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+
 @code {
+    private List<PersonModel> people;
     public string UserName;
 
     protected override async Task OnInitializedAsync()
     {
         UserName = httpContextAccessor.HttpContext.User.Identity.Name;
 
-
+        people = await _db.GetPeople();
     }
 
 
