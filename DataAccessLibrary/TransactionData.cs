@@ -15,9 +15,10 @@ namespace DataAccessLibrary
             _db = db;
         }
 
-        public Task<List<TransactionModel>> GetTransactions()
+        public Task<List<TransactionModel>> GetTransactions(String UserName)            // change this sql for joins VERY BAD SQL INJECTION VULNERABILITY
         {
-            string sql = "SELECT * FROM dbo.transactions;";                             // change this sql for joins
+            string sql = @"SELECT * FROM dbo.transactions
+                                WHERE Type = '" + UserName + "';";
 
             return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }

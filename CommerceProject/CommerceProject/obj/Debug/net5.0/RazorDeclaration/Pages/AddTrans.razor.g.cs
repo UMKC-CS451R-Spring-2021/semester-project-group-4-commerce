@@ -132,7 +132,7 @@ using Microsoft.AspNetCore.Http;
 
         people = await _db.GetPeople();
 
-        trans = await _trans.GetTransactions();
+        trans = await _trans.GetTransactions("CR");
 
     }
 
