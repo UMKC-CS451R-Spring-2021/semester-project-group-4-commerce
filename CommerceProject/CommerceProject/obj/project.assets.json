@@ -2359,6 +2359,21 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "DataAccessLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Dapper": "2.0.78",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "System.Data.SqlClient": "4.8.2"
+        },
+        "compile": {
+          "bin/placeholder/DataAccessLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccessLibrary.dll": {}
+        }
       }
     }
   },
@@ -8042,6 +8057,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "DataAccessLibrary/1.0.0": {
+      "type": "project",
+      "path": "../../DataAccessLibrary/DataAccessLibrary.csproj",
+      "msbuildProject": "../../DataAccessLibrary/DataAccessLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8049,6 +8069,7 @@
       "Blazorise.Bootstrap >= 0.9.3.1",
       "Blazorise.Icons.FontAwesome >= 0.9.3.1",
       "Dapper >= 2.0.78",
+      "DataAccessLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 5.0.4",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.4",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.4",
@@ -8088,7 +8109,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

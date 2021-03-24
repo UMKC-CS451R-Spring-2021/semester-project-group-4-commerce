@@ -1,0 +1,69 @@
+﻿@page "/addTrans"
+
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using Microsoft.AspNetCore.Http
+
+@inject IPeopleData _db
+@inject IHttpContextAccessor httpContextAccessor
+@inject ITransactionData _trans
+
+
+<h4>Current User: @UserName</h4>
+
+@if (trans is null)     @* if (people is null)*@
+    {
+        <p><em>Loading...</em></p>
+    }
+else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Transaction Number</th>
+                    <th>Account Number</th>
+                    <th>Processing Date</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Description</th>
+                    <th>Balance</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var row in trans)
+                {
+                <tr>
+                    <td>@row.Trans_Num</td>
+                    <td>@row.Account_Num</td>
+                    <td>@row.Processing_Date</td>
+                    <td>@row.Type</td>
+                    <td>@row.Amount</td>
+                    <td>@row.Description</td>
+                    <td>@row.Balance</td>
+                    <td>@row.Location</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+
+@code {
+    private List<PersonModel> people;
+    private List<TransactionModel> trans;
+
+    public string UserName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+
+        people = await _db.GetPeople();
+
+        trans = await _trans.GetTransactions(UserName);
+
+    }
+
+
+}

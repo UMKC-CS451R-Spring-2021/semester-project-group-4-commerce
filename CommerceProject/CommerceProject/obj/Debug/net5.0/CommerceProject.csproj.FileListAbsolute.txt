@@ -596,3 +596,7 @@ G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProje
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.Views.pdb
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CopyComplete
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\AddTrans.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.dll
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.pdb
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\AddTrans.razor.g.cs
