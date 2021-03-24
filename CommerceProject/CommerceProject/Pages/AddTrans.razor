@@ -6,11 +6,12 @@
 
 @inject IPeopleData _db
 @inject IHttpContextAccessor httpContextAccessor
+@inject ITransactionData _trans
 
 
 <h4>Current User: @UserName</h4>
 
-@if (people is null)
+@if (trans is null)     @* if (people is null)*@
     {
         <p><em>Loading...</em></p>
     }
@@ -19,18 +20,18 @@ else
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>First Name</th>
-                    <th>LastName</th>
-                    <th>Email</th>
+                    <th>Transaction Number</th>
+                    <th>Account Number</th>
+                    <th>Balance</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach (var person in people)
+                @foreach (var row in trans)
                 {
                     <tr>
-                        <td>@person.First_Name</td>
-                        <td>@person.Last_Name</td>
-                        <td>@person.Email</td>
+                        <td>@row.Trans_Num</td>
+                        <td>@row.Account_Num</td>
+                        <td>@row.Balance</td>
                     </tr>
                 }
             </tbody>
@@ -40,6 +41,8 @@ else
 
 @code {
     private List<PersonModel> people;
+    private List<TransactionModel> trans;
+
     public string UserName;
 
     protected override async Task OnInitializedAsync()
@@ -47,6 +50,9 @@ else
         UserName = httpContextAccessor.HttpContext.User.Identity.Name;
 
         people = await _db.GetPeople();
+
+        trans = await _trans.GetTransactions();
+
     }
 
 

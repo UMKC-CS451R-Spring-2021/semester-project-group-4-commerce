@@ -119,9 +119,11 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 41 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+#line 42 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
        
     private List<PersonModel> people;
+    private List<TransactionModel> trans;
+
     public string UserName;
 
     protected override async Task OnInitializedAsync()
@@ -129,6 +131,9 @@ using Microsoft.AspNetCore.Http;
         UserName = httpContextAccessor.HttpContext.User.Identity.Name;
 
         people = await _db.GetPeople();
+
+        trans = await _trans.GetTransactions();
+
     }
 
 
@@ -136,6 +141,7 @@ using Microsoft.AspNetCore.Http;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITransactionData _trans { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPeopleData _db { get; set; }
     }
