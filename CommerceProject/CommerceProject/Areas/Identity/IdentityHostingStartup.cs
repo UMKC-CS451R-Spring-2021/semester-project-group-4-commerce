@@ -19,8 +19,8 @@ namespace CommerceProject.Areas.Identity
                     options.UseSqlServer(
                         context.Configuration.GetConnectionString("CommerceProjectContextConnection")));
 
-               //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                 //   .AddEntityFrameworkStores<CommerceProjectContext>();
+               services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                    .AddEntityFrameworkStores<CommerceProjectContext>();
             });
         }
     }

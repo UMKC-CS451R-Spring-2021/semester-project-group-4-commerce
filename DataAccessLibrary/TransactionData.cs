@@ -33,5 +33,12 @@ namespace DataAccessLibrary
 
             return _db.SaveData(sql, transaction);
         }
+
+        public Task InsertTransaction(TransactionModel transaction)
+        {
+            string sql = @"insert into dbo.TRANSACTIONS (Amount, Description, Location)
+                            values (@Amount, @Description, @Location);";
+            return _db.SaveData(sql, transaction);
+        }
     }
 }

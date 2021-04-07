@@ -26,7 +26,7 @@ namespace CommerceProject.Data
             }
         }
 
-        public IEnumerable<Transaction> GetTransactions()//will become relevant
+        public IEnumerable<Transaction> GetTransactions()
         {
             string the_query = "SELECT * FROM TRANSACTIONS";//trying to figure out authentication
             Connection.Open();
