@@ -66,7 +66,7 @@ namespace CommerceProject.Areas.Identity.Pages.Account
             {
                 return Page();
             }
-
+            /*MODIFIED LINE BELOW - Input.Email*/
             var user = await _userManager.FindByEmailAsync(Input.Email);
             if (user == null)
             {

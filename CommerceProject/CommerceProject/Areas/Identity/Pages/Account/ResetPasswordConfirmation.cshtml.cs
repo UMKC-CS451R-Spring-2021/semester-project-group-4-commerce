@@ -10,9 +10,6 @@ namespace CommerceProject.Areas.Identity.Pages.Account
     [AllowAnonymous]
     public class ResetPasswordConfirmationModel : PageModel
     {
-        public void OnGet()
-        {
-
-        }
+        public string ReturnUrl { get; set; }
     }
 }
