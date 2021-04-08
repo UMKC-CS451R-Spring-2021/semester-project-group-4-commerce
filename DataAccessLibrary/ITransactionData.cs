@@ -7,6 +7,10 @@ namespace DataAccessLibrary
     public interface ITransactionData
     {
         Task<List<TransactionModel>> GetTransactions(string UserName);
-        Task InsertPerson(TransactionModel transaction);
+
+        //Task InsertPerson(TransactionModel transaction);
+
+        Task InsertTransaction(TransactionModel transaction);
+        
     }
 }

@@ -140,23 +140,20 @@ using System.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 33 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\InsertTransaction.razor"
+#line 35 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\InsertTransaction.razor"
  
     TransactionModel ts = new TransactionModel();
-    String connectionString = "Data Source=NEWBLUE-PC\\COMMERCE_BANK;User ID=Developer2;Password=commerce1;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
+    
     void insertdata()
     {
-        ISqlDataAccess _db = new ISqlDataAccess(); //not sure why I need this but I do - Connor
-        TransactionData trans_data = new TransactionData(_db);
-        IDbConnection connection = new SqlConnection(connectionString);
-        connection.Open();
-
+        _db.InsertTransaction(ts);
+        
     }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITransactionData _db { get; set; }
     }
 }
 #pragma warning restore 1591

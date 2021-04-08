@@ -26,13 +26,13 @@ namespace DataAccessLibrary
             return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }
 
-        public Task InsertPerson(TransactionModel transaction)
-        {
-            string sql = @"insert into dbo.account_holder (First_Name, Last_Name, Email)
-                            values (@First_Name, @Last_Name, @Email);";                 // use this for inserting data from forms
+        //public Task InsertPerson(TransactionModel transaction)
+        //{
+        //    string sql = @"insert into dbo.account_holder (First_Name, Last_Name, Email)
+        //                    values (@First_Name, @Last_Name, @Email);";                 // use this for inserting data from forms
 
-            return _db.SaveData(sql, transaction);
-        }
+        //    return _db.SaveData(sql, transaction);
+        //}
 
         public Task InsertTransaction(TransactionModel transaction)
         {

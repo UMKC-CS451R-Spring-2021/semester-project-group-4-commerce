@@ -5,20 +5,22 @@
 @using CommerceProject.Data
 @using System.Data.SqlClient;
 @using System.Data
+
+@inject ITransactionData _db
 <h1>Insert new transaction</h1>
 <EditForm Model="@ts" OnValidSubmit="insertdata">
     <table border="1">
         <tr>
             <td>Amount</td>
-            <td><input type="text" placeholder="Enter transaction number" @bind="ts.Amount" /></td>
+            <td><input type="text" placeholder="Enter Amount" @bind="ts.Amount" /></td>
         </tr>
         <tr>
             <td>Description</td>
-            <td><input type="text" placeholder="Enter transaction number" @bind="ts.Description" /></td>
+            <td><input type="text" placeholder="Enter Description" @bind="ts.Description" /></td>
         </tr>
         <tr>
             <td>Location</td>
-            <td><input type="text" placeholder="Enter transaction number" @bind="ts.Location" /></td>
+            <td><input type="text" placeholder="Enter Location" @bind="ts.Location" /></td>
         </tr>
 
     </table>
@@ -32,14 +34,10 @@
 @code
 {
     TransactionModel ts = new TransactionModel();
-    String connectionString = "Data Source=NEWBLUE-PC\\COMMERCE_BANK;User ID=Developer2;Password=commerce1;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-
+    
     void insertdata()
     {
-        ISqlDataAccess _db = new ISqlDataAccess(); 
-        TransactionData trans_data = new TransactionData(_db);
-        IDbConnection connection = new SqlConnection(connectionString);
-        connection.Open();
-
+        _db.InsertTransaction(ts);
+        
     }
 }
