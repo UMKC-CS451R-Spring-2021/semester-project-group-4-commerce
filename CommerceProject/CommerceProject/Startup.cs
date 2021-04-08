@@ -19,6 +19,8 @@ using Blazorise;
 using Blazorise.Bootstrap;
 using Blazorise.Icons.FontAwesome;
 using DataAccessLibrary;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using CommerceProject.Services;
 
 namespace CommerceProject
 {
@@ -58,6 +60,9 @@ namespace CommerceProject
               })
               .AddBootstrapProviders()
               .AddFontAwesomeIcons();
+
+            services.AddTransient<IEmailSender, EmailSender>();             // used for sending emails - Shelby
+            services.Configure<AuthMessageSenderOptions>(Configuration);    // used for sending emails - Shelby
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
