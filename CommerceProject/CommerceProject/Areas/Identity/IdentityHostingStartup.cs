@@ -17,10 +17,10 @@ namespace CommerceProject.Areas.Identity
             builder.ConfigureServices((context, services) => {
                 services.AddDbContext<CommerceProjectContext>(options =>
                     options.UseSqlServer(
-                        context.Configuration.GetConnectionString("CommerceProjectContextConnection")));
+                        context.Configuration.GetConnectionString("DefaultConnection")));
 
-               services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<CommerceProjectContext>();
+               //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+               //     .AddEntityFrameworkStores<CommerceProjectContext>();
             });
         }
     }
