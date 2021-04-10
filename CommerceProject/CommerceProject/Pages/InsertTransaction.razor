@@ -13,6 +13,22 @@
     <table border="1">
         <tr>
             <td>Amount</td>
+            <td><input type="text" placeholder="Enter Amount" @bind="ts.Trans_Num" /></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><input type="text" placeholder="Enter Description" @bind="ts.Account_Num" /></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td><input type="text" placeholder="Enter Processing Date" @bind="ts.Processing_Date" /></td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td><input type="text" placeholder="Enter Type" @bind="ts.Type" /></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
             <td><input type="text" placeholder="Enter Amount" @bind="ts.Amount" /></td>
         </tr>
         <tr>
@@ -22,6 +38,10 @@
         <tr>
             <td>Location</td>
             <td><input type="text" placeholder="Enter Location" @bind="ts.Location" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Insert" /></td>
         </tr>
 
     </table>
