@@ -128,7 +128,7 @@ using Microsoft.AspNetCore.Http;
 
     protected override async Task OnInitializedAsync()
     {
-        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
 
         people = await _db.GetPeople();
 
