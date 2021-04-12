@@ -36,7 +36,7 @@ namespace CommerceProjectTest.bUnit
             var cut = ctx.RenderComponent<Home>();
 
             var tableHead = cut.FindAll("tr:first-child");
-            var tableCells = cut.FindAll("tr:second-child");
+            var tableCells = cut.FindAll("tr ");
             var numTransactions = cut.Instance.transaction_list.Count;
 
             //Assert.All(tableCells, td => td.HasAttribute("style"));
