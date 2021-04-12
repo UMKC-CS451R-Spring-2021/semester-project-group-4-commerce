@@ -83,6 +83,10 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.22.0, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
@@ -156,6 +160,10 @@
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.22.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
