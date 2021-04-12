@@ -131,6 +131,13 @@ using System.Data;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\InsertTransaction.razor"
+using CommerceProject.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/insert")]
     public partial class InsertTransaction : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -140,15 +147,30 @@ using System.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 52 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\InsertTransaction.razor"
+#line 64 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\InsertTransaction.razor"
  
-    TransactionModel ts = new TransactionModel();
-    
-    void insertdata()
+    private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
+
+    //private TransactionModel ts = new TransactionModel();
+
+    //private void insertdata()
+    //{
+    //    _db.InsertTransaction(ts);
+
+    //}
+
+    private async Task InsertTrans()
     {
-        _db.InsertTransaction(ts);
-        
+        TransactionModel t = new TransactionModel
+        {
+            Amount = newTransaction.Amount
+        };
+
+        await _db.InsertPerson(t);
+
+        newTransaction = new DisplayTransactionModel();     // wipe out form model
     }
+
 
 #line default
 #line hidden

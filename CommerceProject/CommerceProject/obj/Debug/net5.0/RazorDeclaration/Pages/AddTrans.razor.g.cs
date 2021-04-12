@@ -91,20 +91,27 @@ using Blazorise;
 #nullable disable
 #nullable restore
 #line 3 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
-using DataAccessLibrary;
+using CommerceProject.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 4 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
-using DataAccessLibrary.Models;
+using DataAccessLibrary;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 5 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+using DataAccessLibrary.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
 using Microsoft.AspNetCore.Http;
 
 #line default
@@ -119,10 +126,13 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 50 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+#line 67 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\AddTrans.razor"
        
     private List<PersonModel> people;
     private List<TransactionModel> trans;
+    private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
+    private string depositValue = "CR";
+    private string withdrawalValue = "DR";
 
     public string UserName;
 
@@ -136,6 +146,58 @@ using Microsoft.AspNetCore.Http;
 
     }
 
+    private async Task InsertTrans()
+    {
+        DateTime now = DateTime.Now;
+        int accNum = trans[0].Account_Num;
+
+
+        TransactionModel t = new TransactionModel
+        {
+            Account_Num = accNum,                   // 10010111 for trant@mail.com
+            Processing_Date = now.ToString(),
+            Type = chooseType(),
+            Amount = roundAmount(),
+            Description = newTransaction.Description,
+            Balance = newBalance(),
+            Location = newTransaction.Location
+        };
+
+        await _trans.InsertTransaction(t);              // add to database
+
+        trans.Add(t);                                   // add to list without refreshing page
+        newTransaction = new DisplayTransactionModel();     // wipe out form model
+    }
+
+    private float roundAmount()
+    {
+        double rounded = Math.Round(newTransaction.Amount, 2);
+        return (float)rounded;
+    }
+
+    private float newBalance()
+    {
+        TransactionModel t = trans.Last();
+
+
+        double rounded = Math.Round(newTransaction.Amount, 2);
+        return (float)(t.Balance + rounded);
+    }
+
+    private string chooseType()
+    {
+        
+
+        if (newTransaction.Type == "DR")
+        {
+            newTransaction.Amount *= -1;
+            return "DR";
+        }
+        else
+        {
+            return "CR";
+        }
+    }
 
 
 #line default

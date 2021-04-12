@@ -5,12 +5,24 @@
 @using CommerceProject.Data
 @using System.Data.SqlClient;
 @using System.Data
+@using CommerceProject.Models
+
+
 
 @inject ITransactionData _db
 
 <h1>Insert new transaction</h1>
-<EditForm Model="@ts" OnValidSubmit="insertdata">
-    <table border="1">
+<EditForm Model="@newTransaction" OnValidSubmit="@InsertTrans">
+    <DataAnnotationsValidator />
+    <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         @*conflicting tags, specify which component to use*@
+
+    <InputNumber id="Amount" @bind-Value="newTransaction.Amount" />
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
+
+
+    @*<table border="1">
         <tr>
             <td>Description</td>
             <td><input type="text" placeholder="Enter Description" @bind="ts.Account_Num" /></td>
@@ -40,21 +52,36 @@
             <td><input type="submit" value="Insert" /></td>
         </tr>
 
-    </table>
+    </table>*@
 
 
 
 
-</EditForm>
+
 
 
 @code
 {
-    TransactionModel ts = new TransactionModel();
-    
-    void insertdata()
+    private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
+
+    //private TransactionModel ts = new TransactionModel();
+
+    //private void insertdata()
+    //{
+    //    _db.InsertTransaction(ts);
+
+    //}
+
+    private async Task InsertTrans()
     {
-        _db.InsertTransaction(ts);
-        
+        TransactionModel t = new TransactionModel
+        {
+            Amount = newTransaction.Amount
+        };
+
+        await _db.InsertPerson(t);
+
+        newTransaction = new DisplayTransactionModel();     // wipe out form model
     }
+
 }
