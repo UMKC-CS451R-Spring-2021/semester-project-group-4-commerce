@@ -1,0 +1,64 @@
+﻿@page "/insert"
+@using Dapper
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using CommerceProject.Data
+@using System.Data.SqlClient;
+@using System.Data
+
+@inject ITransactionData _db
+
+<h1>Insert new transaction</h1>
+<EditForm Model="@ts" OnValidSubmit="insertdata">
+    <table border="1">
+        <tr>
+            <td>Amount</td>
+            <td><input type="text" placeholder="Enter Amount" @bind="ts.Trans_Num" /></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><input type="text" placeholder="Enter Description" @bind="ts.Account_Num" /></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td><input type="text" placeholder="Enter Processing Date" @bind="ts.Processing_Date" /></td>
+        </tr>
+        <tr>
+            <td>Type</td>
+            <td><input type="text" placeholder="Enter Type" @bind="ts.Type" /></td>
+        </tr>
+        <tr>
+            <td>Amount</td>
+            <td><input type="text" placeholder="Enter Amount" @bind="ts.Amount" /></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><input type="text" placeholder="Enter Description" @bind="ts.Description" /></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td><input type="text" placeholder="Enter Location" @bind="ts.Location" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Insert" /></td>
+        </tr>
+
+    </table>
+
+
+
+
+</EditForm>
+
+
+@code
+{
+    TransactionModel ts = new TransactionModel();
+    
+    void insertdata()
+    {
+        _db.InsertTransaction(ts);
+        
+    }
+}

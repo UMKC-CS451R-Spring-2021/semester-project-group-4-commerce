@@ -36,14 +36,18 @@ namespace CommerceProject.Data
         {
             return Location;
         }
+
+        
         public String getDate()
         {
             return Processing_Date;
         }
+      
         public float get_Amount()
         {
             return Amount;
         }
+       
 
         public int get_TransNum()
         {

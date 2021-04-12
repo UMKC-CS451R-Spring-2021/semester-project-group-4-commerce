@@ -14,7 +14,7 @@ namespace DataAccessLibrary
     {
         private readonly IConfiguration _config;
 
-        public string ConnectionStringName { get; set; } = "DefaultConnection";   //"LocalConnection";
+        public string ConnectionStringName { get; set; } = "Data Source=NEWBLUE-PC\\COMMERCE_BANK;User ID=Developer2;Password=********;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";   //"LocalConnection";
 
         public SqlDataAccess(IConfiguration config)
         {
