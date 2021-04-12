@@ -108,7 +108,7 @@ using CommerceProject.Data;
 #line 134 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Home.razor"
        
     private WeatherForecast[] forecasts;
-    List<Transaction> transaction_list = new List<Transaction>();
+    public List<Transaction> transaction_list = new List<Transaction>();
 
     protected override async Task OnInitializedAsync()
     {

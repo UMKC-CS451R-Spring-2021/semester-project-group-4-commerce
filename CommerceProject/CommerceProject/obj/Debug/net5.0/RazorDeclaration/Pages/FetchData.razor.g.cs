@@ -107,7 +107,7 @@ using CommerceProject.Data;
 #nullable restore
 #line 39 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\FetchData.razor"
        
-    private WeatherForecast[] forecasts;
+    public WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
     {
