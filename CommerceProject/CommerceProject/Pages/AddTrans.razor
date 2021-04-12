@@ -57,7 +57,7 @@ else
     {
         UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
 
-        people = await _db.GetPeople();
+        //people = await _db.GetPeople();
 
         trans = await _trans.GetTransactions(UserName);
 
