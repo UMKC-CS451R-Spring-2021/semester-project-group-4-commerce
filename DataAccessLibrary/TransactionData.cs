@@ -22,7 +22,7 @@ namespace DataAccessLibrary
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
 						                            INNER JOIN login_credentials ON account_holder.ID_Num = login_credentials.ID_Num
 						                            WHERE login_credentials.Email = '" + UserName + "');";
-
+            
             return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }
 
