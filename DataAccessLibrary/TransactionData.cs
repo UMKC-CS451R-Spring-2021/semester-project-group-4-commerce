@@ -21,15 +21,24 @@ namespace DataAccessLibrary
                             WHERE Account_Num = (SELECT Account_Num FROM account
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
 						                            INNER JOIN login_credentials ON account_holder.ID_Num = login_credentials.ID_Num
-						                            WHERE login_credentials.Email = '" + UserName + "');";
-            
+						                            WHERE login_credentials.Email = '" + UserName + "');";  // currently uses no form input
+
             return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }
 
         public Task InsertPerson(TransactionModel transaction)
         {
-            string sql = @"insert into dbo.account_holder (First_Name, Last_Name, Email)
-                            values (@First_Name, @Last_Name, @Email);";                 // use this for inserting data from forms
+            string sql = "";                 // use this for inserting Person data from forms
+
+            return _db.SaveData(sql, transaction);
+        }
+
+        public Task InsertTransaction(TransactionModel transaction)
+        {
+            // use this for inserting new transaction
+            string sql = @"insert into dbo.TRANSACTIONS (Account_Num, Processing_Date, Type, Amount, Description, Balance, Location)
+                            values (@Account_Num, @Processing_Date, @Type, @Amount, @Description, @Balance, @Location);";                
+            
 
             return _db.SaveData(sql, transaction);
         }

@@ -46,7 +46,10 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLib
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.deps.json
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.dll
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\ref\DataAccessLibrary.dll
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.pdb
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfoInputs.cache
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfo.cs
@@ -54,7 +57,4 @@ C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibr
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.deps.json
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\ref\DataAccessLibrary.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.pdb
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csprojAssemblyReference.cache

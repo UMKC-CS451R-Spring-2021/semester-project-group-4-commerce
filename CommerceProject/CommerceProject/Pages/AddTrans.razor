@@ -1,5 +1,6 @@
 ﻿@page "/addTrans"
 
+@using CommerceProject.Models
 @using DataAccessLibrary
 @using DataAccessLibrary.Models
 @using Microsoft.AspNetCore.Http
@@ -10,6 +11,22 @@
 
 
 <h4>Current User: @UserName</h4>
+
+<h5>Insert new transaction</h5>
+<EditForm Model="@newTransaction" OnValidSubmit="@InsertTrans">
+    <DataAnnotationsValidator />
+    <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         @*conflicting tags, specify which component to use*@
+
+    <InputNumber id="Amount"    @bind-Value="newTransaction.Amount" />
+    <InputSelect id="Type"      @bind-Value="newTransaction.Type">
+        <option value="@depositValue">Deposit</option>                     @*to use strings for option values, make private variables in the code section*@
+        <option value="@withdrawalValue">Withdrawal</option>
+    </InputSelect>
+    <InputText id="Description" @bind-Value="newTransaction.Description" />
+    <InputText id="Location"    @bind-Value="newTransaction.Location" />
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</EditForm>
 
 @if (trans is null)     @* if (people is null)*@
     {
@@ -50,18 +67,73 @@ else
 @code {
     private List<PersonModel> people;
     private List<TransactionModel> trans;
+    private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
+    private string depositValue = "CR";
+    private string withdrawalValue = "DR";
 
     public string UserName;
 
     protected override async Task OnInitializedAsync()
     {
-        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
 
-        people = await _db.GetPeople();
+        //people = await _db.GetPeople();
 
         trans = await _trans.GetTransactions(UserName);
 
     }
 
+    private async Task InsertTrans()
+    {
+        DateTime now = DateTime.Now;
+        int accNum = trans[0].Account_Num;
+
+
+        TransactionModel t = new TransactionModel
+        {
+            Account_Num = accNum,                   // 10010111 for trant@mail.com
+            Processing_Date = now.ToString(),
+            Type = chooseType(),
+            Amount = roundAmount(),
+            Description = newTransaction.Description,
+            Balance = newBalance(),
+            Location = newTransaction.Location
+        };
+
+        await _trans.InsertTransaction(t);              // add to database
+
+        trans.Add(t);                                   // add to list without refreshing page
+        newTransaction = new DisplayTransactionModel();     // wipe out form model
+    }
+
+    private float roundAmount()
+    {
+        double rounded = Math.Round(newTransaction.Amount, 2);
+        return (float)rounded;
+    }
+
+    private float newBalance()
+    {
+        TransactionModel t = trans.Last();
+
+
+        double rounded = Math.Round(newTransaction.Amount, 2);
+        return (float)(t.Balance + rounded);
+    }
+
+    private string chooseType()
+    {
+        
+
+        if (newTransaction.Type == "DR")
+        {
+            newTransaction.Amount *= -1;
+            return "DR";
+        }
+        else
+        {
+            return "CR";
+        }
+    }
 
 }
