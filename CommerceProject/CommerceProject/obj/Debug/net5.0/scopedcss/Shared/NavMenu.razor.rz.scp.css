@@ -24,12 +24,31 @@
 
 .btn[b-q9fo7l4ayw] {
     font-family: sans-serif;
-    background-color: #006747
+    background-color: #006747;
 }
 
-    .btn:hover[b-q9fo7l4ayw] {
-        background-color: #4FA800
+    .btn-primary:focus[b-q9fo7l4ayw], .btn:active[b-q9fo7l4ayw] {
+        box-shadow: none;
+        outline: 0 !important;
     }
+
+        .btn:active:focus[b-q9fo7l4ayw] {
+            background-color: #006746 !important;
+            border-color: #000000 !important;
+            box-shadow: none;
+            outline: 0 !important;
+        }
+
+
+    .btn:hover[b-q9fo7l4ayw] {
+        background-color: #000000
+    }
+
+    .btn:active[b-q9fo7l4ayw], .btn:focus[b-q9fo7l4ayw] {
+        background-color: #000000
+    }
+
+
 
 
 .navbar-brand[b-q9fo7l4ayw] {

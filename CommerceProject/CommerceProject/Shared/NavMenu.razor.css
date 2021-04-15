@@ -24,12 +24,31 @@
 
 .btn {
     font-family: sans-serif;
-    background-color: #006747
+    background-color: #006747;
 }
 
-    .btn:hover {
-        background-color: #4FA800
+    .btn-primary:focus, .btn:active {
+        box-shadow: none;
+        outline: 0 !important;
     }
+
+        .btn:active:focus {
+            background-color: #006746 !important;
+            border-color: #000000 !important;
+            box-shadow: none;
+            outline: 0 !important;
+        }
+
+
+    .btn:hover {
+        background-color: #000000
+    }
+
+    .btn:active, .btn:focus {
+        background-color: #000000
+    }
+
+
 
 
 .navbar-brand {

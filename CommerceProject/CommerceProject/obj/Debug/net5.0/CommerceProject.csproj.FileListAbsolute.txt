@@ -827,8 +827,18 @@ G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\SendGrid.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\StarkbankEcdsa.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\InsertTransaction.razor.g.cs
+<<<<<<< HEAD
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\InsertTransaction.razor.g.cs
+=======
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Settings.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\InsertTransaction.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Settings.razor.g.cs
+>>>>>>> master
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+<<<<<<< HEAD
+=======
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Settings.razor.rz.scp.css
+>>>>>>> master
