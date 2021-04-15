@@ -4,11 +4,13 @@
 @using DataAccessLibrary
 @using DataAccessLibrary.Models
 @using Microsoft.AspNetCore.Http
+@using CommerceProject.Services
+@using Microsoft.AspNetCore.Identity.UI.Services
 
 @inject IPeopleData _db
 @inject IHttpContextAccessor httpContextAccessor
 @inject ITransactionData _trans
-
+@inject IEmailSender emailsender
 
 <h4>Current User: @UserName</h4>
 
@@ -70,8 +72,9 @@ else
     private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
     private string depositValue = "CR";
     private string withdrawalValue = "DR";
-
     public string UserName;
+    private send_email_notification sendemail;
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -101,7 +104,8 @@ else
         };
 
         await _trans.InsertTransaction(t);              // add to database
-
+        sendemail = new send_email_notification(emailsender, trans, UserName);
+        sendemail.email_notification();
         trans.Add(t);                                   // add to list without refreshing page
         newTransaction = new DisplayTransactionModel();     // wipe out form model
     }
@@ -123,7 +127,7 @@ else
 
     private string chooseType()
     {
-        
+
 
         if (newTransaction.Type == "DR")
         {
