@@ -10,6 +10,10 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.pdb
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Bootstrap.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Icons.FontAwesome.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Dapper.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -17,6 +21,13 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -33,79 +44,6 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Runtime.Caching.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfoInputs.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfo.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CoreCompileInputs.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.input.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.output.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\CommerceProject.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.input.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.output.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorCoreGenerate.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LogOut.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.Manifest.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.xml
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\CommerceProject.styles.css
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\projectbundle\CommerceProject.bundle.scp.css
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.Views.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CopyComplete
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -114,11 +52,20 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\SendGrid.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\StarkbankEcdsa.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.AttributedModel.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Convention.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Hosting.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Runtime.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.TypedParts.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -171,674 +118,100 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Bootstrap.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Icons.FontAwesome.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Home.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Home.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.json
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.StaticWebAssets.xml
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.exe
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.deps.json
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.runtimeconfig.json
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.runtimeconfig.dev.json
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ref\CommerceProject.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Bootstrap.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Icons.FontAwesome.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Humanizer.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Convention.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Hosting.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Runtime.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.TypedParts.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Runtime.Caching.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csprojAssemblyReference.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfoInputs.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfo.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CoreCompileInputs.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.input.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Home.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.output.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\CommerceProject.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.input.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.output.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorCoreGenerate.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Home.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LogOut.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.Manifest.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.xml
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\CommerceProject.styles.css
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\projectbundle\CommerceProject.bundle.scp.css
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cs
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.Views.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CopyComplete
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\Dapper.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Data.SqlClient.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Dapper.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Data.SqlClient.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\RedirectToLogin.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\RedirectToLogin.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csprojAssemblyReference.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.Development.json
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.json
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.StaticWebAssets.xml
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.exe
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.deps.json
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.runtimeconfig.json
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.runtimeconfig.dev.json
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ref\CommerceProject.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Bootstrap.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Icons.FontAwesome.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Dapper.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Humanizer.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Newtonsoft.Json.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Convention.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Hosting.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Runtime.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.TypedParts.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Data.SqlClient.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Runtime.Caching.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csprojAssemblyReference.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.GeneratedMSBuildEditorConfig.editorconfig
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfoInputs.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfo.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CoreCompileInputs.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.input.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Home.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\RedirectToLogin.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.output.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\CommerceProject.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.input.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.output.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorCoreGenerate.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\App.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Home.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\RedirectToLogin.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LogOut.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Shared\_LoginPartial.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.Manifest.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.xml
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\CommerceProject.styles.css
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\projectbundle\CommerceProject.bundle.scp.css
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.Views.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CopyComplete
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\AddTrans.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.pdb
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\AddTrans.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfoInputs.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfo.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CoreCompileInputs.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.input.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\AddTrans.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\AddTrans.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.Development.json
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.json
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.StaticWebAssets.xml
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.exe
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.deps.json
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.runtimeconfig.json
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.runtimeconfig.dev.json
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ref\CommerceProject.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.Views.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Bootstrap.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Icons.FontAwesome.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Dapper.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Humanizer.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.UI.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Razor.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.CodeAnalysis.Workspaces.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.FileProviders.Embedded.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.Identity.Client.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\dotnet-aspnet-codegenerator-design.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.AttributedModel.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Convention.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Hosting.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.Runtime.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Composition.TypedParts.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Data.SqlClient.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Runtime.Caching.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\DataAccessLibrary.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csprojAssemblyReference.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfoInputs.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.AssemblyInfo.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CoreCompileInputs.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.input.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\AddTrans.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Home.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\RedirectToLogin.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.output.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\CommerceProject.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.input.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.output.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorCoreGenerate.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\AddTrans.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Home.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\RedirectToLogin.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LogOut.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.Manifest.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.xml
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\CommerceProject.styles.css
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\projectbundle\CommerceProject.bundle.scp.css
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.Views.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CopyComplete
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\InsertTransaction.razor.g.cs
-C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\InsertTransaction.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\SendGrid.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\StarkbankEcdsa.dll
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\InsertTransaction.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\InsertTransaction.razor.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
-G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\SendGrid.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\StarkbankEcdsa.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\FetchData.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Home.razor.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\InsertTransaction.razor.g.cs
-<<<<<<< HEAD
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\InsertTransaction.razor.g.cs
-=======
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\RedirectToLogin.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\LoginDisplay.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Settings.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorComponent.output.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\CommerceProject.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.input.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.TagHelpers.output.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorCoreGenerate.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\App.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\AddTrans.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\FetchData.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Home.razor.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\InsertTransaction.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\RedirectToLogin.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\LoginDisplay.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Settings.razor.g.cs
->>>>>>> master
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LogOut.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
-<<<<<<< HEAD
-=======
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorAssemblyInfo.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.Manifest.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\staticwebassets\CommerceProject.StaticWebAssets.xml
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Settings.razor.rz.scp.css
->>>>>>> master
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\CommerceProject.styles.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\projectbundle\CommerceProject.bundle.scp.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.RazorTargetAssemblyInfo.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.Views.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csproj.CopyComplete
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.csprojAssemblyReference.cache
