@@ -835,3 +835,6 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Settings.razor.rz.scp.css
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Settings.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Settings.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Settings.razor.rz.scp.css
