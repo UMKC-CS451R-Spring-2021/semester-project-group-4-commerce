@@ -130,6 +130,7 @@ using Microsoft.AspNetCore.Http;
        
     private List<PersonModel> people;
     private List<TransactionModel> trans;
+    private List<TransactionModel> accountInfo;
     private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
     private string depositValue = "CR";
     private string withdrawalValue = "DR";
@@ -143,13 +144,13 @@ using Microsoft.AspNetCore.Http;
         //people = await _db.GetPeople();
 
         trans = await _trans.GetTransactions(UserName);
-
+        accountInfo = await _trans.GetAccountNum(UserName);
     }
 
     private async Task InsertTrans()
     {
         DateTime now = DateTime.Now;
-        int accNum = trans[0].Account_Num;
+        int accNum = accountInfo[0].Account_Num;
 
 
         TransactionModel t = new TransactionModel
@@ -175,9 +176,9 @@ using Microsoft.AspNetCore.Http;
         return (float)rounded;
     }
 
-    private float newBalance()
+    private float newBalance()              // need to get balance from account? dont include in transaction? set to account
     {
-        TransactionModel t = trans.Last();
+        TransactionModel t = accountInfo[0];
 
 
         double rounded = Math.Round(newTransaction.Amount, 2);

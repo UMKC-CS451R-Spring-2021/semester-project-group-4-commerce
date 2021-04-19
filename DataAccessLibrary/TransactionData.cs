@@ -20,8 +20,7 @@ namespace DataAccessLibrary
             string sql = @"SELECT * FROM transactions
                             WHERE Account_Num = (SELECT Account_Num FROM account
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
-						                            INNER JOIN login_credentials ON account_holder.ID_Num = login_credentials.ID_Num
-						                            WHERE login_credentials.Email = '" + UserName + "');";  // currently uses no form input
+						                            WHERE account_holder.Email = '" + UserName + "');";  // currently uses no form input
 
             return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }
@@ -41,6 +40,15 @@ namespace DataAccessLibrary
             
 
             return _db.SaveData(sql, transaction);
+        }
+
+        public Task<List<TransactionModel>> GetAccountNum(String UserName)
+        {
+            string sql = @"SELECT * FROM dbo.account
+                            WHERE ID_Num = (SELECT ID_Num FROM account_holder
+                                                WHERE Email = '" + UserName + "');";
+
+            return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }
     }
 }
