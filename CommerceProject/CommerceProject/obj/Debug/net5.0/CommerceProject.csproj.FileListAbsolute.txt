@@ -186,8 +186,6 @@ C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProje
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Bootstrap.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Icons.FontAwesome.dll
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Home.razor.g.cs
-C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Home.razor.g.cs
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\appsettings.json
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerceLGS\CommerceProject\CommerceProject\bin\Debug\net5.0\CommerceProject.StaticWebAssets.xml
@@ -1060,3 +1058,10 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProj
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TransactionsPage.razor.g.cs
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Homepage.razor.rz.scp.css
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\TransactionsPage.razor.rz.scp.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazorise.Charts.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\Homepage.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\TransactionsPage.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\Homepage.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TransactionsPage.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Homepage.razor.rz.scp.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\TransactionsPage.razor.rz.scp.css

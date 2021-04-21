@@ -14,18 +14,18 @@ body[b-0ixdshmtmn] {
 .btn-primary[b-0ixdshmtmn] {
     background-color: #006746;
     border-color: #006746;
-}
 
+}
     .btn-primary:focus[b-0ixdshmtmn], .btn-primary:active[b-0ixdshmtmn] {
         box-shadow: none;
         outline: 0 !important;
     }
 
-        .btn-primary:active:focus[b-0ixdshmtmn] {
-            background-color: #006746 !important;
-            border-color: #000000 !important;
-            outline: 0 !important;
-        }
+    .btn-primary:active:focus[b-0ixdshmtmn] {
+        background-color: #006746 !important;
+        border-color: #000000 !important;
+        outline: 0 !important;
+    }
 
     .btn-primary:hover[b-0ixdshmtmn], .btn-primary:active[b-0ixdshmtmn], .btn-primary:focus[b-0ixdshmtmn] {
         background-color: #000000;
@@ -217,7 +217,6 @@ table.table[b-0ixdshmtmn] {
         border-color: #000000;
         outline: 0 !important;
     }
-
 }
 
 hr.red[b-0ixdshmtmn] {
