@@ -14,18 +14,18 @@
 .btn-primary {
     background-color: #006746;
     border-color: #006746;
-}
 
+}
     .btn-primary:focus, .btn-primary:active {
         box-shadow: none;
         outline: 0 !important;
     }
 
-        .btn-primary:active:focus {
-            background-color: #006746 !important;
-            border-color: #000000 !important;
-            outline: 0 !important;
-        }
+    .btn-primary:active:focus {
+        background-color: #006746 !important;
+        border-color: #000000 !important;
+        outline: 0 !important;
+    }
 
     .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
         background-color: #000000;
@@ -217,7 +217,6 @@ table.table {
         border-color: #000000;
         outline: 0 !important;
     }
-
 }
 
 hr.red {

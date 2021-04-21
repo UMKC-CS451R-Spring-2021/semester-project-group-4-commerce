@@ -1,0 +1,95 @@
+﻿@page "/transactions"
+
+
+@using CommerceProject.Data
+@inject GetTransactionData TransactionData
+
+
+<div class="container mt-3 bg-light" style="border:1px solid #cecece">
+
+    <p class="h2 mt-2 mb-2">
+        Transactions
+        <button type="button" class="btn btn-info float-right mr-1 btn-info add-new" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus"></i> Add Transaction </button>
+    </p>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Notification</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <label class="control-label" for="type">
+                            <select name="selections" id="select" class="select form-control">
+                                <option selected>Choose type</option>
+                                <option value="1">Time</option>
+                                <option value="2">Overdraft</option>
+                                <option value="3">Location</option>
+                            </select>
+                        </label>
+
+                        <label class="control-label col-md-8" for="size">
+                            <input type="text" class="form-control ml-3 col-md-8" id="size" name="size" placeholder="Description">
+                        </label>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info add-new" data-dismiss="modal">Add</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="table-responsive-sm">
+        <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Desecription</th>
+                    <th>Amount</th>
+                    <th>Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{int i = 0;}
+                @foreach (var transaction in transaction_list)
+
+                {
+                    <tr data-toggle="collapse" data-target=".data_@i">
+                        <td>@transaction.getDate()</td>
+                        <td>@transaction.getDescription()</td>
+                        <td>@transaction.get_Amount()</td>
+                        <td>@(transaction.getBalance())</td>
+
+                    </tr>
+                    <tr class="tableRowHoverOff noBorder">
+                        <td class="hiddenRow ">
+                            <div class="collapse data_@i">
+                                <p><strong>Account # : </strong>@(transaction.get_AccountNum())</p>
+                                <p><strong>Type : </strong>@(transaction.getType())</p>
+                                <p><strong>Location : </strong>@(transaction.getLocation())</p>
+                            </div>
+                        </td>
+                    </tr>
+                    i++;
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@code {
+    List<Transaction> transaction_list = new List<Transaction>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        transaction_list = TransactionData.GetTransactions().ToList();
+    }
+}

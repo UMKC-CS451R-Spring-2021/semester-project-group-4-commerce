@@ -1,0 +1,100 @@
+﻿<style >
+
+body {
+    background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.table {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.collapse-row.collapsed + tr {
+    display: none;
+}
+
+table {
+    max-width: 100%;
+}
+
+.hiddenRow {
+    padding: 0 !important;
+}
+
+.tableRowHover tbody tr:not(.tableRowHoverOff):hover td {
+    background-color: #dcdcdc;
+    transition: all 0.01s ease-in-out;
+}
+
+tr.noBorder td {
+    border: 0;
+}
+
+.sticky-top {
+    top: 1em;
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+
+    .table-title .add-new {
+        float: right;
+        height: 30px;
+        font-weight: bold;
+        font-size: 12px;
+        text-shadow: none;
+        min-width: 100px;
+        line-height: 13px;
+    }
+
+        .table-title .add-new i {
+            margin-right: 4px;
+        }
+
+
+.btn-info {
+    background-color: #006746;
+    border-color: #006746;
+}
+
+    .btn-info:focus, .btn-info:active {
+        box-shadow: none;
+        outline: 0 !important;
+    }
+
+        .btn-info:active:focus {
+            background-color: #006746 !important;
+            border-color: #000000 !important;
+            outline: 0 !important;
+        }
+
+    .btn-info:hover, .btn-info:active, .btn-info:focus {
+        background-color: #000000;
+        border-color: #000000;
+        outline: 0 !important;
+    }
+
+}
+</style >

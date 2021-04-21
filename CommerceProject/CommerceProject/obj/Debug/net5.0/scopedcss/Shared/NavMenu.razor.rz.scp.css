@@ -23,8 +23,7 @@
 }
 
 .btn[b-q9fo7l4ayw] {
-    font-family: Poppins;
-    color: #FFFFFF;
+    font-family: sans-serif;
     background-color: #006747;
 }
 
@@ -51,6 +50,23 @@
 
 
 
+.badge[b-q9fo7l4ayw] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    min-width: 10px;
+    padding: 2px 4px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #777;
+    border-radius: 10px;
+}
 
 .navbar-brand[b-q9fo7l4ayw] {
     font-size: 1.1rem;
@@ -63,15 +79,9 @@
     top: -2px;
 }
 
-.abs-center-x[b-q9fo7l4ayw] {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 .nav-item[b-q9fo7l4ayw] {
     font-family: Poppins;
-    color: #6E6F78;
     font-size: 1.2rem;
     padding-top: 0;
 }
@@ -102,6 +112,8 @@
         width: 100%;
         left: 0;
     }
+
+
 
 @media (min-width: 641px) {
     .navbar-toggler[b-q9fo7l4ayw] {
