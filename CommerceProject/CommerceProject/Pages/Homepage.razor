@@ -1,0 +1,80 @@
+﻿@page "/home"
+
+
+<style>
+    body {
+        background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
+        background-repeat: no-repeat;
+        background-position: left bottom, right top;
+        min-height: 500px;
+        background-attachment: fixed;
+    }
+
+
+</style>
+
+    <div class="row mt-3">
+        <div class="col-sm-8">
+            <div class="container mt-1 bg-light float-left" style="border:1px solid #cecece">
+                <h2>
+                    Dashboard
+                </h2>
+                This is where triggered notifications go
+                <p class="text-right">Export to spreadsheet goes here</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="container bg-light sticky-top mt-1" style="border:1px solid #cecece">
+                <h2> Graph </h2>
+                <Button Clicked="@(async () => await HandleRedraw())">Past Month</Button>
+                <Button Clicked="@(async () => await HandleRedraw())">Past Year</Button>
+
+                <LineChart @ref="lineChart" TItem="double" />
+
+            </div>
+        </div>
+    </div>
+
+    @code{
+        LineChart<double> lineChart;
+
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            if (firstRender)
+            {
+                await HandleRedraw();
+            }
+        }
+
+        async Task HandleRedraw()
+        {
+            await lineChart.Clear();
+
+            await lineChart.AddLabelsDatasetsAndUpdate(Labels, GetLineChartDataset());
+        }
+
+        LineChartDataset<double> GetLineChartDataset()
+        {
+            return new LineChartDataset<double>
+            {
+                Label = "# of randoms",
+                Data = RandomizeData(),
+                BackgroundColor = backgroundColors,
+                BorderColor = borderColors,
+                Fill = true,
+                PointRadius = 2,
+                BorderDash = new List<int> { }
+            };
+        }
+
+        string[] Labels = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+        List<string> backgroundColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f), ChartColor.FromRgba(54, 162, 235, 0.2f), ChartColor.FromRgba(255, 206, 86, 0.2f), ChartColor.FromRgba(75, 192, 192, 0.2f), ChartColor.FromRgba(153, 102, 255, 0.2f), ChartColor.FromRgba(255, 159, 64, 0.2f) };
+        List<string> borderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f), ChartColor.FromRgba(54, 162, 235, 1f), ChartColor.FromRgba(255, 206, 86, 1f), ChartColor.FromRgba(75, 192, 192, 1f), ChartColor.FromRgba(153, 102, 255, 1f), ChartColor.FromRgba(255, 159, 64, 1f) };
+
+        List<double> RandomizeData()
+        {
+            var r = new Random(DateTime.Now.Millisecond);
+
+            return new List<double> { r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble() };
+        }
+    }

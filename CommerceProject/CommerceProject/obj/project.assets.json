@@ -48,6 +48,26 @@
           "buildMultiTargeting/Blazorise.Bootstrap.props": {}
         }
       },
+      "Blazorise.Charts/0.9.3.1": {
+        "type": "package",
+        "dependencies": {
+          "Blazorise": "0.9.3.1",
+          "Microsoft.AspNetCore.Components": "5.0.0",
+          "Microsoft.AspNetCore.Components.Web": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Blazorise.Charts.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Blazorise.Charts.dll": {}
+        },
+        "build": {
+          "buildTransitive/Blazorise.Charts.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazorise.Charts.props": {}
+        }
+      },
       "Blazorise.Icons.FontAwesome/0.9.3.1": {
         "type": "package",
         "dependencies": {
@@ -2473,6 +2493,25 @@
         "lib/net5.0/Blazorise.Bootstrap.dll",
         "staticwebassets/blazorise.bootstrap.css",
         "staticwebassets/blazorise.bootstrap.js"
+      ]
+    },
+    "Blazorise.Charts/0.9.3.1": {
+      "sha512": "n9ZaOsgKHRCIz4o3272CiiVUTuGdSHSuAMmx4vlbbRKBfXCTLAmABCJLseTWPnGmfduIG/hahAMx++tzkEa4VQ==",
+      "type": "package",
+      "path": "blazorise.charts/0.9.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Blazorise.png",
+        "LICENSE.md",
+        "blazorise.charts.0.9.3.1.nupkg.sha512",
+        "blazorise.charts.nuspec",
+        "build/Blazorise.Charts.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazorise.Charts.props",
+        "buildTransitive/Blazorise.Charts.props",
+        "lib/net5.0/Blazorise.Charts.dll",
+        "staticwebassets/blazorise.charts.js"
       ]
     },
     "Blazorise.Icons.FontAwesome/0.9.3.1": {
@@ -8129,6 +8168,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Blazorise.Bootstrap >= 0.9.3.1",
+      "Blazorise.Charts >= 0.9.3.1",
       "Blazorise.Icons.FontAwesome >= 0.9.3.1",
       "Dapper >= 2.0.78",
       "DataAccessLibrary >= 1.0.0",
@@ -8143,23 +8183,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\New Blue\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\khoii\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+      "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-FINAL\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
       "projectName": "CommerceProject",
-      "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
-      "packagesPath": "C:\\Users\\New Blue\\.nuget\\packages\\",
-      "outputPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\obj\\",
+      "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-FINAL\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+      "packagesPath": "C:\\Users\\khoii\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-FINAL\\CommerceProject\\CommerceProject\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\New Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\khoii\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8173,8 +8209,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-              "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-FINAL\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-FINAL\\DataAccessLibrary\\DataAccessLibrary.csproj"
             }
           }
         }
@@ -8190,6 +8226,10 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Blazorise.Bootstrap": {
+            "target": "Package",
+            "version": "[0.9.3.1, )"
+          },
+          "Blazorise.Charts": {
             "target": "Package",
             "version": "[0.9.3.1, )"
           },
