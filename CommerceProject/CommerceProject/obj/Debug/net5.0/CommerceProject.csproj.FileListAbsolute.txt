@@ -1060,3 +1060,4 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProj
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TransactionsPage.razor.g.cs
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Homepage.razor.rz.scp.css
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\TransactionsPage.razor.rz.scp.css
+C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazored.Toast.dll

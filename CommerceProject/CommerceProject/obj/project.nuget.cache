@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YUhF3tkjKSgJPUBriwRT3uJKkWyWMtK+xbZ1ZuMV8D/H5ioleN+jcoWA2PDq2FUjun2YG5oCXYh2rCeDRlp1jg==",
+  "dgSpecHash": "EIcsAetHfVwd/tW4aV6Y+7zgO5x8o53EYqsevnLKpcIWHB5cJCzO6yo11R5Ho8VqM7Klf7ORQf9vidonnp/Vnw==",
   "success": true,
   "projectFilePath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-FINAL\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\khoii\\.nuget\\packages\\blazored.toast\\3.1.2\\blazored.toast.3.1.2.nupkg.sha512",
     "C:\\Users\\khoii\\.nuget\\packages\\blazorise\\0.9.3.1\\blazorise.0.9.3.1.nupkg.sha512",
     "C:\\Users\\khoii\\.nuget\\packages\\blazorise.bootstrap\\0.9.3.1\\blazorise.bootstrap.0.9.3.1.nupkg.sha512",
     "C:\\Users\\khoii\\.nuget\\packages\\blazorise.charts\\0.9.3.1\\blazorise.charts.0.9.3.1.nupkg.sha512",

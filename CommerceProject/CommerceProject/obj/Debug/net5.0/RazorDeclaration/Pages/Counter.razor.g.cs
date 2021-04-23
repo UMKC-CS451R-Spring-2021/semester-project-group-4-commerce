@@ -96,6 +96,20 @@ using Blazorise.Charts;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
+using Blazored.Toast;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

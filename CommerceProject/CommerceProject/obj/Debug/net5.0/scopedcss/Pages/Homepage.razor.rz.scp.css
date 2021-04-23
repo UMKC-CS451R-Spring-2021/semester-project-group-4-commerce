@@ -1,0 +1,7 @@
+body[b-vbz074av8t] {
+    background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    min-height: 500px;
+    background-attachment: fixed;
+}

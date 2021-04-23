@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Blazored.Toast/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.4",
+          "Microsoft.AspNetCore.Components.Web": "3.1.4",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/Blazored.Toast.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Blazored.Toast.dll": {}
+        },
+        "build": {
+          "buildTransitive/Blazored.Toast.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Blazored.Toast.props": {}
+        }
+      },
       "Blazorise/0.9.3.1": {
         "type": "package",
         "dependencies": {
@@ -2421,6 +2441,24 @@
     }
   },
   "libraries": {
+    "Blazored.Toast/3.1.2": {
+      "sha512": "EDwxOEeqcT8vNIqn+sCYv/Maouu223UfMCuBxtlUpqPsVHql6OmhZgpo3j9GssIkGU1utKKdi4NaAoUoXDKWSQ==",
+      "type": "package",
+      "path": "blazored.toast/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazored.toast.3.1.2.nupkg.sha512",
+        "blazored.toast.nuspec",
+        "build/Blazored.Toast.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Blazored.Toast.props",
+        "buildTransitive/Blazored.Toast.props",
+        "lib/netstandard2.0/Blazored.Toast.dll",
+        "staticwebassets/blazored-toast.css",
+        "staticwebassets/blazored-toast.min.css"
+      ]
+    },
     "Blazorise/0.9.3.1": {
       "sha512": "vFunZP2sm3BYE7fbKinLOKsrNZdXSqNYBoFWDPQ7HrQp9Qu8D9jqscX6BMFYElhesp7bmAQS4uzLXJaDdH85gA==",
       "type": "package",
@@ -8167,6 +8205,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Blazored.Toast >= 3.1.2",
       "Blazorise.Bootstrap >= 0.9.3.1",
       "Blazorise.Charts >= 0.9.3.1",
       "Blazorise.Icons.FontAwesome >= 0.9.3.1",
@@ -8225,6 +8264,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Blazored.Toast": {
+            "target": "Package",
+            "version": "[3.1.2, )"
+          },
           "Blazorise.Bootstrap": {
             "target": "Package",
             "version": "[0.9.3.1, )"

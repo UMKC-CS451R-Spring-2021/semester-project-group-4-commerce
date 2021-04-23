@@ -1,4 +1,11 @@
 /* _content/CommerceProject/Pages/Homepage.razor.rz.scp.css */
+body[b-vbz074av8t] {
+    background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
+    background-repeat: no-repeat;
+    background-position: left bottom, right top;
+    min-height: 500px;
+    background-attachment: fixed;
+}
 /* _content/CommerceProject/Pages/Settings.razor.rz.scp.css */
 body[b-0ixdshmtmn] {
     margin-top: 20px;
@@ -332,7 +339,10 @@ tr.noBorder td[b-9ejtt86256] {
     }
 
 }
-</style[b-9ejtt86256] >
+
+
+
+    </style[b-9ejtt86256] >
 /* _content/CommerceProject/Shared/MainLayout.razor.rz.scp.css */
 .page[b-q07gp702ym] {
     position: relative;

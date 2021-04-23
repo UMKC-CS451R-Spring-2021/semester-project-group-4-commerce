@@ -1,95 +1,202 @@
 ﻿@page "/transactions"
 
+@using CommerceProject.Models
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using Microsoft.AspNetCore.Http
 
-@using CommerceProject.Data
-@inject GetTransactionData TransactionData
+@inject IPeopleData _db
+@inject IHttpContextAccessor httpContextAccessor
+@inject ITransactionData _trans
+@inject IToastService toastService
 
+<style>
+    body {
+        background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
+        background-repeat: no-repeat;
+        background-position: left bottom, right top;
+        min-height: 500px;
+        background-attachment: fixed;
+    }
+</style>
 
-<div class="container mt-3 bg-light" style="border:1px solid #cecece">
+<h4>Current User: @UserName</h4>
 
-    <p class="h2 mt-2 mb-2">
-        Transactions
-        <button type="button" class="btn btn-info float-right mr-1 btn-info add-new" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus"></i> Add Transaction </button>
-    </p>
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-dialog-centered">
+@if (trans is null)@* if (people is null)*@
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container mt-3 bg-light" style="border:1px solid #cecece">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Add Notification</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-row">
-                        <label class="control-label" for="type">
-                            <select name="selections" id="select" class="select form-control">
-                                <option selected>Choose type</option>
-                                <option value="1">Time</option>
-                                <option value="2">Overdraft</option>
-                                <option value="3">Location</option>
-                            </select>
-                        </label>
+        <p class="h2 mt-2 mb-2">
+            Transactions
+            <button type="button" class="btn btn-info float-right mr-1 btn-info add-new" data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus"></i> Add Transaction </button>
+        </p>
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
 
-                        <label class="control-label col-md-8" for="size">
-                            <input type="text" class="form-control ml-3 col-md-8" id="size" name="size" placeholder="Description">
-                        </label>
-
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add New Transaction</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-info add-new" data-dismiss="modal">Add</button>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <EditForm Model="@newTransaction" OnValidSubmit="@InsertTrans">
+                                <DataAnnotationsValidator />
+                                <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         @*conflicting tags, specify which component to use*@
+
+                                <div class="form-group">
+                                    <label asp-for="Amount" class="col-form-label">Amount</label>
+                                    <InputNumber id="Amount" @bind-Value="newTransaction.Amount" />
+                                    <InputSelect id="Type" @bind-Value="newTransaction.Type">
+                                        <option value="@depositValue">Deposit</option>                     @*to use strings for option values, make private variables in the code section*@
+                                        <option value="@withdrawalValue">Withdrawal</option>
+                                    </InputSelect>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Description" class="col-form-label">Description:</label>
+                                    <InputText id="Description" @bind-Value="newTransaction.Description" />
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Location" class="col-form-label">Location:</label>
+                                    <InputText id="Location" @bind-Value="newTransaction.Location" />
+                                </div>
+                            </EditForm>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-info add-new" @onclick="@(() => toastService.ShowSuccess("Transaction added"))">Submit</button>
+                        </div>
                     </div>
                 </div>
+
             </div>
+        </div>
 
+        <div class="table-responsive-sm">
+            <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{int i = 0;}
+                    @foreach (var row in trans)
+
+                    {
+                        <tr data-toggle="collapse" data-target=".data_@i">
+                            <td>@row.Processing_Date</td>
+                            <td>@row.Description</td>
+                            <td>@row.Amount</td>
+                            <td>@(row.Balance)</td>
+
+                        </tr>
+                        <tr class="tableRowHoverOff noBorder">
+                            <td class="hiddenRow ">
+                                <div class="collapse data_@i">
+                                    <p><strong>Account # : </strong>@(row.Account_Num)</p>
+                                    <p><strong>Type : </strong>@(row.Type)</p>
+                                    <p><strong>Location : </strong>@(row.Location)</p>
+                                </div>
+                            </td>
+                        </tr>
+                        i++;
+
+                    }
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="table-responsive-sm">
-        <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Desecription</th>
-                    <th>Amount</th>
-                    <th>Balance</th>
-                </tr>
-            </thead>
-            <tbody>
-                @{int i = 0;}
-                @foreach (var transaction in transaction_list)
-
-                {
-                    <tr data-toggle="collapse" data-target=".data_@i">
-                        <td>@transaction.getDate()</td>
-                        <td>@transaction.getDescription()</td>
-                        <td>@transaction.get_Amount()</td>
-                        <td>@(transaction.getBalance())</td>
-
-                    </tr>
-                    <tr class="tableRowHoverOff noBorder">
-                        <td class="hiddenRow ">
-                            <div class="collapse data_@i">
-                                <p><strong>Account # : </strong>@(transaction.get_AccountNum())</p>
-                                <p><strong>Type : </strong>@(transaction.getType())</p>
-                                <p><strong>Location : </strong>@(transaction.getLocation())</p>
-                            </div>
-                        </td>
-                    </tr>
-                    i++;
-
-                }
-            </tbody>
-        </table>
-    </div>
-</div>
+}
+    }
 
 
 @code {
-    List<Transaction> transaction_list = new List<Transaction>();
+    private List<PersonModel> people;
+    private List<TransactionModel> trans;
+    private List<TransactionModel> accountInfo;
+    private DisplayTransactionModel newTransaction = new DisplayTransactionModel();
+    private string depositValue = "CR";
+    private string withdrawalValue = "DR";
+
+    public string UserName;
 
     protected override async Task OnInitializedAsync()
     {
-        transaction_list = TransactionData.GetTransactions().ToList();
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        //people = await _db.GetPeople();
+
+        trans = await _trans.GetTransactions(UserName);
+        accountInfo = await _trans.GetAccountNum(UserName);
     }
+
+    private async Task InsertTrans()
+    {
+        DateTime now = DateTime.Now;
+        int accNum = accountInfo[0].Account_Num;
+
+
+        TransactionModel t = new TransactionModel
+        {
+            Account_Num = accNum,                   // 10010111 for trant@mail.com
+            Processing_Date = now.ToString(),
+            Type = chooseType(),
+            Amount = roundAmount(),
+            Description = newTransaction.Description,
+            Balance = newBalance(),
+            Location = newTransaction.Location
+        };
+
+        await _trans.InsertTransaction(t);              // add to database
+
+        trans.Add(t);                                   // add to list without refreshing page
+        newTransaction = new DisplayTransactionModel();     // wipe out form model
+    }
+
+    private float roundAmount()
+    {
+        double rounded = Math.Round(newTransaction.Amount, 2);
+        return (float)rounded;
+    }
+
+    private float newBalance()              // need to get balance from account? dont include in transaction? set to account
+    {
+        TransactionModel t = accountInfo[0];
+
+
+        double rounded = Math.Round(newTransaction.Amount, 2);
+        return (float)(t.Balance + rounded);
+    }
+
+    private string chooseType()
+    {
+
+
+        if (newTransaction.Type == "DR")
+        {
+            newTransaction.Amount *= -1;
+            return "DR";
+        }
+        else
+        {
+            return "CR";
+        }
+    }
+
+
+
 }
+
+

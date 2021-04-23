@@ -21,6 +21,7 @@ using Blazorise.Icons.FontAwesome;
 using DataAccessLibrary;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using CommerceProject.Services;
+using Blazored.Toast;
 
 namespace CommerceProject
 {
@@ -52,6 +53,7 @@ namespace CommerceProject
             services.AddTransient<IPeopleData, PeopleData>();               // Interface and Dapper for connection with db -Thomas
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();         // see one line above -(you guessed it...) Thomas
             services.AddTransient<ITransactionData, TransactionData>();
+            services.AddBlazoredToast();
 
             services
               .AddBlazorise(options =>

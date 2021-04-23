@@ -96,6 +96,20 @@ using Blazorise.Charts;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 13 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
+using Blazored.Toast;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
+using Blazored.Toast.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
     public partial class Homepage : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -105,7 +119,7 @@ using Blazorise.Charts;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 36 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\Pages\Homepage.razor"
           
         LineChart<double> lineChart;
 
