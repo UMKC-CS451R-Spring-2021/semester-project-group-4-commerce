@@ -1,6 +1,9 @@
 ﻿@page "/settings"
-
-
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor httpContextAccessor
+@inject IAccountHolderData _acc
 
 <div class="row gutters-sm">
     <div class="col-md-2 d-none d-md-block">
@@ -42,14 +45,22 @@
                     <hr>
                     <form>
                         <div class="form-group">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter your fullname" value="Name here">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter your first name" @bind-value=nametochange.firstName>
                         </div>
                         <div class="form-group">
-                            <label for="location">Location</label>
-                            <input type="text" class="form-control" id="location" placeholder="Enter your location" value="where i live">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter your last name" @bind-value=nametochange.lastName>
                         </div>
-                        <button type="button" class="btn btn-primary">Update Profile</button>
+                        <div class="form-group">
+                            <label for="City">City</label>
+                            <input type="text" class="form-control" id="City" placeholder="Enter your City" @bind-value=nametochange.city>
+                        </div>
+                        <div class="form-group">
+                            <label for="State">State</label>
+                            <input type="text" class="form-control" id="State" placeholder="Enter your State" @bind-value=nametochange.state>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="reset" class="btn btn-light">Reset Changes</button>
                     </form>
                 </div>
@@ -220,3 +231,14 @@
         </div>
     </div>
 </div>
+
+@code{
+    AccountHolderModel nametochange = new AccountHolderModel();
+    private string email;
+    protected override async Task OnInitializedAsync()
+    {
+
+        nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
+        _acc.ChangeName(nametochange);
+    }
+}

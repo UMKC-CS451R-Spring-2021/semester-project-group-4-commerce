@@ -52,6 +52,7 @@ namespace CommerceProject
             services.AddTransient<IPeopleData, PeopleData>();               // Interface and Dapper for connection with db -Thomas
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();         // see one line above -(you guessed it...) Thomas
             services.AddTransient<ITransactionData, TransactionData>();
+            services.AddTransient<IAccountHolderData, AccountHolderData>();
 
             services
               .AddBlazorise(options =>

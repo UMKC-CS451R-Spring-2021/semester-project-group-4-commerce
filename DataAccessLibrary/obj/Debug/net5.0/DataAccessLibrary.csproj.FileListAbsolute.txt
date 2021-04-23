@@ -58,3 +58,9 @@ C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibr
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
 C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csprojAssemblyReference.cache
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\xunit.runner.utility.netcoreapp10.dll
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.runtimeconfig.json
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.runtimeconfig.dev.json
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.genruntimeconfig.cache

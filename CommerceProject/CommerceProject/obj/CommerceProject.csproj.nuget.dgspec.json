@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
+    "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
+    "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
         "projectName": "CommerceProject",
-        "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
-        "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\obj\\",
+        "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-                "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj"
+              "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+                "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj"
               }
             }
           }
@@ -83,6 +80,10 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
             "SendGrid": {
               "target": "Package",
               "version": "[9.22.0, )"
@@ -90,6 +91,18 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+            },
+            "bunit": {
+              "target": "Package",
+              "version": "[1.0.19, )"
+            },
+            "bunit.xunit": {
+              "target": "Package",
+              "version": "[1.0.0-preview-02, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
             }
           },
           "imports": [
@@ -114,20 +127,17 @@
         }
       }
     },
-    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+    "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "projectName": "DataAccessLibrary",
-        "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
-        "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -168,6 +178,20 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.2, )"
+            },
+            "xunit.assert": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.core": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
