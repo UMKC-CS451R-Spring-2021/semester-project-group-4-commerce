@@ -20,3 +20,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+**/bin
+**/.vs
+**/obj
+**/Properties
