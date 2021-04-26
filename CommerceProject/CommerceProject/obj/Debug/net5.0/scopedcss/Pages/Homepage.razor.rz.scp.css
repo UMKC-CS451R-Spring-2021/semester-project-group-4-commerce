@@ -5,3 +5,7 @@ body[b-vbz074av8t] {
     min-height: 500px;
     background-attachment: fixed;
 }
+
+.bg-light[b-vbz074av8t] {
+    background-color: #F3F1EE !important;
+}

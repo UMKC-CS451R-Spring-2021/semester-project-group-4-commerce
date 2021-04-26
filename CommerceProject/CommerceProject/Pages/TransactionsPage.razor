@@ -52,6 +52,7 @@ else
 
                                 <div class="form-group">
                                     <label asp-for="Amount" class="col-form-label">Amount</label>
+                                    <div></div>
                                     <InputNumber id="Amount" @bind-Value="newTransaction.Amount" />
                                     <InputSelect id="Type" @bind-Value="newTransaction.Type">
                                         <option value="@depositValue">Deposit</option>                     @*to use strings for option values, make private variables in the code section*@
@@ -60,12 +61,14 @@ else
                                 </div>
 
                                 <div class="form-group">
-                                    <label asp-for="Description" class="col-form-label">Description:</label>
+                                    <label asp-for="Description" class="col-form-label">Description</label>
+                                    <div></div>
                                     <InputText id="Description" @bind-Value="newTransaction.Description" />
                                 </div>
 
                                 <div class="form-group">
-                                    <label asp-for="Location" class="col-form-label">Location:</label>
+                                    <label asp-for="Location" class="col-form-label">Location</label>
+                                    <div></div>
                                     <InputText id="Location" @bind-Value="newTransaction.Location" />
                                 </div>
                             </EditForm>

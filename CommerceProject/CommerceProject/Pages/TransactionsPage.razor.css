@@ -1,6 +1,4 @@
-﻿<style >
-
-body {
+﻿body {
     background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
     background-repeat: no-repeat;
     background-position: left bottom, right top;
@@ -96,8 +94,7 @@ tr.noBorder td {
         outline: 0 !important;
     }
 
+
+.bg-light {
+    background-color: #F3F1EE !important;
 }
-
-
-
-    </style >
