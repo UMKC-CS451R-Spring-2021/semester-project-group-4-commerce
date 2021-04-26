@@ -2,3 +2,21 @@
 CommerceProject/.vs/CommerceProject/config/applicationhost.config
 CommerceProject/CommerceProject/bin/Debug/net5.0/CommerceProject.runtimeconfig.dev.json
 CommerceProject/CommerceProject/bin/Debug/net5.0/CommerceProject.runtimeconfig.dev.json
+#user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
