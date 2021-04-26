@@ -17,8 +17,8 @@ namespace DataAccessLibrary
         public Task ChangeName(AccountHolderModel accountholder)
         {
             string sql = @"UPDATE account_holder
-                            SET First_Name = " + accountholder.firstName + " Last_Name=" + accountholder.lastName + " City="+accountholder.city +" State="+accountholder.state+
-                            " WHERE email=" + accountholder.email + ";";
+                            SET First_Name = '" + accountholder.firstName + "', Last_Name='" + accountholder.lastName + "', City='"+accountholder.city +"', State='"+accountholder.state+
+                            "' WHERE email='" + accountholder.email + "';";
 
 
             return db.SaveData(sql, accountholder);

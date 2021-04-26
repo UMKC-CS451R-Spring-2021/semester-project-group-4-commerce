@@ -123,11 +123,11 @@ using Microsoft.AspNetCore.Http;
       
     AccountHolderModel nametochange = new AccountHolderModel();
     private string email;
-    protected override async Task OnInitializedAsync()
+    protected Task UpdateInfo()
     {
 
         nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
-        await _acc.ChangeName(nametochange);
+        return _acc.ChangeName(nametochange);
     }
 
 #line default

@@ -60,7 +60,7 @@
                             <label for="State">State</label>
                             <input type="text" class="form-control" id="State" placeholder="Enter your State" @bind-value=nametochange.state>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary" @onclick="UpdateInfo">Submit</button>
                         <button type="reset" class="btn btn-light">Reset Changes</button>
                     </form>
                 </div>
@@ -235,10 +235,10 @@
 @code{
     AccountHolderModel nametochange = new AccountHolderModel();
     private string email;
-    protected override async Task OnInitializedAsync()
+    protected Task UpdateInfo()
     {
 
         nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
-        _acc.ChangeName(nametochange);
+        return _acc.ChangeName(nametochange);
     }
 }
