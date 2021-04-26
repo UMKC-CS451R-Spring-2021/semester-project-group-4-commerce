@@ -88,7 +88,7 @@ else
     {
         DateTime now = DateTime.Now;
         int accNum = accountInfo[0].Account_Num;
-
+        //float testBal = newTransaction.Amount + accountInfo[0].Balance;
 
         TransactionModel t = new TransactionModel
         {
@@ -103,8 +103,10 @@ else
 
         await _trans.InsertTransaction(t);              // add to database
 
-        trans.Add(t);                                   // add to list without refreshing page
+        trans.Add(t);                                   // add to list without refreshing page (no longer works data sync issues)
+        //trans = await _trans.GetTransactions(UserName);
         newTransaction = new DisplayTransactionModel();     // wipe out form model
+
     }
 
     private float roundAmount()
@@ -115,17 +117,22 @@ else
 
     private float newBalance()              // need to get balance from account? dont include in transaction? set to account
     {
-        TransactionModel t = accountInfo[0];
+        if (trans.Count != 0)
+        {
+            double rounded = Math.Round(trans.Last().Balance + newTransaction.Amount, 2);
+            return (float)rounded;
+        }
+        else
+        {
+            TransactionModel t = accountInfo[0];
 
-
-        double rounded = Math.Round(newTransaction.Amount, 2);
-        return (float)(t.Balance + rounded);
+            double rounded = Math.Round(newTransaction.Amount + t.Balance, 2);
+            return (float)(rounded);
+        }
     }
 
     private string chooseType()
     {
-        
-
         if (newTransaction.Type == "DR")
         {
             newTransaction.Amount *= -1;
