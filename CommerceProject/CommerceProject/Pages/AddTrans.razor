@@ -104,7 +104,7 @@ else
         await _trans.InsertTransaction(t);              // add to database
 
         trans.Add(t);                                   // add to list without refreshing page (no longer works data sync issues)
-        //trans = await _trans.GetTransactions(UserName);
+        
         newTransaction = new DisplayTransactionModel();     // wipe out form model
 
     }

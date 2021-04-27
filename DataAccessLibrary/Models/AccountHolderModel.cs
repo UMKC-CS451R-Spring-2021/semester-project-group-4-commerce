@@ -12,7 +12,10 @@ namespace DataAccessLibrary.Models
 
         public string lastName { get; set; }
 
+        public string phoneNumber { get; set; }
+
         public string email { get; set; }
+
         public string city { get; set; }
 
         public string state { get; set; }
