@@ -1,4 +1,4 @@
-﻿<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="/css/images/commerce-bank-vector-logo-horizontal.png" />
@@ -12,23 +12,83 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/transactions">Transactions</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/settings">Settings</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-bell"></i> <span class="badge rounded-pill badge-notification bg-danger">99</span></a>
+
+                @* NAVBAR NOTIFICATIO DROPDOWN MENU *@
+                <li class="nav-item-notif dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i> <span class="badge rounded-pill badge-notification bg-danger">3</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="head text-white">
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-12">
+                                    <span>Notifications (3)</span>
+                                    <a href="" class="float-right text-white">View all <i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="notification-box">
+                            <div class="row">
+                                <div class="col-lg-1 col-sm-1 col-1 text-center">
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-10">
+                                    <strong class="text-info">Location</strong>
+                                    <div>
+                                        Transaction in Rhode Island
+                                    </div>
+                                    <small class="text">DATE, TIME</small>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider" style="border-color:grey;"></div>
+                        </li>
+                        <li class="notification-box">
+                            <div class="row">
+                                <div class="col-lg-1 col-sm-1 col-1 text-center">
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-10">
+                                    <strong class="text-info">Overdraft</strong>
+                                    <div>
+                                        Overdraft by 100000$
+                                    </div>
+                                    <small class="text">1/1/1, 3:00a.m.</small>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider" style="border-color:grey;"></div>
+                        </li>
+                        <li class="notification-box">
+                            <div class="row">
+                                <div class="col-lg-1 col-sm-1 col-1 text-center">
+                                </div>
+                                <div class="col-lg-10 col-sm-10 col-10">
+                                    <strong class="text-info">Time</strong>
+                                    <div>
+                                        Transaction at 2:00p.m.
+                                    </div>
+                                    <small class="text">4/26/2021, 2:00p.m.</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer bg-dark text-center">
+                            <a href="" class="text-white">Clear</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-
             <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <form method="post" action="Identity/Account/LogOut">
-                    <button type="submit" class="nav-link btn btn-link">Sign out</button>
-                </form>
+            <form method="post" action="Identity/Account/LogOut">
+                <button type="submit" class="nav-link btn btn-link">Sign out</button>
+            </form>
 
             </div>
-
         </div>
 
 
-        </div>
+    </div>
 </nav>
