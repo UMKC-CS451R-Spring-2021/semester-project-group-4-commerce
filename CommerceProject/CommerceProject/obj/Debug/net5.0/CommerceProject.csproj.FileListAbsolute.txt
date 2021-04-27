@@ -1070,3 +1070,4 @@ G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProje
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TransactionsPage.razor.g.cs
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\Homepage.razor.rz.scp.css
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\Pages\TransactionsPage.razor.rz.scp.css
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\TableDependency.SqlClient.dll

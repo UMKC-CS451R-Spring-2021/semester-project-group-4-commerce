@@ -1214,6 +1214,19 @@
           "lib/netstandard2.0/SendGrid.dll": {}
         }
       },
+      "SqlTableDependency/8.5.8": {
+        "type": "package",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.4.0",
+          "System.Data.SqlClient": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/TableDependency.SqlClient.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/TableDependency.SqlClient.dll": {}
+        }
+      },
       "starkbank-ecdsa/1.2.0": {
         "type": "package",
         "compile": {
@@ -4494,6 +4507,20 @@
         "lib/netstandard2.0/SendGrid.xml",
         "sendgrid.9.22.0.nupkg.sha512",
         "sendgrid.nuspec"
+      ]
+    },
+    "SqlTableDependency/8.5.8": {
+      "sha512": "+XD+4uNnaYRExoeSff4c4l3g+e0cWHgzQIXGcz/n+gq0hfWGhMyd11I4CrFLC3ZIXCQokTCw2S/lzh0X4fvlAQ==",
+      "type": "package",
+      "path": "sqltabledependency/8.5.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/TableDependency.SqlClient.dll",
+        "lib/netcoreapp2.0/TableDependency.SqlClient.dll",
+        "lib/netstandard2.0/TableDependency.SqlClient.dll",
+        "sqltabledependency.8.5.8.nupkg.sha512",
+        "sqltabledependency.nuspec"
       ]
     },
     "starkbank-ecdsa/1.2.0": {
@@ -8179,27 +8206,28 @@
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
       "SendGrid >= 9.22.0",
+      "SqlTableDependency >= 8.5.8",
       "System.Data.SqlClient >= 4.8.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\New Blue\\.nuget\\packages\\": {},
+    "C:\\Users\\Shelby\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+      "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
       "projectName": "CommerceProject",
-      "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
-      "packagesPath": "C:\\Users\\New Blue\\.nuget\\packages\\",
-      "outputPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\obj\\",
+      "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+      "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\New Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8213,8 +8241,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-              "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj"
+            "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj"
             }
           }
         }
@@ -8272,6 +8300,10 @@
           "SendGrid": {
             "target": "Package",
             "version": "[9.22.0, )"
+          },
+          "SqlTableDependency": {
+            "target": "Package",
+            "version": "[8.5.8, )"
           },
           "System.Data.SqlClient": {
             "target": "Package",
