@@ -52,7 +52,7 @@ namespace CommerceProject
             services.AddTransient<IPeopleData, PeopleData>();               // Interface and Dapper for connection with db -Thomas
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();         // see one line above -(you guessed it...) Thomas
             services.AddTransient<ITransactionData, TransactionData>();
-            services.AddTransient<IAccountHolderData, AccountHolderData>();
+
             services
               .AddBlazorise(options =>
               {
@@ -63,6 +63,8 @@ namespace CommerceProject
 
             services.AddTransient<IEmailSender, EmailSender>();             // used for sending emails - Shelby
             services.Configure<AuthMessageSenderOptions>(Configuration);    // used for sending emails - Shelby
+
+            services.AddSingleton<ITableChangeBroadcastService, TableChangeBroadcastService>();  // used for monitoring changes in DB - Shelby
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
