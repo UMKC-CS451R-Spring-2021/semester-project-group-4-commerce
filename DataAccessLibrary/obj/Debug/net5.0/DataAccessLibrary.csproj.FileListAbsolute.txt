@@ -69,3 +69,4 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\DataAccessLi
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csprojAssemblyReference.cache

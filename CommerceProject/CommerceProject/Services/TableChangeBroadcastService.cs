@@ -18,9 +18,6 @@ namespace CommerceProject.Services
         private SqlTableDependency<AccountModel> _notifier;
         private IConfiguration _configuration;
 
-        private AccountModel newAccount = new AccountModel() { Balance = 200 };
-        private AccountModel oldAccount = new AccountModel() { Balance = 100 };
-
         public event BalanceChangeDelegate OnBalanceChanged;
 
         public TableChangeBroadcastService(IConfiguration configuration)
@@ -39,12 +36,13 @@ namespace CommerceProject.Services
         // This method will notify the Blazor component about the transaction change
         private void TableDependency_Changed(object sender, RecordChangedEventArgs<AccountModel> e)
         {
-            //this.OnBalanceChanged(this, new BalanceChangeEventArgs(e.Entity, e.EntityOldValues));
-            if (this.OnBalanceChanged != null)
+            if (this.OnBalanceChanged != null) // "If OnBalancedChaged has been initialized in Homepage"
             {
-                this.OnBalanceChanged(this, new BalanceChangeEventArgs(newAccount, oldAccount));
+                this.OnBalanceChanged(this, new BalanceChangeEventArgs(e.Entity, e.EntityOldValues));
+
             }
         }
+
 
         // This method is used to populate the HTML view 
         // when it is rendered for the first time

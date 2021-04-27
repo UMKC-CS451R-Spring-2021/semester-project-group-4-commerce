@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 #nullable disable
 #nullable restore
 #line 6 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 #line default
 #line hidden
@@ -133,7 +133,7 @@ using Microsoft.AspNetCore.Mvc;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 44 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 46 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     LineChart<double> lineChart;
 
@@ -177,23 +177,37 @@ using Microsoft.AspNetCore.Mvc;
         return new List<double> { r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble() };
     }
 
-    //private readonly IEmailSender _emailSender;
-    private readonly AuthenticationState context;
+
+    public string user_email;
 
     protected override void OnInitialized()
     {
+        user_email = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        // Getting current balance of database to be compared to future values
         this.BalanceService.OnBalanceChanged += this.BalanceChanged;
     }
 
 
     // Event handler to send notification email
-    public async void BalanceChanged(object sender, BalanceChangeEventArgs args)
+    public void BalanceChanged(object sender, BalanceChangeEventArgs args)
+    {
+        if (args.NewValue.Balance < 25.00) {
+            string subject = "Low Balance Alert";
+            string message = "Your bank balance is less than $25.00.";
+
+            SendEmail(subject, message);
+        }
+
+    }
+
+    public async void SendEmail(string subject, string message)
     {
         //send notification email
         await _emailSender.SendEmailAsync(
-        "semohar@gmail.com",
-        "New Notification",
-        "You have a new notification!");
+        user_email,
+        subject,
+        message);
     }
 
     public void Dispose()
@@ -205,6 +219,7 @@ using Microsoft.AspNetCore.Mvc;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITableChangeBroadcastService BalanceService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IEmailSender _emailSender { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
     }

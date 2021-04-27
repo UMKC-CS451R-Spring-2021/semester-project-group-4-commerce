@@ -3,9 +3,11 @@
 @using CommerceProject.Data
 @using CommerceProject.Services
 @using Microsoft.AspNetCore.Identity.UI.Services;
-@using Microsoft.AspNetCore.Mvc;
+@using Microsoft.AspNetCore.Http
+
 @inject WeatherForecastService ForecastService
 @inject IEmailSender _emailSender
+@inject IHttpContextAccessor httpContextAccessor
 @inject ITableChangeBroadcastService BalanceService
 @implements IDisposable
 
@@ -84,23 +86,37 @@
         return new List<double> { r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble() };
     }
 
-    //private readonly IEmailSender _emailSender;
-    private readonly AuthenticationState context;
+
+    public string user_email;
 
     protected override void OnInitialized()
     {
+        user_email = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        // Getting current balance of database to be compared to future values
         this.BalanceService.OnBalanceChanged += this.BalanceChanged;
     }
 
 
     // Event handler to send notification email
-    public async void BalanceChanged(object sender, BalanceChangeEventArgs args)
+    public void BalanceChanged(object sender, BalanceChangeEventArgs args)
+    {
+        if (args.NewValue.Balance < 25.00) {
+            string subject = "Low Balance Alert";
+            string message = "Your bank balance is less than $25.00.";
+
+            SendEmail(subject, message);
+        }
+
+    }
+
+    public async void SendEmail(string subject, string message)
     {
         //send notification email
         await _emailSender.SendEmailAsync(
-        "semohar@gmail.com",
-        "New Notification",
-        "You have a new notification!");
+        user_email,
+        subject,
+        message);
     }
 
     public void Dispose()
