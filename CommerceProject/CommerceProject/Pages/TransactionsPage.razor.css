@@ -96,5 +96,9 @@ tr.noBorder td {
         outline: 0 !important;
     }
 
+.bg-light {
+    background-color: #F3F1EE !important;
 }
-</style >
+
+
+}
