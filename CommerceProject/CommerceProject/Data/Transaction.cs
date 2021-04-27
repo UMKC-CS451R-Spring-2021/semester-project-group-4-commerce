@@ -15,7 +15,7 @@ namespace CommerceProject.Data
         private String Type;
         private float Amount;
         private String Description;
-        private float Balance;
+        private decimal Balance;
         private String Location;
 
 
@@ -37,17 +37,17 @@ namespace CommerceProject.Data
             return Location;
         }
 
-        
+
         public String getDate()
         {
             return Processing_Date;
         }
-      
+
         public float get_Amount()
         {
             return Amount;
         }
-       
+
 
         public int get_TransNum()
         {
@@ -68,7 +68,7 @@ namespace CommerceProject.Data
             return Description;
         }
 
-        public float getBalance()
+        public decimal getBalance()
         {
             return Balance;
         }
