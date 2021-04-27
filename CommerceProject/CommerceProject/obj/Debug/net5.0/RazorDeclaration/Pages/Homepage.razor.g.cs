@@ -133,48 +133,158 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 47 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
-    LineChart<double> lineChart;
+    LineChart<decimal> lineChart;
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
         {
-            await HandleRedraw();
+            await MonthHandleRedraw();
         }
     }
 
-    async Task HandleRedraw()
+    async Task MonthHandleRedraw()
     {
         await lineChart.Clear();
 
-        await lineChart.AddLabelsDatasetsAndUpdate(Labels, GetLineChartDataset());
+        await lineChart.AddLabelsDatasetsAndUpdate(getDayLabels(), GetLineChartDataset("month"));
     }
 
-    LineChartDataset<double> GetLineChartDataset()
+    async Task YearHandleRedraw()
     {
-        return new LineChartDataset<double>
+        await lineChart.Clear();
+
+        await lineChart.AddLabelsDatasetsAndUpdate(getMonthLabels(), GetLineChartDataset("year"));
+    }
+
+    LineChartDataset<decimal> GetLineChartDataset(string param)
+    {
+        List<decimal> data = new List<decimal>();
+        string label = "";
+        int point_radius = 0;
+
+        switch (param)
         {
-            Label = "# of randoms",
-            Data = RandomizeData(),
-            BackgroundColor = backgroundColors,
-            BorderColor = borderColors,
+            case "month":
+                label = "Daily Balance";
+                data = DailyBalanceData();
+                point_radius = 2;
+                break;
+            case "year":
+                label = "Monthly Balance";
+                data = MonthlyBalanceData();
+                point_radius = 5;
+                break;
+        }
+
+        return new LineChartDataset<decimal>
+        {
+            Label = label,
+            Data = data,
+            BackgroundColor = new List<string> { ChartColor.FromRgba(79, 168, 0, 0.8f) },
+            PointBackgroundColor = getPointBackgroundColors(),
+            PointBorderColor = getPointBorderColors(),
             Fill = true,
-            PointRadius = 2,
+            PointRadius = point_radius,
             BorderDash = new List<int> { }
         };
     }
 
-    string[] Labels = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
-    List<string> backgroundColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 0.2f), ChartColor.FromRgba(54, 162, 235, 0.2f), ChartColor.FromRgba(255, 206, 86, 0.2f), ChartColor.FromRgba(75, 192, 192, 0.2f), ChartColor.FromRgba(153, 102, 255, 0.2f), ChartColor.FromRgba(255, 159, 64, 0.2f) };
-    List<string> borderColors = new List<string> { ChartColor.FromRgba(255, 99, 132, 1f), ChartColor.FromRgba(54, 162, 235, 1f), ChartColor.FromRgba(255, 206, 86, 1f), ChartColor.FromRgba(75, 192, 192, 1f), ChartColor.FromRgba(153, 102, 255, 1f), ChartColor.FromRgba(255, 159, 64, 1f) };
-
-    List<double> RandomizeData()
+    List<string> getPointBackgroundColors()
     {
-        var r = new Random(DateTime.Now.Millisecond);
+        List<string> pointBackgroundColors = new List<string>();
 
-        return new List<double> { r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble(), r.Next(3, 50) * r.NextDouble() };
+        for (int i = 0; i < 31; i++)
+        {
+            pointBackgroundColors.Add(ChartColor.FromRgba(79, 168, 0, 0.8f));
+        }
+
+        return pointBackgroundColors;
+    }
+
+    List<string> getPointBorderColors()
+    {
+        List<string> pointBorderColors = new List<string>();
+
+        for (int i = 0; i < 31; i++)
+        {
+            pointBorderColors.Add(ChartColor.FromRgba(0, 103, 71, 0.8f));
+        }
+
+        return pointBorderColors;
+    }
+
+    string[] getDayLabels()
+    {
+        var curr_day = DateTime.Now.Day;
+        List<string> dayLabels = new List<string>();
+
+        for (int i = 1; i <= curr_day; i++)
+        {
+            dayLabels.Add(i.ToString());
+        }
+
+        return dayLabels.ToArray();
+    }
+
+    string[] getMonthLabels()
+    {
+        string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+        var curr_month = DateTime.Now.Month;
+        List<string> monthLabels = new List<string>();
+
+        for (int i = 1; i <= curr_month; i++)
+        {
+            monthLabels.Add(months[i - 1]);
+        }
+
+        return monthLabels.ToArray();
+    }
+
+    List<decimal> MonthlyBalanceData()
+    {
+        // get dict that contains the avg balance per month of current year
+        Dictionary<int, decimal> avg_monthly_balances = new Dictionary<int, decimal>(TransactionData.GetMonthlyBalancesPastYear());
+
+        List<decimal> visual_balances = new List<decimal>();
+
+        for (int i = 0; i < DateTime.Now.Month; i++)
+        {
+            if (avg_monthly_balances.ContainsKey(i))
+            {
+                visual_balances.Add(Decimal.Round(avg_monthly_balances[i], 2));
+            }
+            else
+            {
+                visual_balances.Add(Decimal.Round(0, 2));
+            }
+        }
+
+        return visual_balances;
+    }
+
+    List<decimal> DailyBalanceData()
+    {
+        // get dict that contains the avg balance per month of current year
+        Dictionary<int, decimal> avg_daily_balances = new Dictionary<int, decimal>(TransactionData.GetDailyBalancesPastMonth(DateTime.Now.Month));
+
+        List<decimal> visual_balances = new List<decimal>();
+
+        for (int i = 0; i < 31; i++)
+        {
+            if (avg_daily_balances.ContainsKey(i))
+            {
+                visual_balances.Add(Decimal.Round(avg_daily_balances[i], 2));
+            }
+            else
+            {
+                visual_balances.Add(Decimal.Round(0, 2));
+            }
+        }
+
+        return visual_balances;
     }
 
 
@@ -192,7 +302,8 @@ using Microsoft.AspNetCore.Http;
     // Event handler to send notification email
     public void BalanceChanged(object sender, BalanceChangeEventArgs args)
     {
-        if (args.NewValue.Balance < 25.00) {
+        if (args.NewValue.Balance < 25.00)
+        {
             string subject = "Low Balance Alert";
             string message = "Your bank balance is less than $25.00.";
 
@@ -221,7 +332,7 @@ using Microsoft.AspNetCore.Http;
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITableChangeBroadcastService BalanceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IEmailSender _emailSender { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private GetTransactionData TransactionData { get; set; }
     }
 }
 #pragma warning restore 1591
