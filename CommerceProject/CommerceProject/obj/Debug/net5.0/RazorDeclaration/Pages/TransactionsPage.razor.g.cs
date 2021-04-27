@@ -147,7 +147,7 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 128 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\Pages\TransactionsPage.razor"
+#line 145 "C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\Pages\TransactionsPage.razor"
        
     private List<PersonModel> people;
     private List<TransactionModel> trans;
