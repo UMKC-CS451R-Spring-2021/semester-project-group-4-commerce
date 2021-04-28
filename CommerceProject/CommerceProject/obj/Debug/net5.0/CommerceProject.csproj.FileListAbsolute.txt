@@ -1309,3 +1309,4 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerceFINAL3\CommerceProj
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerceFINAL3\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerceFINAL3\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerceFINAL3\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ChangePassword.cshtml.g.cs
