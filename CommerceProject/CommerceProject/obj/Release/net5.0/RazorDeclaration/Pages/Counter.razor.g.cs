@@ -13,98 +13,98 @@ namespace CommerceProject.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 1 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 2 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 3 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 4 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 5 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 6 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 7 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 8 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 9 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using CommerceProject;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 10 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using CommerceProject.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 11 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 12 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Blazorise.Charts;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 13 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Blazored.Toast;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\_Imports.razor"
+#line 14 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\_Imports.razor"
 using Blazored.Toast.Services;
 
 #line default
@@ -119,7 +119,7 @@ using Blazored.Toast.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 9 "c:\users\khoii\source\repos\semester-project-group-4-commerce-final\commerceproject\CommerceProject\Pages\Counter.razor"
+#line 9 "C:\Users\khoii\source\repos\semester-project-group-4-commerce-FINAL\CommerceProject\CommerceProject\Pages\Counter.razor"
        
     private int currentCount = 0;
 
