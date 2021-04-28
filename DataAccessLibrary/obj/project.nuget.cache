@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4SlJRCLgXlACR8D1Y7HmSrpwlYx0kxRdAAHJTpMyTI/3JXOA/kqDZEAMgsRJzGum1jyALPJ/2RJFGyN2bv+fkA==",
+  "dgSpecHash": "nNbqGx7yfIG8CuU92aArHs0i+RHgycdFhe0/o04v+j739j4a0cPknfNzRbzxW4fPmJTE9jFrNKnxcRe+rexPJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Owner\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Owner\\.nuget\\packages\\csvhelper\\27.0.1\\csvhelper.27.0.1.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Owner\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

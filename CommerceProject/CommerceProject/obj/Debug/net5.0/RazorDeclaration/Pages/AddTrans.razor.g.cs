@@ -124,6 +124,34 @@ using Microsoft.AspNetCore.Http;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+using CommerceProject.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+using CsvHelper;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+using System.IO;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 10 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+using System.Globalization;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/addTrans")]
     public partial class AddTrans : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -133,7 +161,7 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 67 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\AddTrans.razor"
+#line 70 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\AddTrans.razor"
        
     private List<PersonModel> people;
     private List<TransactionModel> trans;
@@ -174,6 +202,7 @@ using Microsoft.AspNetCore.Http;
         await _trans.InsertTransaction(t);              // add to database
 
         trans.Add(t);                                   // add to list without refreshing page (no longer works data sync issues)
+        
         //trans = await _trans.GetTransactions(UserName);
         newTransaction = new DisplayTransactionModel();     // wipe out form model
 
@@ -213,6 +242,8 @@ using Microsoft.AspNetCore.Http;
             return "CR";
         }
     }
+
+   
 
 
 #line default

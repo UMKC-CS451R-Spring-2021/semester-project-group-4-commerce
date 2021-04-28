@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[0.9.3.1, )"
             },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[27.0.1, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
@@ -151,6 +155,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[27.0.1, )"
+            },
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"

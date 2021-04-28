@@ -4,7 +4,10 @@
 @using DataAccessLibrary
 @using DataAccessLibrary.Models
 @using Microsoft.AspNetCore.Http
-
+@using CommerceProject.Services
+@using CsvHelper
+@using System.IO;
+@using System.Globalization;
 @inject IPeopleData _db
 @inject IHttpContextAccessor httpContextAccessor
 @inject ITransactionData _trans
@@ -17,38 +20,38 @@
     <DataAnnotationsValidator />
     <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         @*conflicting tags, specify which component to use*@
 
-    <InputNumber id="Amount"    @bind-Value="newTransaction.Amount" />
-    <InputSelect id="Type"      @bind-Value="newTransaction.Type">
+    <InputNumber id="Amount" @bind-Value="newTransaction.Amount" />
+    <InputSelect id="Type" @bind-Value="newTransaction.Type">
         <option value="@depositValue">Deposit</option>                     @*to use strings for option values, make private variables in the code section*@
         <option value="@withdrawalValue">Withdrawal</option>
     </InputSelect>
     <InputText id="Description" @bind-Value="newTransaction.Description" />
-    <InputText id="Location"    @bind-Value="newTransaction.Location" />
+    <InputText id="Location" @bind-Value="newTransaction.Location" />
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </EditForm>
 
-@if (trans is null)     @* if (people is null)*@
-    {
-        <p><em>Loading...</em></p>
-    }
+@if (trans is null)@* if (people is null)*@
+{
+    <p><em>Loading...</em></p>
+}
 else
-    {
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Account Number</th>
-                    <th>Processing Date</th>
-                    <th>Type</th>
-                    <th>Amount</th>
-                    <th>Description</th>
-                    <th>Balance</th>
-                    <th>Location</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var row in trans)
-                {
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Account Number</th>
+                <th>Processing Date</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Balance</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in trans)
+            {
                 <tr>
                     <td>@row.Account_Num</td>
                     <td>@row.Processing_Date</td>
@@ -58,10 +61,10 @@ else
                     <td>@row.Balance</td>
                     <td>@row.Location</td>
                 </tr>
-                }
-            </tbody>
-        </table>
-    }
+            }
+        </tbody>
+    </table>
+}
 
 
 @code {
@@ -104,6 +107,7 @@ else
         await _trans.InsertTransaction(t);              // add to database
 
         trans.Add(t);                                   // add to list without refreshing page (no longer works data sync issues)
+        
         //trans = await _trans.GetTransactions(UserName);
         newTransaction = new DisplayTransactionModel();     // wipe out form model
 
@@ -143,5 +147,7 @@ else
             return "CR";
         }
     }
+
+   
 
 }

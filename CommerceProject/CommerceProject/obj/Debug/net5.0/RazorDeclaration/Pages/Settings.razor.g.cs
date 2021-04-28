@@ -96,6 +96,27 @@ using Blazorise.Charts;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Settings.razor"
+using DataAccessLibrary;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Settings.razor"
+using DataAccessLibrary.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Settings.razor"
+using Microsoft.AspNetCore.Http;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/settings")]
     public partial class Settings : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -104,6 +125,23 @@ using Blazorise.Charts;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 235 "C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Settings.razor"
+      
+    AccountHolderModel nametochange = new AccountHolderModel();
+    private string email;
+    protected Task UpdateInfo()
+    {
+
+        nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
+        return _acc.ChangeName(nametochange);
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IAccountHolderData _acc { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
     }
 }
 #pragma warning restore 1591
