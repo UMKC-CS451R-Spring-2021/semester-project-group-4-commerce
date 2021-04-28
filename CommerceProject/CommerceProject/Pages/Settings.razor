@@ -4,6 +4,7 @@
 @using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor httpContextAccessor
 @inject IAccountHolderData _acc
+@inject NavigationManager UriHelper
 
 <div class="row gutters-sm mt-3">
     <div class="col-md-2 d-none d-md-block">
@@ -51,7 +52,7 @@
                         <div class="form-group">
                             <label for="lastName">Last Name</label>
                             <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter your last name" @bind-value=nametochange.lastName>
-                        </div>                        
+                        </div>
                         <div class="form-group">
                             <label for="phoneNumber">Phone Number</label>
                             <input type="text" class="form-control" id="phoneNumber" aria-describedby="lastNameHelp" placeholder="Enter your Phone Number" @bind-value=nametochange.phoneNumber>
@@ -73,13 +74,7 @@
                     <h6>SECURITY SETTINGS</h6>
                     <hr class="red">
                     <form>
-                        <div class="form-group">
-                            <label class="d-block">Change Password</label>
-                            <input type="text" class="form-control" placeholder="Enter your old password">
-                            <input type="text" class="form-control mt-1" placeholder="New password">
-                            <input type="text" class="form-control mt-1" placeholder="Confirm new password">
-                        </div>
-                        <button type="button" class="btn btn-primary">Change password</button>
+                        <button type="button" class="btn btn-primary" @onclick="toChangePassword">Change password</button>
                     </form>
                     <hr />
                     <form>
@@ -244,5 +239,10 @@
 
         nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
         return _acc.ChangeName(nametochange);
+    }
+
+    void toChangePassword()
+    {
+        UriHelper.NavigateTo("Identity/Account/ChangePassword", true);
     }
 }
