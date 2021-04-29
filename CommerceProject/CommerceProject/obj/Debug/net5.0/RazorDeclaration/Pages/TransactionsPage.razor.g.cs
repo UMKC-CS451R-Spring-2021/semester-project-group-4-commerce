@@ -177,19 +177,19 @@ using Microsoft.AspNetCore.Http;
         newTransaction = new DisplayTransactionModel();     // wipe out form model
     }
 
-    private float roundAmount()
+    private decimal roundAmount()
     {
-        double rounded = Math.Round(newTransaction.Amount, 2);
-        return (float)rounded;
+        decimal rounded = Math.Round(newTransaction.Amount, 2);
+        return rounded;
     }
 
-    private float newBalance()              // need to get balance from account? dont include in transaction? set to account
+    private decimal newBalance()              // need to get balance from account? dont include in transaction? set to account
     {
         TransactionModel t = accountInfo[0];
 
 
-        double rounded = Math.Round(newTransaction.Amount, 2);
-        return (float)(t.Balance + rounded);
+        decimal rounded = Math.Round(newTransaction.Amount, 2);
+        return (t.Balance + rounded);
     }
 
     private string chooseType()

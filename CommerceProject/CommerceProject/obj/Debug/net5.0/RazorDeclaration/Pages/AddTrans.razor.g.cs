@@ -179,25 +179,25 @@ using Microsoft.AspNetCore.Http;
 
     }
 
-    private float roundAmount()
+    private decimal roundAmount()
     {
-        double rounded = Math.Round(newTransaction.Amount, 2);
-        return (float)rounded;
+        decimal rounded = Math.Round(newTransaction.Amount, 2);
+        return rounded;
     }
 
-    private float newBalance()              // need to get balance from account? dont include in transaction? set to account
+    private decimal newBalance()              // need to get balance from account? dont include in transaction? set to account
     {
         if (trans.Count != 0)
         {
-            double rounded = Math.Round(trans.Last().Balance + newTransaction.Amount, 2);
-            return (float)rounded;
+            decimal rounded = Math.Round(trans.Last().Balance + newTransaction.Amount, 2);
+            return rounded;
         }
         else
         {
             TransactionModel t = accountInfo[0];
 
-            double rounded = Math.Round(newTransaction.Amount + t.Balance, 2);
-            return (float)(rounded);
+            decimal rounded = Math.Round(newTransaction.Amount + t.Balance, 2);
+            return rounded;
         }
     }
 

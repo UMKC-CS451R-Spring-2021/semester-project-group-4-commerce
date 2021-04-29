@@ -17,13 +17,13 @@ namespace CommerceProject.Models
 
         [Required]
         [Range(1, 10000, ErrorMessage = "Minimum value is $1.00. Maximum is $10,000")]
-        public float Amount { get; set; }
+        public decimal Amount { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "100 characters or less.")]
         public String Description { get; set; }
 
-        public float Balance { get; set; }
+        public decimal Balance { get; set; }
 
         [Required]
         [MinLength(4, ErrorMessage = "Minimum 4 characters for Location.")]
