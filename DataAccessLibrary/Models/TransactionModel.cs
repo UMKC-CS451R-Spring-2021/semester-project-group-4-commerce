@@ -16,11 +16,11 @@ namespace DataAccessLibrary.Models
 
         public String Type { get; set; }
 
-        public float Amount { get; set; }
+        public decimal Amount { get; set; }
 
         public String Description { get; set; }
 
-        public float Balance { get; set; }
+        public decimal Balance { get; set; }
 
         public String Location { get; set; }
 
