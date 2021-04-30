@@ -339,8 +339,13 @@ tr.noBorder td[b-9ejtt86256] {
     background-color: #F3F1EE !important;
 }
 
+.alnright[b-9ejtt86256] {
+    text-align: right;
+}
 
 }
+
+
 /* _content/CommerceProject/Shared/MainLayout.razor.rz.scp.css */
 .page[b-q07gp702ym] {
     position: relative;
@@ -505,12 +510,32 @@ li[b-q9fo7l4ayw] {
 
 
     .btn:hover[b-q9fo7l4ayw] {
-        background-color: #000000
+        background-color: #000000;
     }
 
     .btn:active[b-q9fo7l4ayw], .btn:focus[b-q9fo7l4ayw] {
-        background-color: #000000
+        background-color: #000000;
     }
+
+
+.submit[b-q9fo7l4ayw] {
+    font-family: Poppins;
+    color: #FFFFFF;
+    background-color: #006747;
+}
+
+    .submit:focus[b-q9fo7l4ayw], .btn:active[b-q9fo7l4ayw] {
+        box-shadow: none;
+        outline: 0 !important;
+        color: #FFFFFF;
+    }
+
+    .submit:hover[b-q9fo7l4ayw], .btn:active[b-q9fo7l4ayw] {
+        box-shadow: none;
+        outline: 0 !important;
+        color: #FFFFFF;
+    }
+
 
 
 
