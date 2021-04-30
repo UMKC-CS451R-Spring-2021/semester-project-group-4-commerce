@@ -1,0 +1,65 @@
+﻿@page "/notes"
+
+@using CommerceProject.Models
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using Microsoft.AspNetCore.Http
+
+
+@inject IHttpContextAccessor httpContextAccessor
+@inject INotificationListData _notifications
+
+
+<h4>Current User: @UserName</h4>
+
+
+@if (notifications is null)@* if (people is null)*@
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Notification ID Number</th>
+                <th>Account Number</th>
+                <th>Message</th>
+                <th>Notification Type (number)</th>
+                <th>Date and Time of Notification</th>
+                <th>Read or Not Read</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var row in notifications)
+            {
+                <tr>
+                    <td>@row.Notification_ID</td>
+                    <td>@row.Account_Num</td>
+                    <td>@row.Message</td>
+                    <td>@row.Notification_Type</td>
+                    <td>@row.Date</td>
+                    <td>@row.Read</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+    private List<NotificationListModel> notifications;
+
+    public string UserName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+
+        //notifications = await _notifications.GetNotifications(UserName);                // Getting all Notifcations
+        notifications = await _notifications.GetNotificationsUnread(UserName);        // Getting UNREAD Notifications
+    }
+
+
+
+}

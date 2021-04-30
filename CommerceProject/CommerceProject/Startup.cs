@@ -53,6 +53,7 @@ namespace CommerceProject
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();         // see one line above -(you guessed it...) Thomas
             services.AddTransient<ITransactionData, TransactionData>();
             services.AddTransient<IAccountHolderData, AccountHolderData>();
+            services.AddTransient<INotificationListData, NotificationListData>();
             services
               .AddBlazorise(options =>
               {

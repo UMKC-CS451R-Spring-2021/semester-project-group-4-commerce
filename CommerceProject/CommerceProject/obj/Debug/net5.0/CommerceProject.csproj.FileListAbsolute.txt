@@ -1312,3 +1312,5 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerceFINAL3\CommerceProj
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ChangePassword.cshtml.g.cs
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\TableDependency.SqlClient.dll
 G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ChangePassword.cshtml.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\TestNotifications.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TestNotifications.razor.g.cs
