@@ -8,6 +8,7 @@
 @inject IPeopleData _db
 @inject IHttpContextAccessor httpContextAccessor
 @inject ITransactionData _trans
+
 <style>
     body {
         background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
@@ -35,77 +36,63 @@ else
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered">
 
-                <!-- Modal content-->
+                @*<--Modal content-->*@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Add New Transaction</h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
 
-                    <EditForm Model="@newTransaction" OnValidSubmit="@InsertTrans">
-                        <DataAnnotationsValidator />
-                        <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         @*conflicting tags, specify which component to use*@
+                    <div class="modal-body">
+                        <div class="form">
+                            <EditForm Model="@newTransaction" OnValidSubmit="@InsertTrans">
+                                <DataAnnotationsValidator />
+                                <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         @*conflicting tags, specify which component to use*@
 
-                        <InputNumber id="Amount" @bind-Value="newTransaction.Amount" />
-                        <InputSelect id="Type" @bind-Value="newTransaction.Type">
-                            <option value="@depositValue">Deposit</option>                     @*to use strings for option values, make private variables in the code section*@
-                            <option value="@withdrawalValue">Withdrawal</option>
-                        </InputSelect>
-                        <InputText id="Description" @bind-Value="newTransaction.Description" />
-                        <InputText id="Location" @bind-Value="newTransaction.Location" />
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </EditForm>
-
-
-
-                    @*<div class="modal-body">
-                            <div class="form-row">
-                                <EditForm Model="@newTransaction" OnValidSubmit="@InsertTrans">
-                                    <DataAnnotationsValidator />
-                                    <Microsoft.AspNetCore.Components.Forms.ValidationSummary />         conflicting tags, specify which component to use
-
-                                    <div class="form-group">
-                                        <label for="Amount" class="col-form-label">Amount</label>
-                                        <div></div>
+                                <div class="form-group">
+                                    <label for="Amount" class="col-form-label">Amount:</label>
+                                    <div>
                                         <InputNumber id="Amount" @bind-Value="newTransaction.Amount" />
                                         <InputSelect id="Type" @bind-Value="newTransaction.Type">
-                                            <option value="@depositValue">Deposit</option>                   to use strings for option values, make private variables in the code section
+                                            <option value="@depositValue">Deposit</option>                   @*to use strings for option values, make private variables in the code section*@
                                             <option value="@withdrawalValue">Withdrawal</option>
                                         </InputSelect>
                                     </div>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="Description" class="col-form-label">Description</label>
-                                        <div></div>
+                                <div class="form-group">
+                                    <label for="Description" class="col-form-label">Description:</label>
+                                    <div>
                                         <InputText id="Description" @bind-Value="newTransaction.Description" />
                                     </div>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="Location" class="col-form-label">Location</label>
-                                        <div></div>
+                                <div class="form-group">
+                                    <label for="Location" class="col-form-label">Location:</label>
+                                    <div>
                                         <InputText id="Location" @bind-Value="newTransaction.Location" />
                                     </div>
-                                </EditForm>
-                            </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-info add-new">Submit</button>
+                                </div>
+                            </EditForm>
+                        </div>
 
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-info add-new" @onclick="@(() => toastService.ShowSuccess("Transaction added"))">Submit</button>
-                            </div>
-                        </div>*@
+                    </div>
                 </div>
-
             </div>
         </div>
 
+        @*<--Table content-->*@
         <div class="table-responsive-sm">
             <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
                 <thead>
                     <tr>
                         <th>Date</th>
                         <th>Description</th>
-                        <th>Amount</th>
-                        <th>Balance</th>
+                        <th class="alnright">Amount</th>
+                        <th class="alnright">Balance</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -116,8 +103,8 @@ else
                         <tr data-toggle="collapse" data-target=".data_@i">
                             <td>@row.Processing_Date</td>
                             <td>@row.Description</td>
-                            <td>@row.Amount</td>
-                            <td>@(row.Balance)</td>
+                            <td class="alnright">$@row.Amount</td>
+                            <td class="alnright">$@(row.Balance)</td>
 
                         </tr>
                         <tr class="tableRowHoverOff noBorder">

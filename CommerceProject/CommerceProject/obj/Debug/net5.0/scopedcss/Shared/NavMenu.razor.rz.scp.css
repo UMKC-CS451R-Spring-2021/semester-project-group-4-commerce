@@ -89,12 +89,32 @@ li[b-q9fo7l4ayw] {
 
 
     .btn:hover[b-q9fo7l4ayw] {
-        background-color: #000000
+        background-color: #000000;
     }
 
     .btn:active[b-q9fo7l4ayw], .btn:focus[b-q9fo7l4ayw] {
-        background-color: #000000
+        background-color: #000000;
     }
+
+
+.submit[b-q9fo7l4ayw] {
+    font-family: Poppins;
+    color: #FFFFFF;
+    background-color: #006747;
+}
+
+    .submit:focus[b-q9fo7l4ayw], .btn:active[b-q9fo7l4ayw] {
+        box-shadow: none;
+        outline: 0 !important;
+        color: #FFFFFF;
+    }
+
+    .submit:hover[b-q9fo7l4ayw], .btn:active[b-q9fo7l4ayw] {
+        box-shadow: none;
+        outline: 0 !important;
+        color: #FFFFFF;
+    }
+
 
 
 

@@ -89,12 +89,32 @@ li {
 
 
     .btn:hover {
-        background-color: #000000
+        background-color: #000000;
     }
 
     .btn:active, .btn:focus {
-        background-color: #000000
+        background-color: #000000;
     }
+
+
+.submit {
+    font-family: Poppins;
+    color: #FFFFFF;
+    background-color: #006747;
+}
+
+    .submit:focus, .btn:active {
+        box-shadow: none;
+        outline: 0 !important;
+        color: #FFFFFF;
+    }
+
+    .submit:hover, .btn:active {
+        box-shadow: none;
+        outline: 0 !important;
+        color: #FFFFFF;
+    }
+
 
 
 
