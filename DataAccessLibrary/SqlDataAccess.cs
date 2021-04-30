@@ -42,5 +42,15 @@ namespace DataAccessLibrary
                 await connection.ExecuteAsync(sql, parameters);
             }
         }
+
+        public async Task ExecuteSql(string sql)
+        {
+            string connectionString = _config.GetConnectionString(ConnectionStringName);
+
+            using (IDbConnection connection = new SqlConnection(connectionString))
+            {
+                await connection.ExecuteAsync(sql);
+            }
+        }
     }
 }

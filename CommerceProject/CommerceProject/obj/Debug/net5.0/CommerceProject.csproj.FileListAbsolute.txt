@@ -1536,3 +1536,5 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\CommerceProj
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\TestNotifications.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TestNotifications.razor.g.cs

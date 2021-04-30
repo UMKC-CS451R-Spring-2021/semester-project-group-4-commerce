@@ -35,5 +35,14 @@ namespace DataAccessLibrary
 
             return _db.LoadData<NotificationListModel, dynamic>(sql, new { });
         }
+
+        public Task SetReadToTrue(int Notification_ID)
+        {
+            string sql = @"UPDATE notificationList
+                            SET [Read] = 'true'
+                            WHERE Notification_ID = " + Notification_ID + ";";
+
+            return _db.ExecuteSql(sql);
+        }
     }
 }

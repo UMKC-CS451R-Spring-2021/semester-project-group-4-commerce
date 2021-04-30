@@ -8,5 +8,7 @@ namespace DataAccessLibrary
     {
         Task<List<NotificationListModel>> GetNotifications(string UserName);
         Task<List<NotificationListModel>> GetNotificationsUnread(string UserName);
+        Task SetReadToTrue(int Notification_ID);
+
     }
 }

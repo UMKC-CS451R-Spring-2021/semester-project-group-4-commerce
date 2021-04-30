@@ -40,6 +40,9 @@ else
                     <td>@row.Notification_Type</td>
                     <td>@row.Date</td>
                     <td>@row.Read</td>
+                    <td>
+                        <button type="button" @onclick="@(e => SetReadToTrue(row.Notification_ID))">Dismiss</button>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -60,6 +63,9 @@ else
         notifications = await _notifications.GetNotificationsUnread(UserName);        // Getting UNREAD Notifications
     }
 
-
+    private async Task SetReadToTrue(int notificationID)
+    {
+        await _notifications.SetReadToTrue(notificationID);
+    }
 
 }
