@@ -1,3 +1,12 @@
+@using CommerceProject.Services
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
+@using Microsoft.AspNetCore.Http
+
+@inject TriggeredNotificationBroadcastService NotificationService
+@inject INotificationListData _NotificationList
+@inject IHttpContextAccessor httpContextAccessor
+
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -20,10 +29,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/settings">Settings</a>
                 </li>
-
+                @if (unreadNotifications is null)
+                {
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i> </a>
+                }
+                else
+                {
                 @* NAVBAR NOTIFICATIO DROPDOWN MENU *@
                 <li class="nav-item-notif dropdown mr-3">
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i> <span class="badge rounded-pill badge-notification bg-danger">3</span></a>
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i> <span class="badge rounded-pill badge-notification bg-danger">@num_unread_notifs</span></a>
                     <ul class="dropdown-menu">
                         <li class="head text-white">
                             <div class="row">
@@ -33,57 +47,101 @@
                                 </div>
                             </div>
                         </li>
-
-                        <li class="notification-box">
-                            <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-1 text-center">
-                                </div>
-                                <div class="col-lg-10 col-sm-10 col-10">
-                                    <strong class="text-info">Location</strong>
-                                    <div>
-                                        Transaction in Rhode Island
+                        @foreach (var row in unreadNotifications)
+                        {
+                            <li class="notification-box">
+                                <div class="row">
+                                    <div class="col-lg-1 col-sm-1 col-1 text-center">
                                     </div>
-                                    <small class="text">DATE, TIME</small>
-                                </div>
-                            </div>
-                            <div class="dropdown-divider" style="border-color:grey;"></div>
-                        </li>
-                        <li class="notification-box">
-                            <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-1 text-center">
-                                </div>
-                                <div class="col-lg-10 col-sm-10 col-10">
-                                    <strong class="text-info">Overdraft</strong>
-                                    <div>
-                                        Overdraft by 100000$
+                                    <div class="col-lg-10 col-sm-10 col-10">
+                                        <strong class="text-info">@getNotificationType(row)</strong>
+                                        <div>
+                                            @row.Message
+                                        </div>
+                                        <small class="text">@row.Date.ToString("MM/dd/yyyy"), @row.Date.ToString("h:mm tt")</small>
                                     </div>
-                                    <small class="text">1/1/1, 3:00a.m.</small>
                                 </div>
-                            </div>
-                            <div class="dropdown-divider" style="border-color:grey;"></div>
-                        </li>
-                        <li class="notification-box">
-                            <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-1 text-center">
-                                </div>
-                                <div class="col-lg-10 col-sm-10 col-10">
-                                    <strong class="text-info">Time</strong>
-                                    <div>
-                                        Transaction at 2:00p.m.
-                                    </div>
-                                    <small class="text">4/26/2021, 2:00p.m.</small>
-                                </div>
-                            </div>
-                        </li>
+                                <div class="dropdown-divider" style="border-color:grey;"></div>
+                            </li>
+                        }
                         <li class="footer bg-dark text-center">
                             <a href="" class="text-white">Clear</a>
                         </li>
                     </ul>
                 </li>
+                }
             </ul>
-                <form method="post" action="Identity/Account/LogOut">
-                    <button type="submit" class="submit nav-link btn btn-link">Sign out</button>
-                </form>
+            <form method="post" action="Identity/Account/LogOut">
+                <button type="submit" class="submit nav-link btn btn-link">Sign out</button>
+            </form>
         </div>
     </div>
 </nav>
+
+@code {
+    private List<NotificationListModel> unreadNotifications;
+    public string UserName;
+    public int num_unread_notifs;
+
+
+    protected override void OnInitialized()
+    {
+        this.NotificationService.OnTriggeredNotification += this.TriggeredNotification;  //prepare to listen for new notifications
+
+    }
+
+
+    //populate bell notifications
+    protected override async Task OnInitializedAsync()
+    {
+
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        unreadNotifications = await _NotificationList.GetNotificationsUnread(UserName); // get current user's unread notifs
+
+        num_unread_notifs = unreadNotifications.Count;
+    }
+
+
+    public async void TriggeredNotification(NotificationListModel triggeredNotification)
+    {
+        unreadNotifications = await _NotificationList.GetNotificationsUnread(UserName); // get current user's unread notifs
+
+        num_unread_notifs = unreadNotifications.Count;
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
+    }
+
+    public string getNotificationType(NotificationListModel notification)
+    {
+        string not_type = "";
+
+        switch(notification.Notification_Type)
+        {
+            case 1:
+                not_type = "Timeframe Alert";
+                break;
+            case 2:
+                not_type = "Transaction Alert";
+                break;
+            case 3:
+                not_type = "Low Balance Alert";
+                break;
+            case 4:
+                not_type = "Overdraft Alert";
+                break;
+        }
+
+        return not_type;
+    }
+
+
+    public void Dispose()
+    {
+        this.NotificationService.OnTriggeredNotification -= this.TriggeredNotification;
+    }
+
+}
