@@ -37,14 +37,10 @@
                 <div class="float-child">
                     <p>Select Start Range</p>
                     <DateEdit TValue="DateTime?" @bind-Date="@selectedStartDate" />
-                    <TimeEdit TValue="TimeSpan?" @bind-Time="@selectedStartTime" />
-                    <p>Ex. 02:35 AM</p>
                 </div>
                 <div class="float-child">
                     <p>Select End Range</p>
-                    <DateEdit TValue="DateTime?" @bind-Date="@selectedEndDate" />
-                    <TimeEdit TValue="TimeSpan?" @bind-Time="@selectedEndTime" />
-                    <p>Ex. 10:42 PM</p>
+                    <DateEdit Min=@selectedStartDate TValue="DateTime?" @bind-Date="@selectedEndDate" />
                 </div>
             </div>
             @if (notifications is null)@* if (people is null)*@
