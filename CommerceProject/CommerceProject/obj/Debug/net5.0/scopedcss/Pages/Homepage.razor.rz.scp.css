@@ -1,3 +1,9 @@
 .bg-light[b-vbz074av8t] {
     background-color: #F3F1EE !important;
 }
+
+.float-child[b-vbz074av8t] {
+    width: 50%;
+    float: left;
+    padding: 20px;
+} 

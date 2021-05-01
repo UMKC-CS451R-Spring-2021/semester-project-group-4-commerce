@@ -4,6 +4,12 @@
 .bg-light[b-vbz074av8t] {
     background-color: #F3F1EE !important;
 }
+
+.float-child[b-vbz074av8t] {
+    width: 50%;
+    float: left;
+    padding: 20px;
+} 
 /* _content/CommerceProject/Pages/Settings.razor.rz.scp.css */
 body[b-0ixdshmtmn] {
     margin-top: 20px;
