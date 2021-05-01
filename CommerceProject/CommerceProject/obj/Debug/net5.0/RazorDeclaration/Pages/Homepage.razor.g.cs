@@ -124,6 +124,20 @@ using Microsoft.AspNetCore.Http;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+using DataAccessLibrary;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+using DataAccessLibrary.Models;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
     public partial class Homepage : Microsoft.AspNetCore.Components.ComponentBase, IDisposable
     {
@@ -133,7 +147,7 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 49 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 93 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     LineChart<decimal> lineChart;
 
@@ -326,10 +340,53 @@ using Microsoft.AspNetCore.Http;
         this.BalanceService.OnBalanceChanged += this.BalanceChanged;
     }
 
+
+    private List<NotificationListModel> notifications;
+    public string UserName;
+
+    //populate notifications
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        notifications = await _NotificationList.GetNotifications(UserName); // get current user's unread notifs
+    }
+
+    public string getNotificationType(NotificationListModel notification)
+    {
+        string not_type = "";
+
+        switch (notification.Notification_Type)
+        {
+            case 1:
+                not_type = "Timeframe Alert";
+                break;
+            case 2:
+                not_type = "Transaction Alert";
+                break;
+            case 3:
+                not_type = "Low Balance Alert";
+                break;
+            case 4:
+                not_type = "Overdraft Alert";
+                break;
+        }
+
+        return not_type;
+    }
+
+    TimeSpan? selectedStartTime;
+    DateTime? selectedStartDate;
+
+    TimeSpan? selectedEndTime;
+    DateTime? selectedEndDate;
+
+
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITableChangeBroadcastService BalanceService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private INotificationListData _NotificationList { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IEmailSender _emailSender { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private GetTransactionData TransactionData { get; set; }

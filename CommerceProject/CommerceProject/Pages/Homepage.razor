@@ -4,10 +4,13 @@
 @using CommerceProject.Services
 @using Microsoft.AspNetCore.Identity.UI.Services;
 @using Microsoft.AspNetCore.Http
+@using DataAccessLibrary
+@using DataAccessLibrary.Models
 
 @inject GetTransactionData TransactionData
 @inject IEmailSender _emailSender
 @inject IHttpContextAccessor httpContextAccessor
+@inject INotificationListData _NotificationList
 @inject ITableChangeBroadcastService BalanceService
 @implements IDisposable
 
@@ -28,9 +31,50 @@
     <div class="col-sm-8">
         <div class="container mt-1 bg-light float-left" style="border:1px solid #cecece">
             <h2>
-                Dashboard
+                Notifications
             </h2>
-            This is where triggered notifications go
+            <div>
+                <div class="float-child">
+                    <p>Select Start Range</p>
+                    <DateEdit TValue="DateTime?" @bind-Date="@selectedStartDate" />
+                    <TimeEdit TValue="TimeSpan?" @bind-Time="@selectedStartTime" />
+                    <p>Ex. 02:35 AM</p>
+                </div>
+                <div class="float-child">
+                    <p>Select End Range</p>
+                    <DateEdit TValue="DateTime?" @bind-Date="@selectedEndDate" />
+                    <TimeEdit TValue="TimeSpan?" @bind-Time="@selectedEndTime" />
+                    <p>Ex. 10:42 PM</p>
+                </div>
+            </div>
+            @if (notifications is null)@* if (people is null)*@
+            {
+                <p><em>Loading...</em></p>
+            }
+            else
+            {
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Notification Type</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var row in notifications)
+                        {
+                            <tr>
+                                <td>@row.Date.ToString("MM/dd/yyyy")</td>
+                                <td>@row.Date.ToString("h:mm tt")</td>
+                                <td>@getNotificationType(row)</td>
+                                <td>@row.Message</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
             <p class="text-right">Export to spreadsheet goes here</p>
         </div>
     </div>
@@ -237,4 +281,46 @@
     {
         this.BalanceService.OnBalanceChanged += this.BalanceChanged;
     }
+
+
+    private List<NotificationListModel> notifications;
+    public string UserName;
+
+    //populate notifications
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        notifications = await _NotificationList.GetNotifications(UserName); // get current user's unread notifs
+    }
+
+    public string getNotificationType(NotificationListModel notification)
+    {
+        string not_type = "";
+
+        switch (notification.Notification_Type)
+        {
+            case 1:
+                not_type = "Timeframe Alert";
+                break;
+            case 2:
+                not_type = "Transaction Alert";
+                break;
+            case 3:
+                not_type = "Low Balance Alert";
+                break;
+            case 4:
+                not_type = "Overdraft Alert";
+                break;
+        }
+
+        return not_type;
+    }
+
+    TimeSpan? selectedStartTime;
+    DateTime? selectedStartDate;
+
+    TimeSpan? selectedEndTime;
+    DateTime? selectedEndDate;
+
 }
