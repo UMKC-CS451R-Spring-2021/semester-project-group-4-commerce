@@ -147,7 +147,7 @@ using DataAccessLibrary.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 93 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 89 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     LineChart<decimal> lineChart;
 
@@ -375,10 +375,7 @@ using DataAccessLibrary.Models;
         return not_type;
     }
 
-    TimeSpan? selectedStartTime;
     DateTime? selectedStartDate;
-
-    TimeSpan? selectedEndTime;
     DateTime? selectedEndDate;
 
 
