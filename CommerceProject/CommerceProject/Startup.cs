@@ -66,6 +66,7 @@ namespace CommerceProject
             services.Configure<AuthMessageSenderOptions>(Configuration);    // used for sending emails - Shelby
 
             services.AddSingleton<ITableChangeBroadcastService, TableChangeBroadcastService>();  // used for monitoring changes in DB - Shelby
+            services.AddSingleton<TriggeredNotificationBroadcastService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
