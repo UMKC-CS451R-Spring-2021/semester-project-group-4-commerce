@@ -132,7 +132,7 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 81 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Shared\NavMenu.razor"
+#line 88 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Shared\NavMenu.razor"
        
     private List<NotificationListModel> unreadNotifications;
     public string UserName;
@@ -191,6 +191,23 @@ using Microsoft.AspNetCore.Http;
         }
 
         return not_type;
+    }
+
+    public async void clearNewNotifications()
+    {
+        foreach (NotificationListModel curr_notification in unreadNotifications)
+        {
+            await _NotificationList.SetReadToTrue(curr_notification.Notification_ID);
+        }
+
+        unreadNotifications = await _NotificationList.GetNotificationsUnread(UserName); // get current user's unread notifs
+
+        num_unread_notifs = unreadNotifications.Count;
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
     }
 
 
