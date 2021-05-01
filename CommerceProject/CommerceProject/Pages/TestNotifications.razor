@@ -31,6 +31,7 @@ else
             </tr>
         </thead>
         <tbody>
+            @{int i = 0;}
             @foreach (var row in notifications)
             {
                 <tr>
@@ -41,14 +42,15 @@ else
                     <td>@row.Date</td>
                     <td>@row.Read</td>
                     <td>
-                        <button type="button" @onclick="@(e => SetReadToTrue(row.Notification_ID))">Dismiss</button>
+                        <button type="button" @onclick="@(e => SetReadToTrue(row))">Dismiss</button>
                     </td>
                 </tr>
+                i++;
             }
         </tbody>
     </table>
 }
-
+@*@(e => SetReadToTrue(row))*@
 
 @code {
     private List<NotificationListModel> notifications;
@@ -59,13 +61,47 @@ else
     {
         UserName = httpContextAccessor.HttpContext.User.Identity.Name;
 
-        //notifications = await _notifications.GetNotifications(UserName);                // Getting all Notifcations
-        notifications = await _notifications.GetNotificationsUnread(UserName);        // Getting UNREAD Notifications
+        string StartDate = "4/29/2021";     // for testing, 
+        string StopDate = "4/30/2021";
+
+        //notifications = await _notifications.GetNotifications(UserName);              // Getting all Notifcations
+        //notifications = await _notifications.GetNotificationsUnread(UserName);        // Getting UNREAD Notifications
+        notifications = await _notifications.GetNotificationsByDates(UserName, StartDate, StopDate);       // Get Notifications by date range
     }
 
-    private async Task SetReadToTrue(int notificationID)
+    private async Task SetReadToTrue(NotificationListModel row)
     {
-        await _notifications.SetReadToTrue(notificationID);
+        //notifications.RemoveAt(row.Account_Num);                   // remember index starts at 0
+        await _notifications.SetReadToTrue(row.Notification_ID);
     }
+
+    private async Task SetParameters(bool setTimeframe, string startTime, string endTime, 
+                                    bool withdrawalFlag, decimal withdrawalAmount, bool lowBalanceFlag, 
+                                    decimal balanceThresh, bool EmailNoteFlag)
+    {
+            // For testing purposes
+        //setTimeframe = false;
+        //startTime = "5/1/2021 5:00:00.0"; // idk what the DateTime structure is, but Sql reads it as a string
+        //endTime = "1/1/1900 13:00:00.0";   // day and year wont matter
+        //withdrawalFlag = false;
+        //withdrawalAmount = 200.00M;
+        //lowBalanceFlag = false;
+        //balanceThresh = 200.00M;
+        //EmailNoteFlag = false;
+
+        // first arg (parameter) is username - used to get account num
+        await _notifications.SetParameters(UserName, setTimeframe, startTime, endTime, withdrawalFlag,
+            withdrawalAmount, lowBalanceFlag, balanceThresh, EmailNoteFlag);
+    }
+
+    //private NotificationListModel test(NotificationListModel rowObject, int rowNum)
+    //{
+    //    rowObject.Account_Num = rowNum;
+
+    //    return rowObject;
+    //}
+
+    // Will set correct notification's Read flag to true, but will not remove correct row from table
+    // need some front end feedback from clicking button.
 
 }
