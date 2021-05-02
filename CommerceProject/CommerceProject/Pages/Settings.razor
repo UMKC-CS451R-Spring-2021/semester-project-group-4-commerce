@@ -76,165 +76,57 @@
                             <label for="State">State</label>
                             <input type="text" class="form-control" id="State" placeholder="Enter your State" @bind-value=nametochange.state>
                         </div>
+                        <hr>
                         <button type="button" class="btn btn-primary" @onclick="UpdateInfo">Submit</button>
-                        <button type="reset" class="btn btn-light">Reset Changes</button>
                     </form>
                 </div>
 
                 <div class="tab-pane" id="security">
                     <h6>SECURITY SETTINGS</h6>
-                    <hr class="red">
+                    <hr>
                     <form>
                         <button type="button" class="btn btn-primary" @onclick="toChangePassword">Change password</button>
                     </form>
                     <hr />
-                    <form>
-                        <div class="form-group">
-                            <label class="d-block mb-0">Security Alerts</label>
-                            <div class="small text-muted mb-3">Receive notifications via email</div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck1" checked="">
-                                <label class="custom-control-label" for="customCheck1">Email each time a notification is triggered</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck2" checked="">
-                                <label class="custom-control-label" for="customCheck2">Send SMS each time a notification is triggered</label>
-                            </div>
-
-                        </div>
-
-                        <div class="form-group mb-0">
-                            <label class="d-block">Notifications</label>
-                            <ul class="list-group list-group-sm">
-                                <li class="list-group-item has-icon">
-                                    Time-frame
-                                    <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked="">
-                                        <label class="custom-control-label" for="customSwitch1"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item has-icon">
-                                    Overdraft
-                                    <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                        <label class="custom-control-label" for="customSwitch2"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item has-icon">
-                                    Out of state
-                                    <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked="">
-                                        <label class="custom-control-label" for="customSwitch3"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item has-icon">
-                                    Test4
-                                    <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked="">
-                                        <label class="custom-control-label" for="customSwitch4"></label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item has-icon">
-                                    Test5
-                                    <div class="custom-control custom-control-nolabel custom-switch ml-auto">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch5">
-                                        <label class="custom-control-label" for="customSwitch5"></label>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </form>
-
                 </div>
+
                 <div class="tab-pane" id="notification">
                     <h6>NOTIFICATION SETTINGS</h6>
                     <hr>
-                    <div class="container">
-                        <div class="table-wrapper">
-                            <div class="table-title">
-                                <div class="row">
-                                    <div class="col-sm-8"><h2>Notifications List</h2></div>
-                                    <div class="col-sm-4">
-                                        <button type="button" class="btn btn-info add-new" data-toggle="modal" data-target="#myModal">
-                                            <i class="fa fa-plus"></i>
-                                            Add New
-                                        </button>
-                                    </div>
+                    <div class="card-body">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck2" checked="">
+                            <label class="custom-control-label" for="customCheck2">
+                                <h2>Account Balance</h2>
+                            </label>
+                            <div> Notify me when a my account balance is below:</div>
+                            <div>[]</div>
+                        </div>
 
-                                    <div id="myModal" class="modal fade" role="dialog">
-                                        <div class="modal-dialog modal-dialog-centered">
+                        <div class="custom-control custom-checkbox mt-5">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck1" checked="">
+                            <label class="custom-control-label" for="customCheck1">
+                                <h2>Time notification</h2>
+                            </label>
+                            <div> Notify me when a transaction is made between:</div>
+                            <div>[] and []</div>
+                        </div>
 
-                                            <!-- Modal content-->
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Add Notification</h4>
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <div class="form-row">
-                                                        <label class="control-label" for="type">
-                                                            <select name="selections" id="select" class="select form-control">
-                                                                <option selected>Choose type</option>
-                                                                <option value="1">Time</option>
-                                                                <option value="2">Overdraft</option>
-                                                                <option value="3">Location</option>
-                                                            </select>
-                                                        </label>
-
-                                                        <label class="control-label col-md-8" for="size">
-                                                            <input type="text" class="form-control ml-3 col-md-8" id="size" name="size" placeholder="Description">
-                                                        </label>
-
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-info add-new" data-dismiss="modal">Add</button>
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Type</th>
-                                        <th>Description</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Overdraft</td>
-                                        <td>$1000000000000</td>
-                                        <td>
-                                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-pen"></i></a>
-                                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Time</td>
-                                        <td>00:50 - 4:30</td>
-                                        <td>
-                                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-pen"></i></a>
-                                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Location</td>
-                                        <td>Topeka, Kansas</td>
-                                        <td>
-                                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-pen"></i></a>
-                                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="custom-control custom-checkbox mt-5">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck3" checked="">
+                            <label class="custom-control-label" for="customCheck3">
+                                <h2>Transaction amount</h2>
+                                <div> Notify me when a transaction exceeds:</div>
+                                <div>[]</div>
+                            </label>
+                        </div>
+                        <div class="custom-control custom-checkbox mt-5">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck4" checked="">
+                            <label class="custom-control-label" for="customCheck4">Email me each time a notification is triggered</label>
                         </div>
                     </div>
+                    <hr>
+                    <button type="button" class="btn btn-primary">Submit</button>
 
                 </div>
             </div>
@@ -243,6 +135,8 @@
 </div>
 
 @code{
+
+
     AccountHolderModel nametochange = new AccountHolderModel();
     private string email;
     protected Task UpdateInfo()
@@ -256,4 +150,6 @@
     {
         UriHelper.NavigateTo("Identity/Account/ChangePassword", true);
     }
+
+
 }

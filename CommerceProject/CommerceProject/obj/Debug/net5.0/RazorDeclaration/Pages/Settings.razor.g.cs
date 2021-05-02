@@ -126,8 +126,10 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 245 "C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\CommerceProject\CommerceProject\Pages\Settings.razor"
+#line 137 "C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\CommerceProject\CommerceProject\Pages\Settings.razor"
       
+
+
     AccountHolderModel nametochange = new AccountHolderModel();
     private string email;
     protected Task UpdateInfo()
@@ -141,6 +143,8 @@ using Microsoft.AspNetCore.Http;
     {
         UriHelper.NavigateTo("Identity/Account/ChangePassword", true);
     }
+
+
 
 #line default
 #line hidden
