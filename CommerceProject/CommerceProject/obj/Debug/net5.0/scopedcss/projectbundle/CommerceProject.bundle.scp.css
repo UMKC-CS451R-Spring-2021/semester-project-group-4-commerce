@@ -481,7 +481,6 @@ li[b-q9fo7l4ayw] {
 }
 
 .footer[b-q9fo7l4ayw] {
-    padding: 5px 15px;
     border-radius: 0px 0px 3px 3px;
     background-color: #4FA800 !important;
 }
@@ -521,6 +520,8 @@ li[b-q9fo7l4ayw] {
 
     .btn:active[b-q9fo7l4ayw], .btn:focus[b-q9fo7l4ayw] {
         background-color: #000000;
+        outline: none;
+        box-shadow: none;
     }
 
 
