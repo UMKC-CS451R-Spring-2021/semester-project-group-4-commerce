@@ -24,13 +24,7 @@
         min-height: 500px;
         background-attachment: fixed;
     }
-
-    .spreadsheet_button{
-
-    }
 </style>
-
-@*<h4>Welcome @UserName !</h4>*@
 
 <div class="row mt-3">
     <div class="col-sm-8">
@@ -38,6 +32,7 @@
             <h2>
                 Notifications
             </h2>
+            <h6 onclick=@FilterNotificationsByDate()>Filter</h6>
             <div>
                 <div class="float-child">
                     <p>Select Start Range</p>
@@ -48,6 +43,7 @@
                     <DateEdit Min=@selectedStartDate TValue="DateTime?" @bind-Date="@selectedEndDate" />
                 </div>
             </div>
+
             @if (notifications is null)@* if (people is null)*@
             {
                 <p><em>Loading...</em></p>
@@ -76,12 +72,12 @@
                     </tbody>
                 </table>
             }
-            <button type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export to spreadsheet</button>
+            <button class="btn" type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export to spreadsheet</button>
         </div>
     </div>
     <div class="col-sm-4">
         <div class="container bg-light sticky-top mt-1" style="border:1px solid #cecece">
-            <h2> Graph </h2>
+            <h2> Account Balance </h2>
             <Button Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
             <Button Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
             <div class="card mb-3" style="border:1px solid #cecece">
@@ -320,6 +316,21 @@
 
     DateTime? selectedStartDate;
     DateTime? selectedEndDate;
+
+
+    public async Task FilterNotificationsByDate()
+    {
+        DateTime start = selectedStartDate ?? DateTime.Parse("Jan 1, 20015");
+        DateTime end = selectedEndDate ?? DateTime.Now;
+
+        notifications = await _NotificationList.GetNotificationsByDates(UserName, start.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
+    }
+
 
     public async void savespreadsheet()
     {

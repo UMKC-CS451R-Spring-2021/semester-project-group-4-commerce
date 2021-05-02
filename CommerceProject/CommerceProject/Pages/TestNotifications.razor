@@ -49,11 +49,26 @@ else
             }
         </tbody>
     </table>
+    @if (settings is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        @foreach (var row in settings)
+        {
+            <p>@row.Begin_Time </p>
+            <p>@row.End_Time </p>
+            <p>@row.Low_Balance_Threshold </p>
+            <p>@row.Withdrawal_Amount </p>
+        }
+    }
 }
 @*@(e => SetReadToTrue(row))*@
 
 @code {
     private List<NotificationListModel> notifications;
+    private List<NotificationParamsModel> settings;
 
     public string UserName;
 
@@ -61,12 +76,13 @@ else
     {
         UserName = httpContextAccessor.HttpContext.User.Identity.Name;
 
-        string StartDate = "4/29/2021";     // for testing, 
+        string StartDate = "4/29/2021";     // for testing,
         string StopDate = "4/30/2021";
 
         //notifications = await _notifications.GetNotifications(UserName);              // Getting all Notifcations
         //notifications = await _notifications.GetNotificationsUnread(UserName);        // Getting UNREAD Notifications
         notifications = await _notifications.GetNotificationsByDates(UserName, StartDate, StopDate);       // Get Notifications by date range
+        settings = await _notifications.GetNotificationSettings(UserName);
     }
 
     private async Task SetReadToTrue(NotificationListModel row)
@@ -75,11 +91,11 @@ else
         await _notifications.SetReadToTrue(row.Notification_ID);
     }
 
-    private async Task SetParameters(bool setTimeframe, string startTime, string endTime, 
-                                    bool withdrawalFlag, decimal withdrawalAmount, bool lowBalanceFlag, 
+    private async Task SetParameters(bool setTimeframe, string startTime, string endTime,
+                                    bool withdrawalFlag, decimal withdrawalAmount, bool lowBalanceFlag,
                                     decimal balanceThresh, bool EmailNoteFlag)
     {
-            // For testing purposes
+        // For testing purposes
         //setTimeframe = false;
         //startTime = "5/1/2021 5:00:00.0"; // idk what the DateTime structure is, but Sql reads it as a string
         //endTime = "1/1/1900 13:00:00.0";   // day and year wont matter

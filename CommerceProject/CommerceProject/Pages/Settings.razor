@@ -5,6 +5,7 @@
 @inject IHttpContextAccessor httpContextAccessor
 @inject IAccountHolderData _acc
 @inject NavigationManager UriHelper
+@inject INotificationListData _Notifications
 
 
     <style>
@@ -95,39 +96,45 @@
                     <hr>
                     <div class="card-body">
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck2" checked="">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck2" checked="@lowBalanceIsOn" @bind-value="@lowBalanceIsOn">
                             <label class="custom-control-label" for="customCheck2">
                                 <h2>Account Balance</h2>
                             </label>
-                            <div> Notify me when a my account balance is below:</div>
-                            <div>[]</div>
+                            <div>
+                                Notify me when a my account balance is below:
+                                <NumericEdit TValue="decimal?" @bind-Value="@min_balance" Placeholder="@current_min_balance"/>
+                            </div>
                         </div>
 
                         <div class="custom-control custom-checkbox mt-5">
-                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck1" checked="">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck1" checked="@timeIsOn" @bind-value="@timeIsOn">
                             <label class="custom-control-label" for="customCheck1">
                                 <h2>Time notification</h2>
                             </label>
-                            <div> Notify me when a transaction is made between:</div>
-                            <div>[] and []</div>
+                            <div>
+                                Notify me when a transaction is made between:
+                                <TimeEdit TValue="TimeSpan?" @bind-Time="@startTime" value="@current_start"/>
+                                <TimeEdit TValue="TimeSpan?" @bind-Time="@endTime" value="@current_end"/>
+                            </div>
                         </div>
 
                         <div class="custom-control custom-checkbox mt-5">
-                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck3" checked="">
+                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck3" checked="@withdrawalIsOn" @bind-value="@withdrawalIsOn">
                             <label class="custom-control-label" for="customCheck3">
                                 <h2>Transaction amount</h2>
-                                <div> Notify me when a transaction exceeds:</div>
-                                <div>[]</div>
+                                <div>
+                                    Notify me when a transaction exceeds:
+                                    <NumericEdit TValue="decimal?" @bind-Value="@max_transaction" Placeholder="@current_max_transaction"/>
+                                </div>
                             </label>
                         </div>
                         <div class="custom-control custom-checkbox mt-5">
-                            <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck4" checked="">
+                            <input type="checkbox" checked="@emailNotIsOn" @bind-value="@emailNotIsOn" class="custom-control-input custom-control-input-green" id="customCheck4">
                             <label class="custom-control-label" for="customCheck4">Email me each time a notification is triggered</label>
                         </div>
                     </div>
                     <hr>
-                    <button type="button" class="btn btn-primary">Submit</button>
-
+                    <button type="button" class="btn btn-primary" onclick="@updateNotificationSettings()">Submit</button>
                 </div>
             </div>
         </div>
@@ -149,6 +156,62 @@
     void toChangePassword()
     {
         UriHelper.NavigateTo("Identity/Account/ChangePassword", true);
+    }
+
+    bool withdrawalIsOn = false;
+    bool lowBalanceIsOn = false;
+    bool timeIsOn = false;
+    bool emailNotIsOn = false;
+
+    string current_min_balance = "25.00";
+    string current_max_transaction = "500.00";
+    string current_start = "02:00 AM";
+    string current_end = "06:00 AM";
+
+    public string UserName;
+    private List<NotificationParamsModel> current_settings;
+
+    protected override async Task OnInitializedAsync()
+    {
+        UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+
+        current_settings = await _Notifications.GetNotificationSettings(UserName);
+
+        current_min_balance = current_settings[0].Low_Balance_Threshold.ToString();
+        current_max_transaction = current_settings[0].Withdrawal_Amount.ToString();
+        current_start = current_settings[0].Begin_Time.ToString();
+        current_end = current_settings[0].End_Time.ToString();
+
+        withdrawalIsOn = current_settings[0].Large_Withdrawal_Is_On;
+        lowBalanceIsOn = current_settings[0].Low_Balance_Is_On;
+        timeIsOn = current_settings[0].Timeframe_Is_On;
+        emailNotIsOn = current_settings[0].Send_Email;
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
+    }
+
+
+
+    decimal? min_balance;
+
+    decimal? max_transaction;
+
+    TimeSpan? startTime;
+    TimeSpan? endTime;
+
+
+    private async Task updateNotificationSettings()
+    {
+        decimal min_bal = min_balance ?? 0.00m;
+        decimal max_trans = max_transaction ?? 500.00m;
+        TimeSpan start = startTime ?? TimeSpan.Parse("00:00:00");
+        TimeSpan end = endTime ?? TimeSpan.Parse("04:00:00");
+
+        await _Notifications.SetParameters(UserName, timeIsOn, start.ToString(), end.ToString(), withdrawalIsOn,
+                                           min_bal, lowBalanceIsOn, max_trans, emailNotIsOn);
     }
 
 
