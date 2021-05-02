@@ -11,9 +11,7 @@
 @inject IEmailSender _emailSender
 @inject IHttpContextAccessor httpContextAccessor
 @inject INotificationListData _NotificationList
-@inject ITableChangeBroadcastService BalanceService
 @inject ITransactionData trans
-@implements IDisposable
 
 
 <style>
@@ -246,37 +244,6 @@
     protected override void OnInitialized()
     {
         user_email = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
-
-        // Getting current balance of database to be compared to future values
-        this.BalanceService.OnBalanceChanged += this.BalanceChanged;
-    }
-
-
-    // Event handler to send notification email
-    public void BalanceChanged(object sender, BalanceChangeEventArgs args)
-    {
-        if (args.NewValue.Balance < 25.00)
-        {
-            string subject = "Low Balance Alert";
-            string message = "Your bank balance is less than $25.00.";
-
-            SendEmail(subject, message);
-        }
-
-    }
-
-    public async void SendEmail(string subject, string message)
-    {
-        //send notification email
-        await _emailSender.SendEmailAsync(
-        user_email,
-        subject,
-        message);
-    }
-
-    public void Dispose()
-    {
-        this.BalanceService.OnBalanceChanged += this.BalanceChanged;
     }
 
 

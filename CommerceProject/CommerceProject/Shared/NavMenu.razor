@@ -2,10 +2,12 @@
 @using DataAccessLibrary
 @using DataAccessLibrary.Models
 @using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Identity.UI.Services;
 
 @inject TriggeredNotificationBroadcastService NotificationService
 @inject INotificationListData _NotificationList
 @inject IHttpContextAccessor httpContextAccessor
+@inject IEmailSender _emailSender
 
 
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -88,6 +90,7 @@
 
 @code {
     private List<NotificationListModel> unreadNotifications;
+    private List<NotificationParamsModel> notificationSettings;
     public string UserName;
     public int num_unread_notifs;
 
@@ -117,17 +120,35 @@
 
         num_unread_notifs = unreadNotifications.Count;
 
+        notificationSettings = await _NotificationList.GetNotificationSettings(UserName);
+
+        if (notificationSettings[0].Send_Email)
+        {
+            SendEmail(getNotificationType(triggeredNotification), triggeredNotification.Message);
+        }
+
         await InvokeAsync(() =>
         {
             base.StateHasChanged();
         });
     }
 
+
+    public async void SendEmail(string subject, string message)
+    {
+        //send notification email
+        await _emailSender.SendEmailAsync(
+        UserName,
+        subject,
+        message);
+    }
+
+
     public string getNotificationType(NotificationListModel notification)
     {
         string not_type = "";
 
-        switch(notification.Notification_Type)
+        switch (notification.Notification_Type)
         {
             case 1:
                 not_type = "Timeframe Alert";
