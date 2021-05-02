@@ -139,7 +139,7 @@ using DataAccessLibrary.Models;
 #line hidden
 #nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
-    public partial class Homepage : Microsoft.AspNetCore.Components.ComponentBase, IDisposable
+    public partial class Homepage : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -147,7 +147,7 @@ using DataAccessLibrary.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 90 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 88 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     LineChart<decimal> lineChart;
 
@@ -307,37 +307,6 @@ using DataAccessLibrary.Models;
     protected override void OnInitialized()
     {
         user_email = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
-
-        // Getting current balance of database to be compared to future values
-        this.BalanceService.OnBalanceChanged += this.BalanceChanged;
-    }
-
-
-    // Event handler to send notification email
-    public void BalanceChanged(object sender, BalanceChangeEventArgs args)
-    {
-        if (args.NewValue.Balance < 25.00)
-        {
-            string subject = "Low Balance Alert";
-            string message = "Your bank balance is less than $25.00.";
-
-            SendEmail(subject, message);
-        }
-
-    }
-
-    public async void SendEmail(string subject, string message)
-    {
-        //send notification email
-        await _emailSender.SendEmailAsync(
-        user_email,
-        subject,
-        message);
-    }
-
-    public void Dispose()
-    {
-        this.BalanceService.OnBalanceChanged += this.BalanceChanged;
     }
 
 
@@ -405,7 +374,6 @@ using DataAccessLibrary.Models;
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITransactionData trans { get; set; }
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITableChangeBroadcastService BalanceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private INotificationListData _NotificationList { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IEmailSender _emailSender { get; set; }

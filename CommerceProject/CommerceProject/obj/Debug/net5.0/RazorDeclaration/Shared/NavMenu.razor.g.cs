@@ -124,6 +124,13 @@ using Microsoft.AspNetCore.Http;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Shared\NavMenu.razor"
+using Microsoft.AspNetCore.Identity.UI.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -132,9 +139,10 @@ using Microsoft.AspNetCore.Http;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 89 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Shared\NavMenu.razor"
+#line 91 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Shared\NavMenu.razor"
        
     private List<NotificationListModel> unreadNotifications;
+    private List<NotificationParamsModel> notificationSettings;
     public string UserName;
     public int num_unread_notifs;
 
@@ -164,17 +172,35 @@ using Microsoft.AspNetCore.Http;
 
         num_unread_notifs = unreadNotifications.Count;
 
+        notificationSettings = await _NotificationList.GetNotificationSettings(UserName);
+
+        if (notificationSettings[0].Send_Email)
+        {
+            SendEmail(getNotificationType(triggeredNotification), triggeredNotification.Message);
+        }
+
         await InvokeAsync(() =>
         {
             base.StateHasChanged();
         });
     }
 
+
+    public async void SendEmail(string subject, string message)
+    {
+        //send notification email
+        await _emailSender.SendEmailAsync(
+        UserName,
+        subject,
+        message);
+    }
+
+
     public string getNotificationType(NotificationListModel notification)
     {
         string not_type = "";
 
-        switch(notification.Notification_Type)
+        switch (notification.Notification_Type)
         {
             case 1:
                 not_type = "Timeframe Alert";
@@ -220,6 +246,7 @@ using Microsoft.AspNetCore.Http;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IEmailSender _emailSender { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private INotificationListData _NotificationList { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private TriggeredNotificationBroadcastService NotificationService { get; set; }
