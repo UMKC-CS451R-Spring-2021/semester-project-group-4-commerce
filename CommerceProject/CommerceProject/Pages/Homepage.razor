@@ -12,6 +12,7 @@
 @inject IHttpContextAccessor httpContextAccessor
 @inject INotificationListData _NotificationList
 @inject ITableChangeBroadcastService BalanceService
+@inject ITransactionData trans
 @implements IDisposable
 
 
@@ -22,6 +23,10 @@
         background-position: left bottom, right top;
         min-height: 500px;
         background-attachment: fixed;
+    }
+
+    .spreadsheet_button{
+
     }
 </style>
 
@@ -71,7 +76,7 @@
                     </tbody>
                 </table>
             }
-            <p class="text-right">Export to spreadsheet goes here</p>
+            <button type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export to spreadsheet</button>
         </div>
     </div>
     <div class="col-sm-4">
@@ -315,5 +320,12 @@
 
     DateTime? selectedStartDate;
     DateTime? selectedEndDate;
+
+    public async void savespreadsheet()
+    {
+        String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
+        List<TransactionModel> translist = await trans.GetTransactions(UserName);
+        ExportToSpreadsheet.create_csv(translist);
+    }
 
 }

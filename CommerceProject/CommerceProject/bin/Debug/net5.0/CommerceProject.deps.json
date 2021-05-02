@@ -394,6 +394,17 @@
           "lib/net5.0/Blazorise.Icons.FontAwesome.dll": {}
         }
       },
+      "CsvHelper/27.0.2": {
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {
+            "assemblyVersion": "27.0.0.0",
+            "fileVersion": "27.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/CsvHelper.dll": {}
+        }
+      },
       "Dapper/2.0.78": {
         "runtime": {
           "lib/net5.0/Dapper.dll": {
@@ -2161,6 +2172,7 @@
       },
       "DataAccessLibrary/1.0.0": {
         "dependencies": {
+          "CsvHelper": "27.0.2",
           "Dapper": "2.0.78",
           "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
           "SendGrid": "9.22.0",
@@ -3864,6 +3876,13 @@
       "sha512": "sha512-2Fezeo7e8B1C1tBX4rCcU3TG3iMxd2G+zKneGAUlR6I2emcCy9MC1/MT2GTWd5mU63Bbv+5ngb7257pBFlm/LQ==",
       "path": "blazorise.icons.fontawesome/0.9.3.1",
       "hashPath": "blazorise.icons.fontawesome.0.9.3.1.nupkg.sha512"
+    },
+    "CsvHelper/27.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BXIM6epjyGh0C73L6t4+EPl1kNiMSIkjkgNXco6USKmO8Dqa+Zw/vujYJwP9S/s51iaR7zZ90mQKHfp/iLfv6A==",
+      "path": "csvhelper/27.0.2",
+      "hashPath": "csvhelper.27.0.2.nupkg.sha512"
     },
     "Dapper/2.0.78": {
       "type": "package",

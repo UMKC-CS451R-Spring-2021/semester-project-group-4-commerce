@@ -1766,3 +1766,7 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\CommerceProj
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\TestNotifications.razor.g.cs
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\CsvHelper.dll
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\TestNotifications.razor.g.cs
+C:\Users\Owner\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ChangePassword.cshtml.g.cs
