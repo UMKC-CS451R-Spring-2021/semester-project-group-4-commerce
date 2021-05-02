@@ -43,6 +43,8 @@
                     <DateEdit Min=@selectedStartDate TValue="DateTime?" @bind-Date="@selectedEndDate" />
                 </div>
             </div>
+            <button class="btn" onclick=@FilterNotificationsByDate()>Filter</button>
+
             @if (notifications is null)@* if (people is null)*@
             {
                 <p><em>Loading...</em></p>
@@ -313,7 +315,20 @@
         return not_type;
     }
 
+
     DateTime? selectedStartDate;
     DateTime? selectedEndDate;
 
+    public async Task FilterNotificationsByDate()
+    {
+        DateTime start = selectedStartDate ?? DateTime.Now;
+        DateTime end = selectedEndDate ?? DateTime.Now;
+
+        notifications = await _NotificationList.GetNotificationsByDates(UserName, start.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
+    }
 }

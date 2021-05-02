@@ -147,7 +147,7 @@ using DataAccessLibrary.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 89 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 91 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     LineChart<decimal> lineChart;
 
@@ -375,9 +375,22 @@ using DataAccessLibrary.Models;
         return not_type;
     }
 
+
     DateTime? selectedStartDate;
     DateTime? selectedEndDate;
 
+    public async Task FilterNotificationsByDate()
+    {
+        DateTime start = selectedStartDate ?? DateTime.Now;
+        DateTime end = selectedEndDate ?? DateTime.Now;
+
+        notifications = await _NotificationList.GetNotificationsByDates(UserName, start.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
+    }
 
 #line default
 #line hidden
