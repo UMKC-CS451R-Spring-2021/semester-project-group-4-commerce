@@ -94,3 +94,15 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\DataAccessLi
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commercefinal1\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.deps.json
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.dll
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\bin\Debug\net5.0\ref\DataAccessLibrary.dll
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\bin\Debug\net5.0\DataAccessLibrary.pdb
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csprojAssemblyReference.cache
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.AssemblyInfo.cs
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.dll
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\ref\DataAccessLibrary.dll
+C:\Users\khoii\Source\Repos\semester-project-group-4-commercecrunch\DataAccessLibrary\obj\Debug\net5.0\DataAccessLibrary.pdb
