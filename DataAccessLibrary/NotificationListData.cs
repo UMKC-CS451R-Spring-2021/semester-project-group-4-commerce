@@ -46,6 +46,15 @@ namespace DataAccessLibrary
             return _db.LoadData<NotificationListModel, dynamic>(sql, new { });
         }
 
+        public Task<List<NotificationParamsModel>> GetNotificationSettings(String UserName)
+        {
+            string sql = @"SELECT * FROM notificationParameters
+                            WHERE Account_Num = (SELECT Account_Num FROM account
+						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
+						                            WHERE account_holder.Email = '" + UserName + "');";
+
+            return _db.LoadData<NotificationParamsModel, dynamic>(sql, new { });
+        }
 
         public Task SetReadToTrue(int Notification_ID)
         {
@@ -76,5 +85,6 @@ namespace DataAccessLibrary
 
             return _db.ExecuteSql(sql);
         }
+
     }
 }

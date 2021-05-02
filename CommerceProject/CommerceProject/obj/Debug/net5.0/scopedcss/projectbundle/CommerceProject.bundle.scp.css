@@ -9,7 +9,14 @@
     width: 50%;
     float: left;
     padding: 20px;
-} 
+}
+
+.btn[b-vbz074av8t] {
+    font-family: Poppins;
+    color: #FFFFFF;
+    background-color: #006747;
+}
+
 /* _content/CommerceProject/Pages/Settings.razor.rz.scp.css */
 body[b-0ixdshmtmn] {
     margin-top: 20px;
@@ -633,3 +640,4 @@ li[b-q9fo7l4ayw] {
         display: block;
     }
 }
+

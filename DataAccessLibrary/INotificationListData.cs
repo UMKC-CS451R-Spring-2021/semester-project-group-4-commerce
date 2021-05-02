@@ -10,6 +10,7 @@ namespace DataAccessLibrary
         Task<List<NotificationListModel>> GetNotifications(string UserName);
         Task<List<NotificationListModel>> GetNotificationsUnread(string UserName);
         Task<List<NotificationListModel>> GetNotificationsByDates(String UserName, string StartDate, string StopDate);
+        Task<List<NotificationParamsModel>> GetNotificationSettings(String UserName);
 
         Task SetReadToTrue(int Notification_ID);
         Task SetParameters(string UserName, bool timeIsOn, string beginTimeframe, string endTimeFrame,

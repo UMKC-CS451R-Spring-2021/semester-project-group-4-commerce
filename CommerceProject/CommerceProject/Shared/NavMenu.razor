@@ -7,9 +7,10 @@
 @inject INotificationListData _NotificationList
 @inject IHttpContextAccessor httpContextAccessor
 
+
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="/home">
+        <a class="navbar-brand" href="#">
             <img src="/css/images/commerce-bank-vector-logo-horizontal.png" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,47 +36,47 @@
                 }
                 else
                 {
-                @* NAVBAR NOTIFICATIO DROPDOWN MENU *@
-                <li class="nav-item-notif dropdown mr-3">
-                @if (num_unread_notifs == 0)
-                {
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></a>
-                }
-                else
-                {
-                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i><span class="badge rounded-pill badge-notification bg-danger">@num_unread_notifs</span></a>
-                }
-                <ul class="dropdown-menu">
-                    <li class="head text-white">
-                        <div class="row">
-                            <div class="col-lg-12 col-sm-12 col-12">
-                                <span>Notifications (@num_unread_notifs)</span>
-                                <a href="/home" class="float-right text-white">View all <i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                    @foreach (var row in unreadNotifications)
-                    {
-                        <li class="notification-box">
-                            <div class="row">
-                                <div class="col-lg-1 col-sm-1 col-1 text-center">
-                                </div>
-                                <div class="col-lg-10 col-sm-10 col-10">
-                                    <strong class="text-info">@getNotificationType(row)</strong>
-                                    <div>
-                                        @row.Message
+                    @* NAVBAR NOTIFICATIO DROPDOWN MENU *@
+                    <li class="nav-item-notif dropdown mr-3">
+                        @if (num_unread_notifs == 0)
+                        {
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i></a>
+                        }
+                        else
+                        {
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i><span class="badge rounded-pill badge-notification bg-danger">@num_unread_notifs</span></a>
+                        }
+                        <ul class="dropdown-menu">
+                            <li class="head text-white">
+                                <div class="row">
+                                    <div class="col-lg-12 col-sm-12 col-12">
+                                        <span>Notifications (@num_unread_notifs)</span>
+                                        <a href="/home" class="float-right text-white">View all <i class="fas fa-search"></i></a>
                                     </div>
-                                    <small class="text">@row.Date.ToString("MM/dd/yyyy"), @row.Date.ToString("h:mm tt")</small>
                                 </div>
-                            </div>
-                            <div class="dropdown-divider" style="border-color:grey;"></div>
-                        </li>
-                    }
-                    <li class="footer bg-dark text-center">
-                        <button class="btn btn-block bg-transparent text-white " @onclick="clearNewNotifications">Clear</button>
+                            </li>
+                            @foreach (var row in unreadNotifications)
+                            {
+                                <li class="notification-box">
+                                    <div class="row">
+                                        <div class="col-lg-1 col-sm-1 col-1 text-center">
+                                        </div>
+                                        <div class="col-lg-10 col-sm-10 col-10">
+                                            <strong class="text-info">@getNotificationType(row)</strong>
+                                            <div>
+                                                @row.Message
+                                            </div>
+                                            <small class="text">@row.Date.ToString("MM/dd/yyyy"), @row.Date.ToString("h:mm tt")</small>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider" style="border-color:grey;"></div>
+                                </li>
+                            }
+                            <li class="footer bg-dark text-center">
+                                <button class="text-white" @onclick="clearNewNotifications">Clear</button>
+                            </li>
+                        </ul>
                     </li>
-                </ul>
-            </li>
                 }
             </ul>
             <form method="post" action="Identity/Account/LogOut">
