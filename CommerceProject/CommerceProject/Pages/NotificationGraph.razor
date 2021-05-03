@@ -1,0 +1,97 @@
+﻿@using CommerceProject.Data
+@inject GetTransactionData TransactionData
+
+<Button Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
+<Button Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
+<div class="card mb-3" style="border:1px solid #cecece">
+    <BarChart @ref="barChart" TItem="int" />
+</div>
+
+@code {
+    [Parameter]
+    public string UserEmail { get; set; }
+
+    BarChart<int> barChart;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await MonthHandleRedraw();
+        }
+    }
+
+    async Task MonthHandleRedraw()
+    {
+        await barChart.Clear();
+
+        await barChart.AddLabelsDatasetsAndUpdate(labels, GetBarChartDataset("month"));
+    }
+
+    async Task YearHandleRedraw()
+    {
+        await barChart.Clear();
+
+        await barChart.AddLabelsDatasetsAndUpdate(labels, GetBarChartDataset("year"));
+    }
+
+    BarChartDataset<int> GetBarChartDataset(string param)
+    {
+        List<int> data = new List<int>();
+        string label = "";
+        int point_radius = 0;
+
+        switch (param)
+        {
+            case "month":
+                label = "Daily Balance";
+                data = YearlyNotificationsData();
+                break;
+            case "year":
+                label = "Monthly Balance";
+                data = MonthlyNotificationsData();
+                break;
+        }
+
+        return new BarChartDataset<int>
+        {
+            Label = label,
+            Data = data,
+            BackgroundColor = new List<string> { ChartColor.FromRgba(79, 168, 0, 0.8f) },
+
+        };
+    }
+
+    List<string> labels = new List<string>() { "Transaction Amount", "Overdraft", "Timeframe", "Account Balance" };
+
+
+    List<int> MonthlyNotificationsData()
+    {
+        // get dict that contains the avg balance per month of current year
+        Dictionary<int, int> monthly_notifications = new Dictionary<int, int>(TransactionData.GetMonthlyNotifications(UserEmail));
+
+        List<int> notifications = new List<int>();
+
+        for (int i = 1; i <= 4; i++)
+        {
+            notifications.Add(monthly_notifications[i]);
+        }
+
+        return notifications;
+    }
+
+    List<int> YearlyNotificationsData()
+    {
+        // get dict that contains the avg balance per month of current year
+        Dictionary<int, int> yearly_notificaions = new Dictionary<int, int>(TransactionData.GetMonthlyNotifications(UserEmail));
+
+        List<int> notifications = new List<int>();
+
+        for (int i = 1; i <= 4; i++)
+        {
+            notifications.Add(yearly_notificaions[i]);
+        }
+
+        return notifications;
+    }
+}
