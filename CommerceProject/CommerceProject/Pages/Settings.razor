@@ -2,21 +2,24 @@
 @using DataAccessLibrary
 @using DataAccessLibrary.Models
 @using Microsoft.AspNetCore.Http
+
 @inject IHttpContextAccessor httpContextAccessor
 @inject IAccountHolderData _acc
 @inject NavigationManager UriHelper
 @inject INotificationListData _Notifications
+@inject IToastService toastService
 
 
-    <style>
-        body {
-            background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
-            background-repeat: no-repeat;
-            background-position: left bottom, right top;
-            min-height: 500px;
-            background-attachment: fixed;
-        }
-    </style>
+<style>
+    body {
+        background-image: url("/css/images/bgh.png"), url("/css/images/uprightcv.png");
+        background-repeat: no-repeat;
+        background-position: left bottom, right top;
+        min-height: 500px;
+        background-attachment: fixed;
+    }
+</style>
+
 
 <div class="row gutters-sm mt-3">
     <div class="col-md-2 d-none d-md-block">
@@ -77,7 +80,6 @@
                             <label for="State">State</label>
                             <input type="text" class="form-control" id="State" placeholder="Enter your State" @bind-value=nametochange.state>
                         </div>
-                        <hr>
                         <button type="button" class="btn btn-primary" @onclick="UpdateInfo">Submit</button>
                     </form>
                 </div>
@@ -102,7 +104,9 @@
                             </label>
                             <div>
                                 Notify me when a my account balance is below:
-                                <NumericEdit TValue="decimal?" @bind-Value="@min_balance" Placeholder="@current_min_balance"/>
+                                <div class="col-md-4">
+                                    <NumericEdit TValue="decimal?" @bind-Value="@min_balance" Placeholder="@current_min_balance" Class="mt-2" />
+                                </div>
                             </div>
                         </div>
 
@@ -113,8 +117,15 @@
                             </label>
                             <div>
                                 Notify me when a transaction is made between:
-                                <TimeEdit TValue="TimeSpan?" @bind-Time="@startTime" value="@current_start"/>
-                                <TimeEdit TValue="TimeSpan?" @bind-Time="@endTime" value="@current_end"/>
+                                <div class="form-row mt-2 ml-2">
+                                    <div class="col-md-4 form-group">
+                                        <TimeEdit TValue="TimeSpan?" @bind-Time="@startTime" value="@current_start" />
+                                    </div>
+                                    <h3> - </h3>
+                                    <div class="col-md-4 form-group">
+                                        <TimeEdit TValue="TimeSpan?" @bind-Time="@endTime" value="@current_end" />
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -122,11 +133,13 @@
                             <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck3" checked="@withdrawalIsOn" @bind-value="@withdrawalIsOn">
                             <label class="custom-control-label" for="customCheck3">
                                 <h2>Transaction amount</h2>
-                                <div>
-                                    Notify me when a transaction exceeds:
-                                    <NumericEdit TValue="decimal?" @bind-Value="@max_transaction" Placeholder="@current_max_transaction"/>
-                                </div>
                             </label>
+                            <div>
+                                Notify me when a transaction exceeds:
+                                <div class="col-md-4 form-group">
+                                    <NumericEdit TValue="decimal?" @bind-Value="@max_transaction" Placeholder="@current_max_transaction" Class="mt-2" />
+                                </div>
+                            </div>
                         </div>
                         <div class="custom-control custom-checkbox mt-5">
                             <input type="checkbox" checked="@emailNotIsOn" @bind-value="@emailNotIsOn" class="custom-control-input custom-control-input-green" id="customCheck4">

@@ -21,6 +21,7 @@ using Blazorise.Icons.FontAwesome;
 using DataAccessLibrary;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using CommerceProject.Services;
+using Blazored.Toast;
 
 namespace CommerceProject
 {
@@ -54,6 +55,7 @@ namespace CommerceProject
             services.AddTransient<ITransactionData, TransactionData>();
             services.AddTransient<IAccountHolderData, AccountHolderData>();
             services.AddTransient<INotificationListData, NotificationListData>();
+            services.AddBlazoredToast();
             services
               .AddBlazorise(options =>
               {
