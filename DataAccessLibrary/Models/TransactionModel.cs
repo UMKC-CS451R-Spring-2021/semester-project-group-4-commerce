@@ -27,7 +27,7 @@ namespace DataAccessLibrary.Models
 
         public int Account_Num { get; set; }
 
-        public String Processing_Date { get; set; }      // potential datatype problem
+        public DateTime Processing_Date { get; set; }      // potential datatype problem
 
         public String Type { get; set; }
 

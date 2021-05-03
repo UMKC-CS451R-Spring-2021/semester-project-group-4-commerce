@@ -61,7 +61,7 @@
                         @foreach (var row in notifications)
                         {
                             <tr>
-                                <td>@row.Date.ToString("MM/dd/yyyy")</td>
+                                <td>@row.Date.ToString("M/d/yyyy")</td>
                                 <td>@row.Date.ToString("h:mm tt")</td>
                                 <td>@getNotificationType(row)</td>
                                 <td>@row.Message</td>

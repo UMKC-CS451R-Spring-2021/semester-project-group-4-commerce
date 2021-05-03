@@ -20,7 +20,6 @@
     }
 </style>
 
-<h4>Current User: @UserName</h4>
 
 @if (trans is null)@* if (people is null)*@
 {
@@ -91,6 +90,7 @@ else
                 <thead>
                     <tr>
                         <th>Date</th>
+                        <th>Time</th>
                         <th>Description</th>
                         <th class="alnright">Amount</th>
                         <th class="alnright">Balance</th>
@@ -101,18 +101,19 @@ else
                     @foreach (var row in trans)
 
                     {
-                        <tr data-toggle="collapse" data-target=".data_@i">
-                            <td>@row.Processing_Date</td>
-                            <td>@row.Description</td>
-                            <td class="alnright">$@row.Amount</td>
-                            <td class="alnright">$@(row.Balance)</td>
+                    <tr data-toggle="collapse" data-target=".data_@i">
+                        <td>@row.Processing_Date.ToString("M/d/yyyy")</td>
+                        <td>@row.Processing_Date.ToString("h:mm tt")</td>
+                        <td>@row.Description</td>
+                        <td class="alnright">$@row.Amount</td>
+                        <td class="alnright">$@(row.Balance)</td>
 
-                        </tr>
+                    </tr>
                         <tr class="tableRowHoverOff noBorder">
                             <td class="hiddenRow ">
                                 <div class="collapse data_@i">
                                     <p><strong>Account # : </strong>@(row.Account_Num)</p>
-                                    <p><strong>Type : </strong>@(row.Type)</p>
+                                    <p><strong>Type : </strong>@getType(row.Type)</p>
                                     <p><strong>Location : </strong>@(row.Location)</p>
                                 </div>
                             </td>
@@ -157,7 +158,7 @@ else
         TransactionModel t = new TransactionModel
         {
             Account_Num = accNum,                   // 10010111 for trant@mail.com
-            Processing_Date = now.ToString(),
+            Processing_Date = now,
             Type = chooseType(),
             Amount = roundAmount(),
             Description = newTransaction.Description,
@@ -201,8 +202,16 @@ else
         }
     }
 
-
+    private string getType(string type)
+    {
+        if (type == "CR")
+        {
+            return "Credit";
+        }
+        else
+        {
+            return "Draft";
+        }
+    }
 
 }
-
-

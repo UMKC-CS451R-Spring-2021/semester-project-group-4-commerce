@@ -1999,3 +1999,4 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazored.Toast.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazored.Toast.dll
