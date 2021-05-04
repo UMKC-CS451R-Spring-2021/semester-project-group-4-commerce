@@ -86,7 +86,7 @@ else
 
         @*<--Table content-->*@
         <div class="table-responsive-sm">
-            <table class="table tableRowHover bg-white" style="border-collapse:collapse;">
+            <table class="table tableRowHover bg-white " style="border-collapse:collapse; table-layout:fixed;">
                 <thead>
                     <tr>
                         <th>Date</th>
@@ -111,7 +111,7 @@ else
                     </tr>
                         <tr class="tableRowHoverOff noBorder">
                             <td class="hiddenRow ">
-                                <div class="collapse data_@i">
+                                <div class="collapse data_@i ml-3">
                                     <p><strong>Account # : </strong>@(row.Account_Num)</p>
                                     <p><strong>Type : </strong>@getType(row.Type)</p>
                                     <p><strong>Location : </strong>@(row.Location)</p>
@@ -119,7 +119,6 @@ else
                             </td>
                         </tr>
                         i++;
-
                     }
                 </tbody>
             </table>

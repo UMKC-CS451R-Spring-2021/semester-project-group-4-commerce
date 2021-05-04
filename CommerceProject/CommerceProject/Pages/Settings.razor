@@ -100,9 +100,9 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck2" checked="@lowBalanceIsOn" @bind-value="@lowBalanceIsOn">
                             <label class="custom-control-label" for="customCheck2">
-                                <h2>Account Balance</h2>
+                                <h6>ACCOUNT BALANCE</h6>
                             </label>
-                            <div>
+                            <div class="sans">
                                 Notify me when a my account balance is below:
                                 <div class="col-md-4">
                                     <NumericEdit TValue="decimal?" @bind-Value="@min_balance" Placeholder="@current_min_balance" Class="mt-2" />
@@ -113,7 +113,7 @@
                         <div class="custom-control custom-checkbox mt-5">
                             <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck1" checked="@timeIsOn" @bind-value="@timeIsOn">
                             <label class="custom-control-label" for="customCheck1">
-                                <h2>Time notification</h2>
+                                <h6>TIME NOTIFICATION</h6>
                             </label>
                             <div>
                                 Notify me when a transaction is made between:
@@ -132,7 +132,7 @@
                         <div class="custom-control custom-checkbox mt-5">
                             <input type="checkbox" class="custom-control-input custom-control-input-green" id="customCheck3" checked="@withdrawalIsOn" @bind-value="@withdrawalIsOn">
                             <label class="custom-control-label" for="customCheck3">
-                                <h2>Transaction amount</h2>
+                                <h6>TRANSACTION AMOUNT</h6>
                             </label>
                             <div>
                                 Notify me when a transaction exceeds:

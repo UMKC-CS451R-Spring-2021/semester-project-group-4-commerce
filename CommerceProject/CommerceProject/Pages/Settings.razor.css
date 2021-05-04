@@ -229,3 +229,30 @@ hr.red {
 input {
     max-width: 100%;
 }
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+div {
+    font-family: 'Open Sans', sans-serif;
+}
