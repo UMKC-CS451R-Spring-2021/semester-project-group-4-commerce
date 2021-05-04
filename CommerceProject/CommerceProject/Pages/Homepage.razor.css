@@ -8,9 +8,52 @@
     padding: 20px;
 }
 
-.btn {
-    font-family: Poppins;
-    color: #FFFFFF;
-    background-color: #006747;
+.btn-info {
+    background-color: #006746;
+    border-color: #006746;
 }
 
+    .btn-info:focus, .btn-info:active {
+        box-shadow: none;
+        outline: 0 !important;
+    }
+
+        .btn-info:active:focus {
+            background-color: #006746 !important;
+            border-color: #000000 !important;
+            outline: 0 !important;
+        }
+
+    .btn-info:hover, .btn-info:active, .btn-info:focus {
+        background-color: #000000;
+        border-color: #000000;
+        outline: 0 !important;
+    }
+
+.sticky-first {
+    background: red;
+    position: sticky;
+    top: 5%;
+}
+
+.sticky-second {
+    background: blue;
+    position: sticky;
+    top: 50%;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.table {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}

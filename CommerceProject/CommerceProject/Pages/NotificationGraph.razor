@@ -1,6 +1,6 @@
 ﻿@using CommerceProject.Data
 @inject GetTransactionData TransactionData
-    <div>
+    <div class="mb-2">
         <Button class="chart-btn" Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
         <Button class="chart-btn" Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
     </div>

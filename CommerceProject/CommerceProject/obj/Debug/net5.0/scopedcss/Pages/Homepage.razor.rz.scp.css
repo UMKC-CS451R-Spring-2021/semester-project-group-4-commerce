@@ -8,9 +8,52 @@
     padding: 20px;
 }
 
-.btn[b-vbz074av8t] {
-    font-family: Poppins;
-    color: #FFFFFF;
-    background-color: #006747;
+.btn-info[b-vbz074av8t] {
+    background-color: #006746;
+    border-color: #006746;
 }
 
+    .btn-info:focus[b-vbz074av8t], .btn-info:active[b-vbz074av8t] {
+        box-shadow: none;
+        outline: 0 !important;
+    }
+
+        .btn-info:active:focus[b-vbz074av8t] {
+            background-color: #006746 !important;
+            border-color: #000000 !important;
+            outline: 0 !important;
+        }
+
+    .btn-info:hover[b-vbz074av8t], .btn-info:active[b-vbz074av8t], .btn-info:focus[b-vbz074av8t] {
+        background-color: #000000;
+        border-color: #000000;
+        outline: 0 !important;
+    }
+
+.sticky-first[b-vbz074av8t] {
+    background: red;
+    position: sticky;
+    top: 5%;
+}
+
+.sticky-second[b-vbz074av8t] {
+    background: blue;
+    position: sticky;
+    top: 50%;
+}
+
+h2[b-vbz074av8t] {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3[b-vbz074av8t] {
+    font-family: 'Poppins', sans-serif;
+}
+
+.table[b-vbz074av8t] {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p[b-vbz074av8t] {
+    font-family: 'Open Sans', sans-serif;
+}
