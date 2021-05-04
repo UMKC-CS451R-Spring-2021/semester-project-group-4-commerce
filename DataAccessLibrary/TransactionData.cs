@@ -36,8 +36,8 @@ namespace DataAccessLibrary
         {
             // use this for inserting new transaction
             string sql = @"insert into dbo.TRANSACTIONS (Account_Num, Processing_Date, Type, Amount, Description, Balance, Location)
-                            values (@Account_Num, @Processing_Date, @Type, @Amount, @Description, @Balance, @Location);";                
-            
+                            values (@Account_Num, @Processing_Date, @Type, @Amount, @Description, @Balance, @Location);";
+
 
             return _db.SaveData(sql, transaction);
         }

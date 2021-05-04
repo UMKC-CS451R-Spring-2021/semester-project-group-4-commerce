@@ -75,170 +75,17 @@
     </div>
     <div class="col-sm-4">
         <div class="container bg-light sticky-top mt-1" style="border:1px solid #cecece">
+            <h2> Notifcation Summary </h2>
+            <NotificationGraph UserEmail="@UserName"></NotificationGraph>
+        </div>
+        <div class="container bg-light sticky-top mt-1" style="border:1px solid #cecece">
             <h2> Account Balance </h2>
-            <Button Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
-            <Button Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
-            <div class="card mb-3" style="border:1px solid #cecece">
-                <LineChart @ref="lineChart" TItem="decimal" />
-            </div>
+            <BalanceGraph UserEmail="@UserName"></BalanceGraph>
         </div>
     </div>
 </div>
 
 @code{
-    LineChart<decimal> lineChart;
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await MonthHandleRedraw();
-        }
-    }
-
-    async Task MonthHandleRedraw()
-    {
-        await lineChart.Clear();
-
-        await lineChart.AddLabelsDatasetsAndUpdate(getDayLabels(), GetLineChartDataset("month"));
-    }
-
-    async Task YearHandleRedraw()
-    {
-        await lineChart.Clear();
-
-        await lineChart.AddLabelsDatasetsAndUpdate(getMonthLabels(), GetLineChartDataset("year"));
-    }
-
-    LineChartDataset<decimal> GetLineChartDataset(string param)
-    {
-        List<decimal> data = new List<decimal>();
-        string label = "";
-        int point_radius = 0;
-
-        switch (param)
-        {
-            case "month":
-                label = "Daily Balance";
-                data = DailyBalanceData();
-                point_radius = 2;
-                break;
-            case "year":
-                label = "Monthly Balance";
-                data = MonthlyBalanceData();
-                point_radius = 5;
-                break;
-        }
-
-        return new LineChartDataset<decimal>
-        {
-            Label = label,
-            Data = data,
-            BackgroundColor = new List<string> { ChartColor.FromRgba(79, 168, 0, 0.8f) },
-            PointBackgroundColor = getPointBackgroundColors(),
-            PointBorderColor = getPointBorderColors(),
-            Fill = true,
-            PointRadius = point_radius,
-            BorderDash = new List<int> { }
-        };
-    }
-
-    List<string> getPointBackgroundColors()
-    {
-        List<string> pointBackgroundColors = new List<string>();
-
-        for (int i = 0; i < 31; i++)
-        {
-            pointBackgroundColors.Add(ChartColor.FromRgba(79, 168, 0, 0.8f));
-        }
-
-        return pointBackgroundColors;
-    }
-
-    List<string> getPointBorderColors()
-    {
-        List<string> pointBorderColors = new List<string>();
-
-        for (int i = 0; i < 31; i++)
-        {
-            pointBorderColors.Add(ChartColor.FromRgba(0, 103, 71, 0.8f));
-        }
-
-        return pointBorderColors;
-    }
-
-    string[] getDayLabels()
-    {
-        var curr_day = DateTime.Now.Day;
-        List<string> dayLabels = new List<string>();
-
-        for (int i = 1; i <= curr_day; i++)
-        {
-            dayLabels.Add(i.ToString());
-        }
-
-        return dayLabels.ToArray();
-    }
-
-    string[] getMonthLabels()
-    {
-        string[] months = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
-        var curr_month = DateTime.Now.Month;
-        List<string> monthLabels = new List<string>();
-
-        for (int i = 1; i <= curr_month; i++)
-        {
-            monthLabels.Add(months[i - 1]);
-        }
-
-        return monthLabels.ToArray();
-    }
-
-    List<decimal> MonthlyBalanceData()
-    {
-        // get dict that contains the avg balance per month of current year
-        Dictionary<int, decimal> avg_monthly_balances = new Dictionary<int, decimal>(TransactionData.GetMonthlyBalancesPastYear());
-
-        List<decimal> visual_balances = new List<decimal>();
-
-        for (int i = 0; i < DateTime.Now.Month; i++)
-        {
-            if (avg_monthly_balances.ContainsKey(i))
-            {
-                visual_balances.Add(Decimal.Round(avg_monthly_balances[i], 2));
-            }
-            else
-            {
-                visual_balances.Add(Decimal.Round(0, 2));
-            }
-        }
-
-        return visual_balances;
-    }
-
-    List<decimal> DailyBalanceData()
-    {
-        // get dict that contains the avg balance per month of current year
-        Dictionary<int, decimal> avg_daily_balances = new Dictionary<int, decimal>(TransactionData.GetDailyBalancesPastMonth(DateTime.Now.Month));
-
-        List<decimal> visual_balances = new List<decimal>();
-
-        for (int i = 0; i < 31; i++)
-        {
-            if (avg_daily_balances.ContainsKey(i))
-            {
-                visual_balances.Add(Decimal.Round(avg_daily_balances[i], 2));
-            }
-            else
-            {
-                visual_balances.Add(Decimal.Round(0, 2));
-            }
-        }
-
-        return visual_balances;
-    }
-
-
     public string user_email;
 
     protected override void OnInitialized()

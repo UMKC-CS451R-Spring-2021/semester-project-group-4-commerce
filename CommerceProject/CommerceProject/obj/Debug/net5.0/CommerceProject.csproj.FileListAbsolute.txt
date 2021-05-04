@@ -2000,3 +2000,7 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce999\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazored.Toast.dll
 C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazored.Toast.dll
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\BalanceGraph.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\BalanceGraph.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\NotificationGraph.razor.g.cs
+C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\NotificationGraph.razor.g.cs
