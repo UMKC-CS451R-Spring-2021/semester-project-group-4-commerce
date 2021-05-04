@@ -99,7 +99,8 @@ namespace CommerceProject.Data
 
             string query = "SELECT Notification_Type, SUM(Notification_Type) FROM notificationList " +
                             "WHERE Date >= DATEADD(month, -1, GETDATE()) " +
-                            "AND Account_Num = (SELECT Account_Num FROM account INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "') " +
+                            "AND Account_Num = (SELECT Account_Num FROM account " +
+                            "INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "') " +
                             "GROUP BY Notification_Type " +
                             "ORDER BY Notification_Type";
 
@@ -118,6 +119,34 @@ namespace CommerceProject.Data
                 }
             }
             return monthly_notifications;
+        }
+
+        public Dictionary<int, int> GetYearlyNotifications(string UserEmail)
+        {
+            Dictionary<int, int> yearly_notifications = new Dictionary<int, int>();
+
+            string query = "SELECT Notification_Type, SUM(Notification_Type) FROM notificationList " +
+                            "WHERE Date >= DATEADD(year, -1, GETDATE()) " +
+                            "AND Account_Num = (SELECT Account_Num FROM account " +
+                            "INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "') " +
+                            "GROUP BY Notification_Type " +
+                            "ORDER BY Notification_Type";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            yearly_notifications.Add(reader.GetInt32(0), reader.GetInt32(1));
+                        }
+                    }
+                }
+            }
+            return yearly_notifications;
         }
 
 

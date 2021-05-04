@@ -1,97 +1,124 @@
 ﻿@using CommerceProject.Data
 @inject GetTransactionData TransactionData
+    <div>
+        <Button class="chart-btn" Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
+        <Button class="chart-btn" Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
+    </div>
+    <div class="card mb-3" style="border:1px solid #cecece">
+        <BarChart @ref="barChart" TItem="int" />
+    </div>
 
-<Button Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
-<Button Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
-<div class="card mb-3" style="border:1px solid #cecece">
-    <BarChart @ref="barChart" TItem="int" />
-</div>
 
-@code {
-    [Parameter]
-    public string UserEmail { get; set; }
+    @code {
+        [Parameter]
+        public string UserEmail { get; set; }
 
-    BarChart<int> barChart;
+        BarChart<int> barChart;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
+        protected BarChartOptions options = new BarChartOptions()
         {
-            await MonthHandleRedraw();
-        }
-    }
-
-    async Task MonthHandleRedraw()
-    {
-        await barChart.Clear();
-
-        await barChart.AddLabelsDatasetsAndUpdate(labels, GetBarChartDataset("month"));
-    }
-
-    async Task YearHandleRedraw()
-    {
-        await barChart.Clear();
-
-        await barChart.AddLabelsDatasetsAndUpdate(labels, GetBarChartDataset("year"));
-    }
-
-    BarChartDataset<int> GetBarChartDataset(string param)
-    {
-        List<int> data = new List<int>();
-        string label = "";
-        int point_radius = 0;
-
-        switch (param)
-        {
-            case "month":
-                label = "Daily Balance";
-                data = YearlyNotificationsData();
-                break;
-            case "year":
-                label = "Monthly Balance";
-                data = MonthlyNotificationsData();
-                break;
-        }
-
-        return new BarChartDataset<int>
-        {
-            Label = label,
-            Data = data,
-            BackgroundColor = new List<string> { ChartColor.FromRgba(79, 168, 0, 0.8f) },
-
+            Legend = new Legend() { Display = false },
         };
-    }
 
-    List<string> labels = new List<string>() { "Transaction Amount", "Overdraft", "Timeframe", "Account Balance" };
-
-
-    List<int> MonthlyNotificationsData()
-    {
-        // get dict that contains the avg balance per month of current year
-        Dictionary<int, int> monthly_notifications = new Dictionary<int, int>(TransactionData.GetMonthlyNotifications(UserEmail));
-
-        List<int> notifications = new List<int>();
-
-        for (int i = 1; i <= 4; i++)
+        protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            notifications.Add(monthly_notifications[i]);
+            if (firstRender)
+            {
+                await MonthHandleRedraw();
+            }
         }
 
-        return notifications;
-    }
-
-    List<int> YearlyNotificationsData()
-    {
-        // get dict that contains the avg balance per month of current year
-        Dictionary<int, int> yearly_notificaions = new Dictionary<int, int>(TransactionData.GetMonthlyNotifications(UserEmail));
-
-        List<int> notifications = new List<int>();
-
-        for (int i = 1; i <= 4; i++)
+        async Task MonthHandleRedraw()
         {
-            notifications.Add(yearly_notificaions[i]);
+            await barChart.Clear();
+            await barChart.SetOptions(options);
+
+            await barChart.AddLabelsDatasetsAndUpdate(labels, GetBarChartDataset("month"));
         }
 
-        return notifications;
+        async Task YearHandleRedraw()
+        {
+            await barChart.Clear();
+            await barChart.SetOptions(options);
+
+            await barChart.AddLabelsDatasetsAndUpdate(labels, GetBarChartDataset("year"));
+        }
+
+        BarChartDataset<int> GetBarChartDataset(string param)
+        {
+            List<int> data = new List<int>();
+
+            switch (param)
+            {
+                case "month":
+                    data = YearlyNotificationsData();
+                    break;
+                case "year":
+                    data = MonthlyNotificationsData();
+                    break;
+            }
+
+            return new BarChartDataset<int>
+            {
+                Label = "Notifications",
+                Data = data,
+                BackgroundColor = new List<string> { ChartColor.FromRgba(0, 122, 163, 0.8f), ChartColor.FromRgba(227, 0, 0, 0.8f), ChartColor.FromRgba(255, 179, 0, 0.8f), ChartColor.FromRgba(0, 103, 71, 0.8f) },
+            };
+        }
+
+        List<string> labels = new List<string>() { "Transaction", "Overdraft", "Timeframe", "Balance" };
+
+
+        List<int> MonthlyNotificationsData()
+        {
+            // get dict that contains the avg balance per month of current year
+            Dictionary<int, int> monthly_notifications = new Dictionary<int, int>(TransactionData.GetMonthlyNotifications(UserEmail));
+
+            List<int> notifications = new List<int>();
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (monthly_notifications.ContainsKey(i))
+                {
+                    notifications.Add(monthly_notifications[i]);
+                }
+                else
+                {
+                    notifications.Add(0);
+                }
+            }
+
+            return notifications;
+        }
+
+        List<int> YearlyNotificationsData()
+        {
+            // get dict that contains the avg balance per month of current year
+            Dictionary<int, int> yearly_notificaions = new Dictionary<int, int>(TransactionData.GetYearlyNotifications(UserEmail));
+
+            List<int> notifications = new List<int>();
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (yearly_notificaions.ContainsKey(i))
+                {
+                    notifications.Add(yearly_notificaions[i]);
+                }
+                else
+                {
+                    notifications.Add(0);
+                }
+            }
+
+            return notifications;
+        }
     }
-}
+
+    <style>
+        .chart-btn {
+            font-family: Poppins;
+            color: #FFFFFF;
+            background-color: #006747;
+            font-size: 12px;
+        }
+    </style>

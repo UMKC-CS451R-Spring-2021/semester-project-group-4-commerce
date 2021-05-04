@@ -1,8 +1,8 @@
 ﻿@using CommerceProject.Data
 @inject GetTransactionData TransactionData
 
-<Button Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
-<Button Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
+<Button class="chart-btn" Clicked="@(async () => await MonthHandleRedraw())">Current Month</Button>
+<Button class="chart-btn" Clicked="@(async () => await YearHandleRedraw())">Current Year</Button>
 <div class="card mb-3" style="border:1px solid #cecece">
     <LineChart @ref="lineChart" TItem="decimal" />
 </div>
@@ -12,6 +12,10 @@
     public string UserEmail { get; set; }
 
     LineChart<decimal> lineChart;
+    protected LineChartOptions options = new LineChartOptions()
+    {
+        Legend = new Legend() { Display = false },
+    };
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
@@ -24,6 +28,7 @@
     async Task MonthHandleRedraw()
     {
         await lineChart.Clear();
+        await lineChart.SetOptions(options);
 
         await lineChart.AddLabelsDatasetsAndUpdate(getDayLabels(), GetLineChartDataset("month"));
     }
@@ -31,6 +36,7 @@
     async Task YearHandleRedraw()
     {
         await lineChart.Clear();
+        await lineChart.SetOptions(options);
 
         await lineChart.AddLabelsDatasetsAndUpdate(getMonthLabels(), GetLineChartDataset("year"));
     }
@@ -38,18 +44,15 @@
     LineChartDataset<decimal> GetLineChartDataset(string param)
     {
         List<decimal> data = new List<decimal>();
-        string label = "";
         int point_radius = 0;
 
         switch (param)
         {
             case "month":
-                label = "Daily Balance";
                 data = DailyBalanceData();
                 point_radius = 2;
                 break;
             case "year":
-                label = "Monthly Balance";
                 data = MonthlyBalanceData();
                 point_radius = 5;
                 break;
@@ -57,7 +60,7 @@
 
         return new LineChartDataset<decimal>
         {
-            Label = label,
+            Label = "Balance",
             Data = data,
             BackgroundColor = new List<string> { ChartColor.FromRgba(79, 168, 0, 0.8f) },
             PointBackgroundColor = getPointBackgroundColors(),
@@ -163,3 +166,11 @@
         return visual_balances;
     }
 }
+
+<style>
+    .chart-btn {
+        font-family: Poppins;
+        color: #FFFFFF;
+        background-color: #006747;
+    }
+</style>
