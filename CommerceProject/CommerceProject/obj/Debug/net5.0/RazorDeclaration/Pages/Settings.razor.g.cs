@@ -151,12 +151,12 @@ using Microsoft.AspNetCore.Http;
         if(String.IsNullOrEmpty(nametochange.firstName) || String.IsNullOrEmpty(nametochange.lastName)
             || String.IsNullOrEmpty(nametochange.phoneNumber) || String.IsNullOrEmpty(nametochange.city) || String.IsNullOrEmpty(nametochange.state))
         {
-            toastService.ShowWarning("Please fill in all fields.", "Invalid Entry");
+            toastService.ShowError("All fields are required. Please check fill in all fields", "Invalid Form");
             return Task.CompletedTask;
         }
         else
         {
-            toastService.ShowSuccess("Your information has been updated.", "Update Information");
+            toastService.ShowSuccess("Your Personal Information is now up to date", "Update Information");
             nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
             return _acc.ChangeName(nametochange);
         }
@@ -212,17 +212,17 @@ using Microsoft.AspNetCore.Http;
     TimeSpan? endTime;
 
 
-    private void updateNotificationSettings()
+    private async void updateNotificationSettings()
     {
         decimal min_bal = min_balance ?? 0.00m;
         decimal max_trans = max_transaction ?? 500.00m;
         TimeSpan start = startTime ?? TimeSpan.Parse("00:00:00");
         TimeSpan end = endTime ?? TimeSpan.Parse("04:00:00");
 
-        toastService.ShowSuccess("Your Notification preferences has been updated.", "Update Notifications");
+        toastService.ShowSuccess("Your Notification Preferences has been updated successfully", "Update Notifications");
 
-        _Notifications.SetParameters(UserName, timeIsOn, start.ToString(), end.ToString(), withdrawalIsOn,
-                                           min_bal, lowBalanceIsOn, max_trans, emailNotIsOn);
+        await _Notifications.SetParameters(UserName, timeIsOn, start.ToString(), end.ToString(), withdrawalIsOn,
+                                           max_trans, lowBalanceIsOn, min_bal, emailNotIsOn);
     }
 
 

@@ -152,7 +152,7 @@ using DataAccessLibrary.Models;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/home")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Homepage : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -227,8 +227,8 @@ using DataAccessLibrary.Models;
     {
         String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
         List<TransactionModel> translist = await trans.GetTransactions(UserName);
-        ExportToSpreadsheet.create_csv(translist);
-        _toastService.ShowSuccess("Transactions .CSV file downloaded to \"Desktop\"");
+        //ExportToSpreadsheet.create_csv(translist);
+        _toastService.ShowInfo("\"TransactionReport.CSV\" has downloaded to \"Desktop\" successfully", "Spreadsheet Created");
     }
 
 

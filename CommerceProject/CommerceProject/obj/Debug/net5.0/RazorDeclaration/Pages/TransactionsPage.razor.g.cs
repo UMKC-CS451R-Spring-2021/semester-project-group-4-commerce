@@ -233,6 +233,11 @@ using Microsoft.AspNetCore.Http;
         }
     }
 
+    private void callToast()
+    {
+        toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
+    }
+
 
 #line default
 #line hidden

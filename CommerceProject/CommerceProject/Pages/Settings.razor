@@ -80,7 +80,7 @@
                             <label for="State">State</label>
                             <input type="text" class="form-control" id="State" placeholder="Enter your State" @bind-value=nametochange.state>
                         </div>
-                        <button type="button" class="btn btn-primary" @onclick="UpdateInfo">Submit</button>                                                 @*HERE*@
+                        <button type="button" class="btn btn-primary" @onclick="UpdateInfo">Update Personal Information</button>                                                 @*HERE*@
                     </form>
                 </div>
 
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                     <hr>
-                    <button type="button" class="btn btn-primary" @onclick="updateNotificationSettings">Submit</button>                               @*HERE*@
+                    <button type="button" class="btn btn-primary" @onclick="updateNotificationSettings">Update Notifications</button>                               @*HERE*@
                 </div>
             </div>
         </div>
@@ -164,12 +164,12 @@
         if(String.IsNullOrEmpty(nametochange.firstName) || String.IsNullOrEmpty(nametochange.lastName)
             || String.IsNullOrEmpty(nametochange.phoneNumber) || String.IsNullOrEmpty(nametochange.city) || String.IsNullOrEmpty(nametochange.state))
         {
-            toastService.ShowWarning("Please fill in all fields.", "Invalid Entry");
+            toastService.ShowError("All fields are required. Please check fill in all fields", "Invalid Form");
             return Task.CompletedTask;
         }
         else
         {
-            toastService.ShowSuccess("Your information has been updated.", "Update Information");
+            toastService.ShowSuccess("Your Personal Information is now up to date", "Update Information");
             nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
             return _acc.ChangeName(nametochange);
         }
@@ -232,10 +232,10 @@
         TimeSpan start = startTime ?? TimeSpan.Parse("00:00:00");
         TimeSpan end = endTime ?? TimeSpan.Parse("04:00:00");
 
-        toastService.ShowSuccess("Your Notification preferences has been updated.", "Update Notifications");
+        toastService.ShowSuccess("Your Notification Preferences has been updated successfully", "Update Notifications");
 
         await _Notifications.SetParameters(UserName, timeIsOn, start.ToString(), end.ToString(), withdrawalIsOn,
-                                           min_bal, lowBalanceIsOn, max_trans, emailNotIsOn);
+                                           max_trans, lowBalanceIsOn, min_bal, emailNotIsOn);
     }
 
 

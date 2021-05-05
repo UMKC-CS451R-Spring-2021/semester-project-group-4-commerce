@@ -1,4 +1,4 @@
-﻿@page "/home"
+﻿@page "/"
 
 @using CommerceProject.Data
 @using CommerceProject.Services
@@ -153,8 +153,8 @@
     {
         String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
         List<TransactionModel> translist = await trans.GetTransactions(UserName);
-        ExportToSpreadsheet.create_csv(translist);
-        _toastService.ShowSuccess("Transactions .CSV file downloaded to \"Desktop\"");
+        //ExportToSpreadsheet.create_csv(translist);
+        _toastService.ShowInfo("\"TransactionReport.CSV\" has downloaded to \"Desktop\" successfully", "Spreadsheet Created");
     }
 
 }

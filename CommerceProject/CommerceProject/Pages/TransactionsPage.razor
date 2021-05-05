@@ -74,7 +74,7 @@ else
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-info add-new">Submit</button>          @*HERE*@
+                                    <button type="submit" class="btn btn-info add-new" @onclick="callToast"><i class="fa fa-plus"></i> Add Transaction</button>          @*HERE*@
                                 </div>
                             </EditForm>
                         </div>
@@ -211,6 +211,11 @@ else
         {
             return "Draft";
         }
+    }
+
+    private void callToast()
+    {
+        toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
     }
 
 }
