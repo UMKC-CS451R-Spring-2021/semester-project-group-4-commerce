@@ -2236,3 +2236,9 @@ C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-final-changes\Comm
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-final-changes\CommerceProject\CommerceProject\obj\Debug\net5.0\ref\CommerceProject.dll
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-final-changes\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.pdb
 C:\Users\khoii\Source\Repos\semester-project-group-4-commerce-final-changes\CommerceProject\CommerceProject\obj\Debug\net5.0\CommerceProject.genruntimeconfig.cache
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\Blazored.Toast.dll
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\bin\Debug\net5.0\CsvHelper.dll
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\BalanceGraph.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\RazorDeclaration\Pages\NotificationGraph.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\BalanceGraph.razor.g.cs
+G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\obj\Debug\net5.0\Razor\Pages\NotificationGraph.razor.g.cs

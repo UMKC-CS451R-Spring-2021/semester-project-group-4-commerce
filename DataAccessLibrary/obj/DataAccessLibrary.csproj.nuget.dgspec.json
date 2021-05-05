@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-final-changes\\DataAccessLibrary\\DataAccessLibrary.csproj": {}
+    "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-final-changes\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+    "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-final-changes\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectUniqueName": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "projectName": "DataAccessLibrary",
-        "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-final-changes\\DataAccessLibrary\\DataAccessLibrary.csproj",
-        "packagesPath": "C:\\Users\\khoii\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerce-final-changes\\DataAccessLibrary\\obj\\",
+        "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "packagesPath": "C:\\Users\\New Blue\\.nuget\\packages\\",
+        "outputPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\khoii\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\New Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
