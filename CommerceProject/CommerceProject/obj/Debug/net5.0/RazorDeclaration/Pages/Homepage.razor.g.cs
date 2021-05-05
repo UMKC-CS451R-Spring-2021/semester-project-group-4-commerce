@@ -161,7 +161,7 @@ using DataAccessLibrary.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 90 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 91 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     public string user_email;
 
@@ -228,12 +228,14 @@ using DataAccessLibrary.Models;
         String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
         List<TransactionModel> translist = await trans.GetTransactions(UserName);
         ExportToSpreadsheet.create_csv(translist);
+        _toastService.ShowSuccess("Transactions .CSV file downloaded to \"Desktop\"");
     }
 
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService _toastService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITransactionData trans { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private INotificationListData _NotificationList { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IHttpContextAccessor httpContextAccessor { get; set; }

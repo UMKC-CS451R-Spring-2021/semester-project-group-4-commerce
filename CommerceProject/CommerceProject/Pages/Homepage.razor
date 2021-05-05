@@ -12,6 +12,7 @@
 @inject IHttpContextAccessor httpContextAccessor
 @inject INotificationListData _NotificationList
 @inject ITransactionData trans
+@inject IToastService _toastService
 
 
 <style>
@@ -31,7 +32,7 @@
         <div class="container mt-1 bg-light float-left" style="border:1px solid #cecece">
             <h2 class="mt-2">
                 Notifications
-                <button class="btn btn-info float-right mt-1" type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export to spreadsheet</button>     @*HERE*@)
+                <button class="btn btn-info float-right mt-1" type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export to spreadsheet</button>     @*HERE*@
             </h2>
             <h6 onclick=@FilterNotificationsByDate()></h6>
             <div>
@@ -153,6 +154,7 @@
         String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
         List<TransactionModel> translist = await trans.GetTransactions(UserName);
         ExportToSpreadsheet.create_csv(translist);
+        _toastService.ShowSuccess("Transactions .CSV file downloaded to \"Desktop\"");
     }
 
 }
