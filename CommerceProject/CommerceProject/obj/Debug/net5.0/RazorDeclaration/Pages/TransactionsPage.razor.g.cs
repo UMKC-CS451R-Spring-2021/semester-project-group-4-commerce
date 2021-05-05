@@ -189,6 +189,7 @@ using Microsoft.AspNetCore.Http;
 
         trans.Add(t);                                   // add to list without refreshing page
         newTransaction = new DisplayTransactionModel();     // wipe out form model
+        toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
     }
 
     private decimal roundAmount()
@@ -231,11 +232,6 @@ using Microsoft.AspNetCore.Http;
         {
             return "Draft";
         }
-    }
-
-    private void callToast()
-    {
-        toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
     }
 
 

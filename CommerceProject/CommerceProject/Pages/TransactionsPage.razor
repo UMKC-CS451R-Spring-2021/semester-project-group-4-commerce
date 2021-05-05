@@ -74,7 +74,7 @@ else
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-info add-new" @onclick="callToast"><i class="fa fa-plus"></i> Add Transaction</button>          @*HERE*@
+                                    <button type="submit" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add Transaction</button>          @*HERE*@
                                 </div>
                             </EditForm>
                         </div>
@@ -169,6 +169,7 @@ else
 
         trans.Add(t);                                   // add to list without refreshing page
         newTransaction = new DisplayTransactionModel();     // wipe out form model
+        toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
     }
 
     private decimal roundAmount()
@@ -211,11 +212,6 @@ else
         {
             return "Draft";
         }
-    }
-
-    private void callToast()
-    {
-        toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
     }
 
 }
