@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {}
+    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceFINALCHANGES\\DataAccessLibrary\\DataAccessLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+    "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceFINALCHANGES\\DataAccessLibrary\\DataAccessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceFINALCHANGES\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "projectName": "DataAccessLibrary",
-        "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
-        "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\obj\\",
+        "projectPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceFINALCHANGES\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "packagesPath": "C:\\Users\\khoii\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\khoii\\Source\\Repos\\semester-project-group-4-commerceFINALCHANGES\\DataAccessLibrary\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khoii\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
