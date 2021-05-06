@@ -26,13 +26,6 @@ namespace CommerceProject.Data
             }
         }
 
-        public IEnumerable<Transaction> GetTransactions()
-        {
-            string the_query = "SELECT * FROM TRANSACTIONS";//trying to figure out authentication
-            Connection.Open();
-            return Connection.Query<Transaction>(the_query).ToList<Transaction>();
-        }
-
         public Dictionary<int, decimal> GetMonthlyBalancesPastYear(string UserEmail)
         {
             Dictionary<int, decimal> monthly_balances_dict = new Dictionary<int, decimal>();

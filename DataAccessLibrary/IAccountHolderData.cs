@@ -10,6 +10,6 @@ namespace DataAccessLibrary
     {
         
         public Task ChangeName(AccountHolderModel account);
-
+        Task<List<AccountHolderModel>> getProfileInfo(string user_email);
     }
 }

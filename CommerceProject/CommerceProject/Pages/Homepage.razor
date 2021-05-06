@@ -13,6 +13,8 @@
 @inject INotificationListData _NotificationList
 @inject ITransactionData trans
 @inject IToastService _toastService
+@inject IAccountHolderData _acc
+
 
 
 <style>
@@ -25,14 +27,14 @@
     }
 </style>
 
-<h4>Welcome, @UserName!</h4>
+<h4>Welcome, @name!</h4>
 
 <div class="row mt-3">
     <div class="col-sm-8">
         <div class="container mt-1 bg-light float-left" style="border:1px solid #cecece">
             <h2 class="mt-2">
                 Notifications
-                <button class="btn btn-info float-right mt-1" type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export to spreadsheet</button>     @*HERE*@
+                <button class="btn btn-info float-right mt-1" type="button" name="spreadsheet_button" @onclick="savespreadsheet">Export transactions to spreadsheet</button>     @*HERE*@
             </h2>
             <h6 onclick=@FilterNotificationsByDate()></h6>
             <div>
@@ -90,6 +92,8 @@
 
 @code{
     public string user_email;
+    List<AccountHolderModel> user_profile;
+    public string name;
 
     protected override void OnInitialized()
     {
@@ -104,8 +108,11 @@
     protected override async Task OnInitializedAsync()
     {
         UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+        user_profile = await _acc.getProfileInfo(user_email);
 
         notifications = await _NotificationList.GetNotifications(UserName); // get current user's unread notifs
+
+        name = user_profile[0].first_Name ?? UserName;
     }
 
     public string getNotificationType(NotificationListModel notification)
@@ -137,7 +144,7 @@
 
     public async Task FilterNotificationsByDate()
     {
-        DateTime start = selectedStartDate ?? DateTime.Parse("Jan 1, 20015");
+        DateTime start = selectedStartDate ?? DateTime.Parse("Jan 1, 2015");
         DateTime end = selectedEndDate ?? DateTime.Now;
 
         notifications = await _NotificationList.GetNotificationsByDates(UserName, start.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
@@ -153,7 +160,7 @@
     {
         String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
         List<TransactionModel> translist = await trans.GetTransactions(UserName);
-        //ExportToSpreadsheet.create_csv(translist);
+        ExportToSpreadsheet.create_csv(translist);
         _toastService.ShowInfo("\"TransactionReport.CSV\" has downloaded to \"Desktop\" successfully", "Spreadsheet Created");
     }
 

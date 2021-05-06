@@ -8,11 +8,11 @@ namespace DataAccessLibrary.Models
 {
     public class AccountHolderModel
     {
-        public string firstName { get; set; }
+        public string first_Name { get; set; }
 
-        public string lastName { get; set; }
+        public string last_Name { get; set; }
 
-        public string phoneNumber { get; set; }
+        public string phone_num { get; set; }
 
         public string email { get; set; }
 

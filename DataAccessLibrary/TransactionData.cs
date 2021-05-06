@@ -20,7 +20,8 @@ namespace DataAccessLibrary
             string sql = @"SELECT * FROM transactions
                             WHERE Account_Num = (SELECT Account_Num FROM account
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
-						                            WHERE account_holder.Email = '" + UserName + "');";  // currently uses no form input
+						                            WHERE account_holder.Email = '" + UserName + "')" +
+                                                    "ORDER BY Processing_date DESC;";  // currently uses no form input
 
             return _db.LoadData<TransactionModel, dynamic>(sql, new { });
         }

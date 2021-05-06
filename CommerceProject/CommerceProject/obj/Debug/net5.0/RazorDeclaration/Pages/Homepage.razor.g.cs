@@ -13,140 +13,140 @@ namespace CommerceProject.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 1 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 2 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 3 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 4 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 5 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 6 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 7 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 8 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 9 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 9 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using CommerceProject;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 10 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 10 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using CommerceProject.Shared;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 11 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Blazorise;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 12 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 12 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Blazorise.Charts;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 13 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Blazored.Toast;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 14 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\_Imports.razor"
+#line 14 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\_Imports.razor"
 using Blazored.Toast.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 3 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
 using CommerceProject.Data;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 4 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 4 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
 using CommerceProject.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 5 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 5 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
 using Microsoft.AspNetCore.Identity.UI.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 6 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
 using Microsoft.AspNetCore.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 7 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
 using DataAccessLibrary;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 8 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
 using DataAccessLibrary.Models;
 
 #line default
@@ -161,9 +161,11 @@ using DataAccessLibrary.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 91 "G:\from documents\School\2021 Spring\451 capstone\Group stuff\Repo\CommerceProject\CommerceProject\Pages\Homepage.razor"
+#line 93 "C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\Pages\Homepage.razor"
       
     public string user_email;
+    List<AccountHolderModel> user_profile;
+    public string name;
 
     protected override void OnInitialized()
     {
@@ -178,8 +180,11 @@ using DataAccessLibrary.Models;
     protected override async Task OnInitializedAsync()
     {
         UserName = httpContextAccessor.HttpContext.User.Identity.Name; // gets current user's email
+        user_profile = await _acc.getProfileInfo(user_email);
 
         notifications = await _NotificationList.GetNotifications(UserName); // get current user's unread notifs
+
+        name = user_profile[0].first_Name ?? UserName;
     }
 
     public string getNotificationType(NotificationListModel notification)
@@ -211,7 +216,7 @@ using DataAccessLibrary.Models;
 
     public async Task FilterNotificationsByDate()
     {
-        DateTime start = selectedStartDate ?? DateTime.Parse("Jan 1, 20015");
+        DateTime start = selectedStartDate ?? DateTime.Parse("Jan 1, 2015");
         DateTime end = selectedEndDate ?? DateTime.Now;
 
         notifications = await _NotificationList.GetNotificationsByDates(UserName, start.ToString("yyyy-MM-dd"), end.ToString("yyyy-MM-dd"));
@@ -227,7 +232,7 @@ using DataAccessLibrary.Models;
     {
         String UserName = httpContextAccessor.HttpContext.User.Identity.Name;
         List<TransactionModel> translist = await trans.GetTransactions(UserName);
-        //ExportToSpreadsheet.create_csv(translist);
+        ExportToSpreadsheet.create_csv(translist);
         _toastService.ShowInfo("\"TransactionReport.CSV\" has downloaded to \"Desktop\" successfully", "Spreadsheet Created");
     }
 
@@ -235,6 +240,7 @@ using DataAccessLibrary.Models;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IAccountHolderData _acc { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IToastService _toastService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private ITransactionData trans { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private INotificationListData _NotificationList { get; set; }

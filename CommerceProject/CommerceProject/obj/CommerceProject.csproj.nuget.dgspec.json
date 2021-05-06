@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
+    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {}
   },
   "projects": {
-    "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
+    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
         "projectName": "CommerceProject",
-        "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
-        "packagesPath": "C:\\Users\\New Blue\\.nuget\\packages\\",
-        "outputPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\CommerceProject\\CommerceProject\\obj\\",
+        "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\CommerceProject.csproj",
+        "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\CommerceProject\\CommerceProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\New Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,8 +31,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
-                "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj"
+              "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+                "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj"
               }
             }
           }
@@ -126,20 +126,20 @@
         }
       }
     },
-    "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj": {
+    "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
         "projectName": "DataAccessLibrary",
-        "projectPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\DataAccessLibrary.csproj",
-        "packagesPath": "C:\\Users\\New Blue\\.nuget\\packages\\",
-        "outputPath": "G:\\from documents\\School\\2021 Spring\\451 capstone\\Group stuff\\Repo\\DataAccessLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\DataAccessLibrary.csproj",
+        "packagesPath": "C:\\Users\\Shelby\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Shelby\\Documents\\GitHub\\semester-project-group-4-commerce\\DataAccessLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\New Blue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shelby\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

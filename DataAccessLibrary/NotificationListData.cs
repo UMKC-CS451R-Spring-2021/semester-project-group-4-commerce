@@ -20,7 +20,8 @@ namespace DataAccessLibrary
             string sql = @"SELECT * FROM notificationList
                             WHERE Account_Num = (SELECT Account_Num FROM account
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
-						                            WHERE account_holder.Email = '" + UserName + "');";
+						                            WHERE account_holder.Email = '" + UserName + "')" +
+                                                    "ORDER BY Date DESC;";
 
             return _db.LoadData<NotificationListModel, dynamic>(sql, new { });
         }
@@ -30,7 +31,7 @@ namespace DataAccessLibrary
                             WHERE Account_Num = (SELECT Account_Num FROM account
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
 						                            WHERE account_holder.Email = '" + UserName + "')" +
-                                "AND [Read] = 0;";
+                                "AND [Read] = 0 ORDER BY Date DESC;";
 
             return _db.LoadData<NotificationListModel, dynamic>(sql, new { });
         }
@@ -41,7 +42,7 @@ namespace DataAccessLibrary
                             WHERE Account_Num = (SELECT Account_Num FROM account
 						                            INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num
 						                            WHERE account_holder.Email = '" + UserName + "') " +
-                                "AND Date >= '" + StartDate + "' AND Date <= '" + StopDate + " 23:59:59.999';";
+                                "AND Date >= '" + StartDate + "' AND Date <= '" + StopDate + " 23:59:59.999' ORDER BY Date DESC;";
 
             return _db.LoadData<NotificationListModel, dynamic>(sql, new { });
         }

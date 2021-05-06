@@ -125,7 +125,6 @@ else
         </div>
     </div>
 }
-    }
 
 
 @code {
@@ -170,6 +169,13 @@ else
         trans.Add(t);                                   // add to list without refreshing page
         newTransaction = new DisplayTransactionModel();     // wipe out form model
         toastService.ShowSuccess("A new transaction has been created successfully", "New Transaction");
+
+        trans = await _trans.GetTransactions(UserName);
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
     }
 
     private decimal roundAmount()

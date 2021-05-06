@@ -17,12 +17,21 @@ namespace DataAccessLibrary
         public Task ChangeName(AccountHolderModel accountholder)
         {
             string sql = @"UPDATE account_holder
-                            SET First_Name = '" + accountholder.firstName + "', Last_Name='" + accountholder.lastName + "', Phone_Num = '" 
-                            + accountholder.phoneNumber + "', City='" + accountholder.city +"', State='" + accountholder.state +
+                            SET First_Name = '" + accountholder.first_Name + "', Last_Name='" + accountholder.last_Name + "', Phone_Num = '" 
+                            + accountholder.phone_num + "', City='" + accountholder.city +"', State='" + accountholder.state +
                             "' WHERE email='" + accountholder.email + "';";
 
 
             return db.SaveData(sql, accountholder);
+        }
+
+        public Task<List<AccountHolderModel>> getProfileInfo(string user_email)
+        {
+            string sql = @"SELECT * FROM account_holder " +
+                            "WHERE email='" + user_email + "';";
+
+
+            return db.LoadData<AccountHolderModel, dynamic>(sql, new { });
         }
     }
 }
