@@ -3,6 +3,13 @@
 @inject IWebHostEnvironment Environment
 @inject ICompositeViewEngine Engine
 <!DOCTYPE html>
+
+<style>
+    .footer {
+        overflow: hidden !important;
+    }
+</style>
+
 <html>
 <head>
     <meta charset="utf-8" />
@@ -20,7 +27,7 @@
         </main>
     </div>
     <footer class="footer border-top text-muted">
-        <div class="container">
+        <div class="container float-right">
             &copy; 2021 - CommerceProject <!--- <a asp-area="" asp-page="Privacy">Privacy</a>-->
         </div>
     </footer>

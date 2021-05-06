@@ -106,4 +106,12 @@ tr.noBorder td {
 
 }
 
+.text-danger {
+    color:#E30000 !important;
+}
+
+.text-success{
+    color:#4FA800 !important;
+}
+
 

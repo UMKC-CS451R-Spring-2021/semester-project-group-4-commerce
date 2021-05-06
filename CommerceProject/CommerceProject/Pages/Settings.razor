@@ -19,6 +19,11 @@
         min-height: 500px;
         background-attachment: fixed;
     }
+
+    .blazored-toast-success {
+        background-color: #4FA800 !important;
+    }
+
 </style>
 
 
@@ -183,7 +188,7 @@
         if (nametochange.city == "") { nametochange.city = current_profile[0].city; };
         if (nametochange.state == "") { nametochange.state = current_profile[0].state; };
 
-        toastService.ShowSuccess("Your Personal Information is now up to date", "Update Information");
+        toastService.ShowSuccess("Your Personal Information is now up to date", "Updated Information");
         nametochange.email = httpContextAccessor.HttpContext.User.Identity.Name;
 
 
@@ -254,7 +259,7 @@
         TimeSpan start = startTime ?? TimeSpan.Parse("00:00:00");
         TimeSpan end = endTime ?? TimeSpan.Parse("04:00:00");
 
-        toastService.ShowSuccess("Your Notification Preferences has been updated successfully", "Update Notifications");
+        toastService.ShowSuccess("Your Notification Preferences has been updated successfully", "Updated Notifications");
 
         await _Notifications.SetParameters(UserName, timeIsOn, start.ToString(), end.ToString(), withdrawalIsOn,
                                            max_trans, lowBalanceIsOn, min_bal, emailNotIsOn);

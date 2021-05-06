@@ -18,6 +18,10 @@
         min-height: 500px;
         background-attachment: fixed;
     }
+
+    .blazored-toast-success {
+        background-color: #4FA800 !important;
+    }
 </style>
 
 
@@ -27,7 +31,7 @@
 }
 else
 {
-    <div class="container mt-3 bg-light" style="border:1px solid #cecece">
+    <div class="container mt-5 bg-light" style="border:1px solid #cecece">
 
         <p class="h2 mt-2 mb-2">
             Transactions
@@ -74,7 +78,7 @@ else
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add Transaction</button>          @*HERE*@
+                                    <button type="submit" class="btn btn-info add-new"> Add Transaction</button>          @*HERE*@
                                 </div>
                             </EditForm>
                         </div>
@@ -105,7 +109,23 @@ else
                         <td>@row.Processing_Date.ToString("M/d/yyyy")</td>
                         <td>@row.Processing_Date.ToString("h:mm tt")</td>
                         <td>@row.Description</td>
-                        <td class="alnright">$@row.Amount</td>
+
+                        @*Color Statements for transaction amount*@
+                        @if (@row.Amount < 0)
+                        {
+                            <td class="alnright text-danger">$@row.Amount</td>
+                        }
+                        else if (@row.Amount > 0)
+                        {
+                            <td class="alnright text-success">$@row.Amount</td>
+                        }
+                        else
+                        {
+
+                            <td class="alnright">$@row.Amount</td>
+                        }
+
+
                         <td class="alnright">$@(row.Balance)</td>
 
                     </tr>
