@@ -51,10 +51,10 @@
             switch (param)
             {
                 case "month":
-                    data = YearlyNotificationsData();
+                    data = MonthlyNotificationsData();
                     break;
                 case "year":
-                    data = MonthlyNotificationsData();
+                    data = YearlyNotificationsData();
                     break;
             }
 
@@ -76,7 +76,7 @@
 
             List<int> notifications = new List<int>();
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 1; i <= 4; i++)
             {
                 if (monthly_notifications.ContainsKey(i))
                 {
@@ -98,7 +98,7 @@
 
             List<int> notifications = new List<int>();
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 1; i <= 4; i++)
             {
                 if (yearly_notificaions.ContainsKey(i))
                 {

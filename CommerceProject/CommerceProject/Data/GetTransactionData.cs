@@ -30,12 +30,12 @@ namespace CommerceProject.Data
         {
             Dictionary<int, decimal> monthly_balances_dict = new Dictionary<int, decimal>();
 
-            string query = "SELECT Avg(Balance), month(Processing_Date) " +
-                      "FROM transactions " +
-                      "WHERE year(Processing_Date) = 2021 " +
-                      "AND Account_Num = (SELECT Account_Num FROM account INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "')" +
-                      "GROUP BY month(Processing_Date) " +
-                      "ORDER BY month(Processing_Date)";
+            string query = "SELECT month(a.processing_date), a.balance " +
+                            " FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY DATEPART(month, [processing_date]) ORDER BY[processing_date] DESC) seq" +
+                            " FROM transactions) a WHERE seq = 1" +
+                            " AND Account_Num = (SELECT Account_Num FROM account" +
+                            " INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "')" +
+                            " AND year(processing_date) = '2021';";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -46,7 +46,7 @@ namespace CommerceProject.Data
                     {
                         while (reader.Read())
                         {
-                            monthly_balances_dict.Add(reader.GetInt32(1), reader.GetDecimal(0));
+                            monthly_balances_dict.Add(reader.GetInt32(0), reader.GetDecimal(1));
                         }
                     }
                 }
@@ -60,12 +60,12 @@ namespace CommerceProject.Data
         {
             Dictionary<int, decimal> daily_balances_dict = new Dictionary<int, decimal>();
 
-            string query = "SELECT Avg(Balance), day(Processing_Date) " +
-                      "FROM transactions " +
-                      "WHERE year(Processing_Date) = 2021 AND month(Processing_Date) = " + curr_month +
-                      "AND Account_Num = (SELECT Account_Num FROM account INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "')" +
-                      " GROUP BY day(Processing_Date) " +
-                      "ORDER BY day(Processing_Date)";
+            string query = "SELECT day(a.processing_date), a.Balance" +
+                            " FROM(SELECT *, ROW_NUMBER() OVER(PARTITION BY DATEPART(day, [processing_date]) ORDER BY[processing_date] DESC) seq" +
+                            " FROM transactions) a WHERE seq = 1" +
+                            " AND Account_Num = (SELECT Account_Num FROM account" +
+                            " INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "')" +
+                            " AND month(processing_date) = '" + curr_month + "' AND year(processing_date) = '2021';";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -76,7 +76,7 @@ namespace CommerceProject.Data
                     {
                         while (reader.Read())
                         {
-                            daily_balances_dict.Add(reader.GetInt32(1), reader.GetDecimal(0));
+                            daily_balances_dict.Add(reader.GetInt32(0), reader.GetDecimal(1));
                         }
                     }
                 }
@@ -119,7 +119,7 @@ namespace CommerceProject.Data
             Dictionary<int, int> yearly_notifications = new Dictionary<int, int>();
 
             string query = "SELECT Notification_Type, SUM(Notification_Type) FROM notificationList " +
-                            "WHERE Date >= DATEADD(year, -1, GETDATE()) " +
+                            "WHERE YEAR(Date) = 2021 " +
                             "AND Account_Num = (SELECT Account_Num FROM account " +
                             "INNER JOIN account_holder ON account.ID_Num = account_holder.ID_Num WHERE account_holder.Email = '" + UserEmail + "') " +
                             "GROUP BY Notification_Type " +
