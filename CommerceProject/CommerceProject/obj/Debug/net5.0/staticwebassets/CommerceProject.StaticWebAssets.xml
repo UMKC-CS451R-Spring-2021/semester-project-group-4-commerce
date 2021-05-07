@@ -1,8 +1,8 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/" Path="C:\Users\khoii\Source\Repos\semester-project-group-4-commerceFINALCHANGES\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\" />
-  <ContentRoot BasePath="/Identity" Path="C:\Users\khoii\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.4\staticwebassets\V4\" />
-  <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\khoii\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\khoii\.nuget\packages\blazorise\0.9.3.1\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\khoii\.nuget\packages\blazorise.bootstrap\0.9.3.1\build\..\staticwebassets\" />
-  <ContentRoot BasePath="_content/Blazorise.Charts" Path="C:\Users\khoii\.nuget\packages\blazorise.charts\0.9.3.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="/" Path="C:\Users\Shelby\Documents\GitHub\semester-project-group-4-commerce\CommerceProject\CommerceProject\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="/Identity" Path="C:\Users\Shelby\.nuget\packages\microsoft.aspnetcore.identity.ui\5.0.4\staticwebassets\V4\" />
+  <ContentRoot BasePath="_content/Blazored.Toast" Path="C:\Users\Shelby\.nuget\packages\blazored.toast\3.1.2\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\Shelby\.nuget\packages\blazorise\0.9.3.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\Shelby\.nuget\packages\blazorise.bootstrap\0.9.3.1\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Charts" Path="C:\Users\Shelby\.nuget\packages\blazorise.charts\0.9.3.1\build\..\staticwebassets\" />
 </StaticWebAssets>

@@ -179,11 +179,7 @@
         if (nametochange.first_Name == "") { nametochange.first_Name = current_profile[0].first_Name; };
         if (nametochange.last_Name == "") { nametochange.last_Name = current_profile[0].last_Name; };
 
-        Regex rgx = new Regex(@"^(\+\d{ 1, 2 }\s)?\(?\d{ 3}\)?[\s.-]?\d{ 3}
-        [\s.-]?\d{ 4}$");
-
-        if (nametochange.phone_num == "" || nametochange.phone_num == null || (nametochange.phone_num != null && !(rgx.IsMatch(nametochange.phone_num)))) { nametochange.phone_num = current_profile[0].phone_num; }
-        else { nametochange.phone_num = String.Format("{0: (###) ###-####}", Int64.Parse(nametochange.phone_num)); };
+        if (nametochange.phone_num == "") { nametochange.phone_num = current_profile[0].phone_num; };
 
         if (nametochange.city == "") { nametochange.city = current_profile[0].city; };
         if (nametochange.state == "") { nametochange.state = current_profile[0].state; };
